@@ -10,6 +10,7 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
+  createButton(modal);
 };
 
 // When the user clicks on <span> (x), close the modal
@@ -23,3 +24,16 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 };
+
+function createButton(modal) {
+  var btn = document.createElement("BUTTON");
+  btn.className = 'btn';
+  btn.addEventListener('click', popup, false);
+  var text = document.createTextNode("button trello"); 
+  btn.appendChild(text);                          
+  modal.appendChild(btn);              
+}
+
+function popup() {
+  alert('test');
+}
