@@ -1,2 +1,3 @@
 test for automatic board
-closing issue #2
+closing PR #3
+closing only with issue #2
