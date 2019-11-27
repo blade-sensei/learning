@@ -1,0 +1,37 @@
+div[class*="child-"]  {
+    margin-bottom: 5px;
+    border: 1px dashed;
+    display: inline-flex;
+    width: 28%;
+    padding: 0 10px;
+
+}
+.child-one {
+    background-color: aquamarine;
+}
+
+.child-two {
+    background-color: coral;
+}
+
+.child-three {
+    background-color: lavender;
+}
+
+.child-four {
+    background-color: aquamarine;
+}
+
+.child-five {
+    background-color: coral;
+}
+
+.child-six {
+    background-color: lavender;
+}
+
+
+
+.parent {
+    border: 1px blue dashed;
+}
