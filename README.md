@@ -1,6 +1,6 @@
 # Software engineer roadmap
 
-Skills
+Skills for engineer
 
 ## Basics Fundamentals 
 
@@ -213,6 +213,11 @@ Skills
 - [ ] Database
   - [ ] ORM
 
+- [ ] security
+  - [ ] CORS
+  - [ ] XSS
+  - [ ] CSRF
+
 ## Backend advance
 
 - [ ] Serverless
@@ -269,8 +274,7 @@ Skills
 - [ ] VS code/IDE
 - [ ] linters
 - [ ] webpack
-- [ ] gulp
-- [ ] redux
+- [ ] loggers
 
 ## Tools middle
 
@@ -278,6 +282,9 @@ Skills
   - [ ] reset, rollback
   - [ ] conflicts
   - [ ] gitflow
+
+- [ ] redux
+- [ ] gulp
 
 ## programming
 

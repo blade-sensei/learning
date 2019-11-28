@@ -1,3 +1,4 @@
-- roadmap
-- project
-- codewar/euler
+- roadmap 3h
+- project 2h
+- codewar/euler 1h
+- maths 1h
