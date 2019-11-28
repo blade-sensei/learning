@@ -67,9 +67,10 @@ Skills
 - [ ] how component interacts
 - [ ] memory ram
 - [ ] stock/data
+- [ ] threads
 - [ ] serveurs
 - [ ] browser
-
+- [ ] bash
 
 ### Web World
 
@@ -128,7 +129,7 @@ Skills
 - [ ] coching server
 - [ ] forward proxy
 
-## Frontend
+## Frontend basics
 
 ### HTML
 - [ ] HTML structure
@@ -162,14 +163,21 @@ Skills
   - [ ] prototype
   - [ ] class
   - [ ] strict
+  - [ ] asyncronous
 - [ ] Testing
 - [ ] Debug in JS
 
+
 ## Frontend middle
 
-### Javascipr
+### JavaScript
 - [ ] Learn a framework 'React'
 - [ ] Testing Unit/Integration/E2E
+- [ ] Babel
+- [ ] Assyncronous
+- [ ] Closures
+- [ ] Types
+- [ ] TypeScript
 
 ### CSS
 
@@ -201,6 +209,15 @@ Skills
 - [ ] SSO
 - [ ] Take a framework
 - [ ] Websockets
+- [ ] Dependendy Injection
+- [ ] Database
+  - [ ] ORM
+
+## Backend advance
+
+- [ ] Serverless
+- [ ] Microservices
+- [ ] GraphQL
 
 ## Backend advance
 
@@ -266,6 +283,10 @@ Skills
 
 - [ ] fonctionnal
 - [ ] declarative
+- [ ] procedural
+- [ ] oop
+- [ ] patterns
+  - [ ] MVC
 
 ## practices
 
@@ -275,5 +296,10 @@ Skills
 
 ## Network
 
-
 - [skills](https://www.zippia.com/network-engineer-jobs/skills/)
+- cryptography
+
+## Technology
+
+- [ ] Singlepage SPA
+- [ ] PWA
