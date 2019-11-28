@@ -6,6 +6,9 @@ Skills for engineer
 
 ###  Algorithms
 
+- [canvas for algo](https://www.hiredintech.com/classrooms/algorithm-design/lesson/78)
+- Big-O perf
+
 ### Maths for Computer science
 
 ### Data structures
