@@ -1,165 +1,18 @@
-// you can write to stdout for debugging purposes, e.g.
-// console.log('this is a debug message');
 
+/** 
 
-/**
- * 
- * A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.
+A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.
 
 For example, number 9 has binary representation 1001 and contains a binary gap of length 2. The number 529 has binary representation 1000010001 and contains two binary gaps: one of length 4 and one of length 3. The number 20 has binary representation 10100 and contains one binary gap of length 1. The number 15 has binary representation 1111 and has no binary gaps. The number 32 has binary representation 100000 and has no binary gaps.
 
-Write a function:
-
-function solution(N);
-
 that, given a positive integer N, returns the length of its longest binary gap. The function should return 0 if N doesn't contain a binary gap.
 
-For example, given N = 1041 the function should return 5, because N has binary representation 10000010001 and so its longest binary gap is of length 5. Given N = 32 the function should return 0, because N has binary representation '100000' and thus no binary gaps.
+N = 1041 should return 5
 
-Write an efficient algorithm for the following assumptions:
 
-N is an integer within the range [1..2,147,483,647].
-Copyright 2009–2019 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
  */
 
-function solution(N) {
-    // write your code in JavaScript (Node.js 8.9.4)
-    
-    const binaryRepresentation = N.toString(2);
-    
-    const splitedBinary = binaryRepresentation.split('').map(bit => {
-        return Number(bit);
-    })
-    
-    
-    if (hasSomeGap(splitedBinary)) {
-        
-        let gap = 0;
-        let maxGap = 0;
-        
-        let gapClosed = false;
-        
-        for (index = 1; index < splitedBinary.length; index++)  {
-            
-            const binary = splitedBinary[index];
-            
-            gapClosed = isClosed(binary);
-            if (gapClosed) {
-                maxGap = getMaxGap(gap, maxGap);
-                gap = 0;
-            } else {
-                gap++
-            }
-        }
-        
-        return maxGap;
-        
-    }
-    
-    return 0;
-    
-}
-
-function isClosed(binary) {
-    return binary === 1;
-}
-
-
-function hasSomeGap(binaryList) {
-    return (
-        hasOneEachExtremity(binaryList) &&
-        hasAtLeastOneZero(binaryList)
-    )
-}
-
-function hasAtLeastOneZero(binaryList) {
-    return binaryList.some(bit => {
-        return bit === 0
-    });
-}
-
-function hasOneEachExtremity(binaryList) {
-    const firstIndex = binaryList[0];
-    const lastIndex = binaryList[binaryList.length -1]
-    return (
-        firstIndex === 1 &&
-        lastIndex === 1
-    )
-}
-
-function getMaxGap(currentGap, currentMaxGap) {
-    return Math.max(currentGap, currentMaxGap);
-}
-
-
-//solution 2
-
-// you can write to stdout for debugging purposes, e.g.
-// console.log('this is a debug message');
-
-function solution(N) {
-    // write your code in JavaScript (Node.js 8.9.4)
-    
-
-    const binaryRepresentation = N.toString(2);
-    const binaryList = binaryRepresentation.split('').map(bit => {
-        return Number(bit);
-    });
-    
-    let status = {
-        startedSegment: false,
-        finishedSegment: false
-    }
-    
-    let gap = 0;
-    let maxGap = 0;
-    
-    binaryList.forEach(bit => {
-        status = updateStatus(bit, status);
-        
-        if (status.startedSegment) {
-            if (status.finishedSegment) {
-                maxGap = getMaxGap(gap, maxGap) - 1;
-                gap = 0;
-                status = restartStatus() 
-            } else {
-                gap++
-            }
-        }
-        
-    })
-    
-    return maxGap;
-}
-
-function updateStatus(bit, status) {
-    if (bit === 1) {
-        if (status.startedSegment === true) {
-            status.finishedSegment = true;
-        } else {
-            status.startedSegment = true;
-        }
-    } 
-    return status;
-}
-
-function getMaxGap(currentGap, currentMaxGap) {
-    if (currentGap > currentMaxGap) {
-        return currentGap
-    }
-    return currentMaxGap;
-}
-
-function restartStatus() {
-    return {
-        startedSegment: true,
-        finishedSegment: false,
-    }
-}
-
-//sol
-
-function solution(N) {
+function maxGapBinary(N) {
     // write your code in JavaScript (Node.js 8.9.4)
     
 
@@ -219,21 +72,12 @@ function restartStatus() {
 }
 
 
-// you can write to stdout for debugging purposes, e.g.
-// console.log('this is a debug message');
+/**
+ * amazon interview
+ * visible squares letters from 
+ */
 
 function solution() {
-    // write your code in Javascript
-    //
-    // you can access DOM Tree using DOM Object Model:
-    //    document.getElementsByTagName
-    // or using jQuery:
-    //    $('some_tag')
-    //
-    // please note that element.innerText is not supported,
-    // you can use element.textContent instead.
-    
-    //get all tr rows
     
     const table = document.getElementsByTagName("table");
     const rows = table[0].rows;
@@ -314,51 +158,10 @@ Assume that:
 N and K are integers within the range [0..100];
 each element of array A is an integer within the range [−1,000..1,000].
 In your solution, focus on correctness. The performance of your solution will not be the focus of the assessment.
- */
 
-/** solution  */
+*/
 
-// got 60%
-
-function solution(A, K) {
-    // write your code in JavaScript (Node.js 8.9.4)
-    
-
-    if (K === A.length) {
-        return A;
-    }
-    
-    let rotatedArray = [];
-    
-    A.forEach((currentNumber, index) => {
-        const nextIndex = getRotatedIndex(index, K, A.length);
-        
-        rotatedArray[nextIndex] = currentNumber;
-    })
-    
-    return rotatedArray;
-    
-}
-
-function getRotatedIndex(index, rotationNumber,lengthArray) {
-
-    let newIndex = index + rotationNumber;
-    if (newIndex > lengthArray - 1)  {
-        return newIndex - lengthArray;
-    }
-    
-    return newIndex;
-    
-}
-
-/** better solution */
-// quand le K fait trop dépasser le calcul de indexNew - Array
-// il se peut qu'il dépasse encore l'index
-
-// you can write to stdout for debugging purposes, e.g.
-// console.log('this is a debug message');
-
-function solution(A, K) {
+function rotateArray(A, K) {
     // write your code in JavaScript (Node.js 8.9.4)
     
 
@@ -387,58 +190,47 @@ function getRotatedIndex(index, rotationNumber,lengthArray) {
     
 }
 
-
-//recruitment 
-
-// matrixe square -1  0  1
-
-'use strict';
-
-const fs = require('fs');
-
-process.stdin.resume();
-process.stdin.setEncoding('utf-8');
-
-let inputString = '';
-let currentLine = 0;
-
-process.stdin.on('data', function(inputStdin) {
-    inputString += inputStdin;
-});
-
-process.stdin.on('end', function() {
-    inputString = inputString.split('\n');
-
-    main();
-});
-
-function readLine() {
-    return inputString[currentLine++];
-}
-
-
-
 /*
- * Complete the 'collectMax' function below.
- *
- * The function is expected to return an INTEGER.
- * The function accepts 2D_INTEGER_ARRAY mat as parameter.
+Complete the 'collectMax' function below.
+The function is expected to return an INTEGER.
+The function accepts 2D_INTEGER_ARRAY mat as parameter.
+ Given a matrix of n*n. Each cell contain 0, 1, -1.
+0 denotes there is no diamond but there is a path.
+1 denotes there is diamond at that location with a path
+-1 denotes that the path is blocked.
+Now you have start from 0,0 and reach to last cell & then return back to 0,0 collecting maximum no of diamonds.
+While going to last cell you can move only right and down.
+While returning back you can move only left and up.
  */
 
 function collectMax(mat) {
     // Write your code here<
-    console.debug(mat);
     let currentMap = clone(mat);
     let currentPosition = [0,0];
     let totalDiamonds = 0;
-    while (!endOfFirstRoad(currentPosition, currentMap.length)) {
+    
+    //first road
+    while (!endOfFirstRoad(currentPosition, currentMap.length - 1)) {
         const nextMove = getNextMove(currentPosition, currentMap);
         if (isThereDiamond(currentMap, nextMove)) {
             totalDiamonds++;
             currentMap[nextMove[0]][nextMove[1]] = 0;
         }
         currentPosition = nextMove;
-    } 
+    }
+
+    //second 
+    while (!endOfSecondRoad(currentPosition)) {
+        const nextMove = getNextMoveReturn(currentPosition, currentMap);
+        console.log(nextMove);
+        if (isThereDiamond(currentMap, nextMove)) {
+            totalDiamonds++;
+            currentMap[nextMove[0]][nextMove[1]] = 0;
+        }
+        currentPosition = nextMove;
+    }
+
+
     return totalDiamonds;
 }
 
@@ -473,10 +265,36 @@ function getNextMove(position, matrix) {
     return [matrixLength - 1, matrixLength - 1];
 }
 
+function getNextMoveReturn(position, matrix) {
+    const row = position[0];
+    const column = position[1];
+
+    if (row > 0 && matrix[row - 1][column] !== -1) {
+        return [row - 1 , column];
+    }
+    else if (column > 0  && matrix[row][column - 1] !== - 1) {
+        return [row, column - 1];
+    }
+    return [0, 0];
+}
+
 function endOfFirstRoad(position, matrixLength) {
-    console.log(position);
     return (
         position[0] === matrixLength &&
         position[1] === matrixLength
     )
 }
+
+
+function endOfSecondRoad(position) {
+    return (
+        position[0] === 0 &&
+        position[1] === 0
+    )
+}
+
+module.exports = {
+    maxGapBinary,
+    rotateArray,
+    collectMax,
+};
