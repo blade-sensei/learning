@@ -269,12 +269,13 @@ function getNextMoveReturn(position, matrix) {
     const row = position[0];
     const column = position[1];
 
-    if (row > 0 && matrix[row - 1][column] !== -1) {
-        return [row - 1 , column];
-    }
-    else if (column > 0  && matrix[row][column - 1] !== - 1) {
+    if (column > 0  && matrix[row][column - 1] !== - 1) {
         return [row, column - 1];
     }
+    else if (row > 0 && matrix[row - 1][column] !== -1) {
+        return [row - 1 , column];
+    }
+
     return [0, 0];
 }
 
