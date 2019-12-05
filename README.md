@@ -14,6 +14,7 @@ Skills for engineer
 ### Data structures
 
 - [ ] arrays
+  - [ ] 
 - [ ] linked list
 - [ ] stack, queue
 - [ ] hash

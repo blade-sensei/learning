@@ -337,6 +337,7 @@ module.exports = {
     maxGapBinary,
     rotateArray,
     collectMax,
+    songDecoder,
 };
 
 
