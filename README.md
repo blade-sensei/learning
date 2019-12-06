@@ -14,7 +14,7 @@ Skills for engineer
 ### Data structures
 
 - [ ] arrays
-  - [ ] 
+  - [how memory and array works](https://www.youtube.com/watch?v=pmN9ExDf3yQ)
 - [ ] linked list
 - [ ] stack, queue
 - [ ] hash
