@@ -1,17 +1,28 @@
 ## Arrays
 
-In memory, les elements d'un array sont stockés cote à cote
-dans un seul/meme bloque de mémoire
 
-Store many data in the same variable, and also sort/organize them if needed
+### What is it ? 
 
-For example, if we need to store 30 fruits, it's a bad idea to create 30 variables of fruits
-to complecated to manipulate and manage
+It's a kind of data structure, like a big tool box.
 
-so we can store all fruits information in 1 same place/variable,
-and if for example we need to sort alphabetically you can do it.
+### Why we use it
+
+Use it to store different or same data information in the SAME variable/place.
+
+A basic reason: If your game/web application... needs to handle fruits, you need array to store all fruits names for example,
+in order don't create a variable or each of fruits.
+
+So each time we need to manage the concept of LIST, GROUP ... we need an array.
+
+### How
+
+Array provide functions and ways to manage them, like add, delete, find and pick up a specific
+element or our array.
 
 ### Representation of arrays in memory
+
+In memory, les elements d'un array sont stockés cote à cote
+dans un seul/meme bloque de mémoire
 
 
 ### Create
