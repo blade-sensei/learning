@@ -331,13 +331,51 @@ function songDecoder(song){
       return removed.join('');
     }
 
- 
+    /**
+     * 
+     * Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carries the "instructions" for the development and functioning of living organisms.
+
+If you want to know more http://en.wikipedia.org/wiki/DNA
+
+In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". You have function with one side of the DNA (string, except for Haskell); you need to get the other complementary side. DNA strand is never empty or there is no DNA at all (again, except for Haskell).
+
+More similar exercise are found here
+
+DNAStrand ("ATTGC") // return "TAACG"
+
+DNAStrand ("GTAT") // return "CATA" 
+     */
+
+    function DNAStrand(dna){
+        //your code here
+        let complementarySide = '';
+        const complementaryTuples = [['A', 'T'], ['C', 'G']];
+        
+        dna.split('').forEach(component => {
+            const complementaryLetter = getComplemntaryLetter(component, complementaryTuples);
+            complementarySide = complementarySide + complementaryLetter;
+        })
+
+        return complementarySide;
+      }
+
+      function getComplemntaryLetter(letter, complementaryTuples) {
+        for (tuple of complementaryTuples) {
+            if (tuple[0] === letter) {
+                return tuple[1];
+            } else if (tuple[1] === letter) {
+                return tuple[0];
+            }
+        }
+
+      }
 
 module.exports = {
     maxGapBinary,
     rotateArray,
     collectMax,
     songDecoder,
+    DNAStrand,
 };
 
 
