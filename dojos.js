@@ -370,12 +370,38 @@ DNAStrand ("GTAT") // return "CATA"
 
       }
 
+      /**
+       * 
+       *Your job in this kata is to calculate the maximum speed you will achieve during your downhill run. The speed is dictated by the height of the mountain. Each element of the array is a layer of the mountain as indicated by the diagram above (and further below). So for this example the mountain has a value of 5 (5 rows of stars). Speed is mountain height * 1.5.
+
+The jump length is calculated by (mountain height * speed * 9) / 10. Jump length should be to two dp.
+       */
+
+      function skiJump(mountain){
+          const mountainHeight = mountain.length;
+          const speed = mountainHeight * 1.5;
+          const jump = ((mountainHeight * speed * 9) / 10).toFixed(2);
+          return getEndPhrase(jump);
+    }
+    function getEndPhrase(jump) {
+        if (jump < 10) {
+            return  `${jump} metres: He's crap!`;
+        } else if (jump < 25) {
+            return  `${jump} metres: He's ok!`;
+        } else if (jump < 50) {
+            return `${jump} metres: He's flying!`;
+        } else {
+            return `${jump} metres: Gold!!`;
+        }
+    }
+
 module.exports = {
     maxGapBinary,
     rotateArray,
     collectMax,
     songDecoder,
     DNAStrand,
+    skiJump,
 };
 
 
