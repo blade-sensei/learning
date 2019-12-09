@@ -4,7 +4,7 @@
   "description": "training, tests, pocs, docs",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --recursive kata"
   },
   "author": "",
   "license": "ISC",
