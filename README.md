@@ -7,6 +7,8 @@ Skills for engineer
 ###  Algorithms
 
 - [canvas for algo](https://www.hiredintech.com/classrooms/algorithm-design/lesson/78)
+
+- [math algorithms](https://peteris.rocks/blog/algorithm-programming-tips-and-tricks/)
 - Big-O perf
 
 ### Maths for Computer science
@@ -15,6 +17,9 @@ Skills for engineer
 
 - [ ] arrays
   - [how memory and array works](https://www.youtube.com/watch?v=pmN9ExDf3yQ)
+  - #### Common functions
+  - #### Common algorithms
+    Intersection in array
 - [ ] linked list
 - [ ] stack, queue
 - [ ] hash

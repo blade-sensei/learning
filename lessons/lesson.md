@@ -65,3 +65,69 @@ var frutsList = []
 Comment décaler tous les élement d'un array vers la droite (switch)
 
 
+### Common operation in array
+
+#### Basic
+
+Accès to specific element
+Delete element by index
+[remove elements in JavaScript](https://love2dev.com/blog/javascript-remove-from-array/)
+
+The most used is splice and pop function in JavaScript
+pop remove the last element of they array
+splice allow you to remove an element starting from x index to n index. so you can remove 1 or more if you know the start index
+
+Find an element
+
+Iterate and using if condition
+
+Get first and last element
+
+Length of array to know how much time
+
+pop -> pickup last
+shift -> pickup first
+
+push -> add at the end
+unshift -> add at the end
+
+JS allow you to put many element as argument of this functions
+
+Insert element at n index
+
+[how to add element](https://www.hostingadvice.com/how-to/javascript-add-to-array/)
+
+Must used are using push/unshift and splice (removing 0 elements)
+
+Contact
+
+Using spread
+arr.push(...new)
+arr.contact(new)
+
+
+JS a.contact(another)
+This will return a new array
+
+Clone array
+Map array
+Matrix iterate in two dimentional
+Filter specific element
+
+### common algorithms
+
+Swap to elements without 3 variables
+
+Reverse array 
+
+Nombre pair le + petit
+
+Intersection of array
+
+Find Max and Minimum of unsorted array
+
+Delete repeated numbers of array
+
+Check if contains a number if they Array
+
+Not the largest path in path matrix m*m
