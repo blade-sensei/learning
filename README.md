@@ -9,7 +9,11 @@ Skills for engineer
 - [canvas for algo](https://www.hiredintech.com/classrooms/algorithm-design/lesson/78)
 
 - [math algorithms](https://peteris.rocks/blog/algorithm-programming-tips-and-tricks/)
+- [some interview algorithms](https://medium.com/@codingfreak/huge-collection-of-array-interview-questions-e87ac7c34e62)
 - Big-O perf
+
+### Reading code
+
 
 ### Maths for Computer science
 
