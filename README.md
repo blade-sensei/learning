@@ -14,6 +14,8 @@ Skills for engineer
 
 ### Reading code
 
+- [read code](https://www.geeksforgeeks.org/problem-solving-arrays/)
+
 
 ### Maths for Computer science
 
