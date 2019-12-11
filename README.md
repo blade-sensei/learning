@@ -25,6 +25,8 @@ Skills for engineer
   - [how memory and array works](https://www.youtube.com/watch?v=pmN9ExDf3yQ)
   - #### Common functions
   - #### Common algorithms
+    [common interview questions](https://dev.to/javinpaul/50-data-structure-and-algorithms-problems-from-coding-interviews-4lh2)
+    [list of algorithms for array by categories](https://www.geeksforgeeks.org/array-data-structure/)
     Intersection in array
 - [ ] linked list
 - [ ] stack, queue
