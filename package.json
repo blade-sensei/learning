@@ -4,11 +4,14 @@
   "description": "training, tests, pocs, docs",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive kata"
+    "test": "mocha --recursive kata",
+    "mocha": "mocha",
+    "ava": "ava"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "ava": "^2.4.0",
     "mocha": "^6.2.2"
   }
 }
