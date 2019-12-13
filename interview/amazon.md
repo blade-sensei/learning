@@ -41,3 +41,42 @@ function getLettersFromRow(row) {
         });
 }
 ```
+
+
+```javascript
+
+//amazon demo
+
+// IMPORT LIBRARY PACKAGES NEEDED BY YOUR PROGRAM
+// SOME FUNCTIONALITY WITHIN A PACKAGE MAY BE RESTRICTED
+// DEFINE ANY FUNCTION NEEDED
+// FUNCTION SIGNATURE BEGINS, THIS FUNCTION IS REQUIRED
+function cellCompete(states, days)
+{
+    // WRITE YOUR CODE HERE 
+    const nextDayStates = getNextDay(states);
+    return nextDayStates;
+}
+// FUNCTION SIGNATURE ENDS
+
+function isSameStatus(left, right) {
+    return left === right;
+}
+
+function getNextDay(states) {
+    const nextDayStates = [];
+    
+    for (let i = 0; i < states.length; i++) {
+        const left = i === 0 ? 0 : states[i - 1];
+        const right = i === states.length - 1 ? 0 : states[i + 1];
+        console.log(left);
+        if (isSameStatus(left, right)) {
+            nextDayStates.push(0);
+        } else {
+            nextDayStates.push(1);
+        }
+    }
+    return nextDayStates;
+}
+
+```
