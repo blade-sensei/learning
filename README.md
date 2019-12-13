@@ -10,6 +10,7 @@ Skills for engineer
 
 - [math algorithms](https://peteris.rocks/blog/algorithm-programming-tips-and-tricks/)
 - [some interview algorithms](https://medium.com/@codingfreak/huge-collection-of-array-interview-questions-e87ac7c34e62)
+- [algorith categories like brute, dynamic etc](https://itnext.io/algorithms-and-data-structures-in-javascript-a71548f902cb)
 - Big-O perf
 
 ### Reading code
@@ -21,14 +22,14 @@ Skills for engineer
 
 ### Data structures
 
-- [ ] arrays
+- [x] arrays
   - [how memory and array works](https://www.youtube.com/watch?v=pmN9ExDf3yQ)
   - #### Common functions
   - #### Common algorithms
     [common interview questions](https://dev.to/javinpaul/50-data-structure-and-algorithms-problems-from-coding-interviews-4lh2)
     [list of algorithms for array by categories](https://www.geeksforgeeks.org/array-data-structure/)
     Intersection in array
-- [ ] linked list
+- [x] linked list
 - [ ] stack, queue
 - [ ] hash
 - [ ] binary search
