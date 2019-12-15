@@ -1,4 +1,4 @@
-const test = require('ava');
+//const test = require('ava');
 
 // IMPORT LIBRARY PACKAGES NEEDED BY YOUR PROGRAM
 // SOME FUNCTIONALITY WITHIN A PACKAGE MAY BE RESTRICTED
@@ -10,6 +10,7 @@ function cellCompete(states, days)
     let nextDays = JSON.parse(JSON.stringify(states));
     for (let i = 0; i < days; i++ ) {
         nextDays = getNextDay(nextDays)
+        console.table(nextDays);
     }
     
     return nextDays;
@@ -60,10 +61,10 @@ function isDivideAll(liste, div) {
 }
 
 function getAllDives(number) {
+    debugger;
     const result = [];
     for (let i = number; i > 0; i-- ) {
         if (number % i === 0) {
-
             result.push(i);
         }
     }
@@ -72,11 +73,6 @@ function getAllDives(number) {
 }
 
 
-test('amazon interview demo' , t => {
+cellCompete([1, 0, 0, 0, 0, 1, 0, 0], 1);
+generalizedGCD(5, [2, 4, 6, 8, 10]);
 
-    t.deepEqual(cellCompete([1, 0, 0, 0, 0, 1, 0, 0], 1), [0, 1, 0, 0, 1, 0, 1, 0]);
-    t.deepEqual(cellCompete([1, 1, 1, 0, 1, 1, 1, 1], 2), [0, 0, 0, 0, 0, 1, 1, 0]);
-
-
-    t.is(generalizedGCD(5, [2, 4, 6, 8, 10]), 2);
-})
