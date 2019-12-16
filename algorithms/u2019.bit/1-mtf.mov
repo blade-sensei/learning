@@ -1,0 +1,33 @@
+/**
+ * 
+ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. 
+ The sum of these multiples is 23.
+ 
+ Find the sum of all the multiples of 3 or 5 below 1000.
+ */
+
+/**
+ * hint: what multiple of a number means, for 3 it means that x (number) is a multiple 
+ * if the division between number/3 has a remainder of 0. 
+ */
+
+ function multiples(number) {
+     const multiples = [];
+     for (let i = 1; i < number; i++) {
+         if (isMultiple(i)) {
+            multiples.push(i);
+         }
+
+     }
+
+     const sum = multiples.reduce((acc, current) => acc + current);
+     return sum;
+     
+ }
+
+function isMultiple(number) {
+    return number % 3 === 0 || number % 5 === 0;
+}
+
+multiples(1000);
+
