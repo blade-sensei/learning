@@ -1,4 +1,0 @@
-- roadmap 1h
-- project 2h
-- codewar/euler 1h
-- maths 1h
