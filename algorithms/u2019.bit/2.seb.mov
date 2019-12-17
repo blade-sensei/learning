@@ -1,0 +1,32 @@
+function sumEvenOfFibo(number) {
+    const fibo = getListFibo(number);
+    let sum = 0;
+
+    for (let i = 0; i < fibo.length; i++) {
+        if (fibo[i] % 2 === 0) {
+            sum += fibo[i];
+        }
+    }
+    return sum;
+}
+
+function getListFibo(max) {
+    const list = [];
+    let previousAddition = 1;
+    let currentSum  = 1;
+    let oldSum = currentSum;
+    let limitRiched = false;
+    while (!limitRiched) {
+        
+        list.push(currentSum);
+        oldSum = currentSum;
+        currentSum += previousAddition;
+        previousAddition = oldSum;
+        if (currentSum > max) {
+            limitRiched = true;
+        }
+    }
+    return list;
+}
+
+console.log(sumEvenOfFibo(4000000));
