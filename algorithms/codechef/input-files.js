@@ -1,37 +1,32 @@
-process.stdin.resume();
-process.stdin.setEncoding('utf-8');
+const readline = require('readline');
 
-var input = '';
+let input = [];
 
-process.stdin.on('data', function (chunk){
-    console.log('chunck', chunk);
-    input += chunk;
-    process.stdout.write('data: ' + chunk);
-});
-
-process.stdin.on("end", function () {
-    // When we reach here, we are done with inputting things according to our wish.
-    // Now, we can do the processing on the input and create a result.
-    process.exit();
-    process.stdout.write('ok');
-
-});
-
-process.stdin.on("resume", function () {
-    // When we reach here, we are done with inputting things according to our wish.
-    // Now, we can do the processing on the input and create a result.
-    process.stdout.write('resume');
-});
-
-process.stdin.on("pause", function () {
-    // When we reach here, we are done with inputting things according to our wish.
-    // Now, we can do the processing on the input and create a result.
-    process.stdout.write('pause');
-});
-
-process.on('SIGINT', function(){
-    process.stdout.write('\n end process \n');
-    process.exit();
-});
+const rl = readline.createInterface({
+    input: process.stdin,
+    ouput: process.stout,
+    terminal: false,
+})
 
 
+
+rl.on('line', (line) => {
+    console.log('input: ', line);
+    input.push(line);
+})
+
+rl.on('close', () => {
+    main(input);
+})
+
+function main(args) {
+    console.log('pararms : ', args );
+    const params = args[0].split(' ').map(param => Number(param));
+    console.log(params);
+    const testInputs = args.slice(1);
+    
+    return 0;
+}
+
+
+main(['7 3', '1', '51', '966369', '7', '9', '999996', '11']);
