@@ -11,21 +11,24 @@ const rl = readline.createInterface({
 
 
 rl.on('line', (line) => {
-    console.log('input: ', line);
     input.push(line);
 })
 
 rl.on('close', () => {
-    main(input);
+    const result = main(input);
+    console.log(result);
 })
 
 function main(args) {
-    console.log('pararms : ', args );
-    const params = args[0].split(' ').map(param => Number(param));
-    console.log(params);
-    const testInputs = args.slice(1);
-    
-    return 0;
+    const [n, k] = args[0].split(' ').map(param => Number(param));
+    const testInputs = args.slice(1).map(param => Number(param));
+    let counter = 0;
+    for (let input of testInputs) {
+        if (input % k === 0) {
+            counter++;
+        }
+    }
+    return counter;
 }
 
 
