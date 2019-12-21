@@ -25,17 +25,13 @@ function run(input) {
     for (let i = 1; i <= numberOfTests; i++) {
 
         const testsIndiceArguments = currentIndex + i;
-        const testsCasesStartIndice = testsIndiceArguments + 1
         const [pagesToFill, pagesLeft, rubles, books] = convertNumber(input[testsIndiceArguments].split(' '))
-        let booksInfo = input.slice(testsCasesStartIndice, testsCasesStartIndice + books).map(info => info.split(' '));
-        booksInfo = booksInfo.map(bookInfo => convertNumber(bookInfo));
 
         const args = {
             pagesToFill,
             pagesLeft,
             rubles,
             books,
-            booksInfo
         }
         const pagesNeeded = args.pagesToFill - args.pagesLeft;
         let isLucky = false;
@@ -56,7 +52,7 @@ function run(input) {
             console.log('UnluckyChef');
         }
 
-        currentIndex += books;
+        currentIndex += Number(books);
         
     }
 
