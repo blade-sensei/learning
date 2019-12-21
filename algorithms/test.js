@@ -20,50 +20,48 @@ rl.on('close', () => {
 
 function run(input) {
     const numberOfTests = Number(input[0])
-    let currentIndex = 1;
+    let currentIndex = 0;
 
     for (let i = 1; i <= numberOfTests; i++) {
 
-        const testsIndice = currentIndex + 1;
-        const [pagesToFill, pagesLeft, rubles, books] = convertNumber(input[currentIndex].split(' '))
-        let booksInfo = input.slice(testsIndice, testsIndice+books).map(info => info.split(' '));
-        booksInfo = booksInfo.map(bookInfo => convertNumber(bookInfo));
+        const testsIndiceArguments = currentIndex + i;
+        const [pagesToFill, pagesLeft, rubles, books] = input[testsIndiceArguments].split(' ');
+
 
         const args = {
             pagesToFill,
             pagesLeft,
             rubles,
-            books,
-            booksInfo
+            books
         }
-        console.log(main(args));
+        const pagesNeeded = args.pagesToFill - args.pagesLeft;
+        let isLucky = false;
+        if (pagesNeeded > 0) {
+            for (let i = 0; i < books; i++) {
+                let book = input[testsIndiceArguments + i + 1].split(' ');
+                if (canBeSelected(book, pagesNeeded, rubles)) {
+                    isLucky = true;
+                    break;
+                }
+            }
+        } else {
+            isLucky = true;
+        }
+        if (isLucky) {
+            console.log('LuckyChef');
+        } else {
+            console.log('UnluckyChef');
+        }
 
-        currentIndex += books + 1;
+        currentIndex += Number(books);
         
     }
 
     return 0;
 }
 
-function checkSubtaskExedLimit(somme, limit) {
-    return somme > limit;
-}
-
 function convertNumber(array) {
     return array.map(e => Number(e));
-}
-
-function main(args) {
-    const pagesNeeded = args.pagesToFill - args.pagesLeft;
-    const result = args.booksInfo.some(book => {
-        return canBeSelected(book, pagesNeeded, args.rubles);
-    })
-
-    if (result) {
-        return 'LuckyChef';
-    }
-
-    return 'UnluckyChef';
 }
 
 function canBeSelected(book, pages, rubles) {
