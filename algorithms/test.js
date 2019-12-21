@@ -25,14 +25,17 @@ function run(input) {
     for (let i = 1; i <= numberOfTests; i++) {
 
         const testsIndiceArguments = currentIndex + i;
-        const [pagesToFill, pagesLeft, rubles, books] = input[testsIndiceArguments].split(' ');
-
+        const testsCasesStartIndice = testsIndiceArguments + 1
+        const [pagesToFill, pagesLeft, rubles, books] = convertNumber(input[testsIndiceArguments].split(' '))
+        let booksInfo = input.slice(testsCasesStartIndice, testsCasesStartIndice + books).map(info => info.split(' '));
+        booksInfo = booksInfo.map(bookInfo => convertNumber(bookInfo));
 
         const args = {
             pagesToFill,
             pagesLeft,
             rubles,
-            books
+            books,
+            booksInfo
         }
         const pagesNeeded = args.pagesToFill - args.pagesLeft;
         let isLucky = false;
@@ -53,28 +56,42 @@ function run(input) {
             console.log('UnluckyChef');
         }
 
-        currentIndex += Number(books);
+        currentIndex += books;
         
     }
 
     return 0;
 }
 
+function checkSubtaskExedLimit(somme, limit) {
+    return somme > limit;
+}
+
 function convertNumber(array) {
     return array.map(e => Number(e));
+}
+
+function main(args) {
+    const pagesNeeded = args.pagesToFill - args.pagesLeft;
+    let isLucky = false;
+    if (pagesNeeded > 0) {
+        isLucky = isLuckyChef(args.booksInfo, pagesNeeded, args.rubles);
+    } 
+    if (isLucky) {
+        return 'LuckyChef';
+    }
+    return 'UnluckyChef';
 }
 
 function canBeSelected(book, pages, rubles) {
     return book[0] >= pages && book[1] <= rubles;
 }
 
-run([ '3',
-'3 1 2 2',
-'3 4',
-'2 2',
-'3 1 2 2',
-'2 3',
-'2 3',
-'3 1 2 2',
-'1 1',
-'1 2' ]);
+function isLuckyChef(books, pagesNeeded, rubles) {
+    for (let i = 0; i < books.length; i++) {
+        if (canBeSelected(books[i], pagesNeeded, rubles)) {
+            return true;
+        }
+    }
+    return false;
+}
