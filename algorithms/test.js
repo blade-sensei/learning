@@ -1,16 +1,30 @@
 function rotLeft(a, d) {
-
+    if (a.length === d) {
+        return a;
+    }
+    
+    const rotatedArray = [];
+    for (let i = 0; i < a.length; i++) {
+        if (d <= i) {
+            const currentElementValue = a[i];
+            const futurRotIndex = i - d;
+            rotatedArray[futurRotIndex] = currentElementValue;
+        }
+    }
+    console.log(rotatedArray);
+    return rotatedArray;
 }
 
-// [ 1, 2, 3, 4, 5 ], 4 [3, 4, 5, 1, 2]
+// [ 1, 2, 3, 4, 5 ], 4 [3, 4, 5, 1, 2] 8
+// [ 1, 2, 3, 4, 5 ]
+
+// Si la le décalage est égale à la taille pas besoin de faire le decalage
+
+
 
 // index 2 - decale 3 -> dest 4 -> taille 5
 // de la soustraction limite - decalage correspond à la taille de l'array - le reste de cette soustraction
 
-// limite ecart entre index et 0 (index courant)
-// taille: 5, un element peut au maximum être calé de (sa place index) - (taille array - 1 = max index) - (0)
-// si on depasse pas la limite on peut reduire l'index
-// si on depasse 
 
 // [ 1, 2, 3, 4, 5 ]
 
