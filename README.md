@@ -12,6 +12,7 @@ Skills for engineer
 - [some interview algorithms](https://medium.com/@codingfreak/huge-collection-of-array-interview-questions-e87ac7c34e62)
 - [algorith categories like brute, dynamic etc](https://itnext.io/algorithms-and-data-structures-in-javascript-a71548f902cb)
 - Big-O perf
+- [big-o with javascript](https://adrianmejia.com/most-popular-algorithms-time-complexity-every-programmer-should-know-free-online-tutorial-course/)
 
 ### Reading code
 
@@ -33,7 +34,10 @@ Skills for engineer
 - [ ] stack, queue
 - [ ] hash
 - [ ] binary search
+  - [implementation with javascript](https://www.geeksforgeeks.org/binary-search-in-javascript/)
 - [ ] Trees
+  - [implementation of tress and most common functions](https://adrianmejia.com/data-structures-for-beginners-trees-binary-search-tree-tutorial/)
+  - [depth-first search and breadth-first search with graph but i can be used with tress](https://adrianmejia.com/data-structures-for-beginners-graphs-time-complexity-tutorial/#Breadth-frirst-search-BFS-Graph-search)
 - [ ] Sorting
 - [ ] Graphs
 
