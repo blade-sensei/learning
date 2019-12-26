@@ -48,7 +48,7 @@ class Graph {
         return [sourceNode, destinationNode];
     }
 
-    addVertes(value) {
+    addVertex(value) {
         if (this.nodes.has(value)) {
             // if value exist return
             return this.nodes.get(value);
@@ -57,7 +57,7 @@ class Graph {
             const vertex = new Node(value);
             // set key and value
             this.nodes.set(value, vertex);
-            return this.vertex;
+            return vertex;
         }
     }
 
@@ -73,7 +73,60 @@ class Graph {
         // any case removed from graph
         return this.nodes.delete(value);
     }
+
+    *bfs(first) {
+        const visited = new Map();
+        const visitList = new Queue();
+        visitList.enqueue(first);
+
+        while(!visitList.isEmpty()) {
+            const node = visitList.dequeue();
+            if (node && !visited.has(node)) {
+                yield node;
+                visited.set(node);
+                node.getAdjacents().forEach(adj => visitList.enqueue(adj));
+            }
+        }
+    }
+}
+
+class Queue {
+    constructor() {
+        this.queue = [];
+    }
+
+    enqueue(element) {
+        this.queue.push(element);
+    }
+
+    dequeue() {
+        return this.queue.shift();
+    }
+
+    isEmpty() {
+        return this.queue.length === 0;
+    }
 }
 
 Graph.UNDIRECTED = Symbol('undirected grapth');
 Graph.DIRECTED = Symbol('directed grapth');
+
+const graph = new Graph(Graph.UNDIRECTED);
+
+const [first] = graph.addEdge(1, 2);
+graph.addEdge(1, 3);
+graph.addEdge(1, 4);
+graph.addEdge(5, 2);
+graph.addEdge(6, 3);
+graph.addEdge(7, 3);
+graph.addEdge(8, 4);
+graph.addEdge(9, 5);
+graph.addEdge(10, 6);
+
+bfsFromFirst = graph.bfs(first);
+
+bfsFromFirst.next().value.value; // 1
+bfsFromFirst.next().value.value; // 2
+bfsFromFirst.next().value.value; // 3
+bfsFromFirst.next().value.value; // 4
+// ...
