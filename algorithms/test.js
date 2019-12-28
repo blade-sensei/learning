@@ -1,10 +1,9 @@
 var twoSum = function(nums, target) {
 
   for (let i = 0; i < nums.length; i++) {
-    const restOfArray = nums.slice(i, nums.length + 1);
-    for (let j = 0; j < restOfArray.length; j++) {
-      const sum = nums[i] + restOfArray[j];
-      if (restOfArray[j] === target) {
+    for (let j = i + 1 ; j < nums.length; j++) {
+      const sum = nums[i] + nums[j];
+      if (sum === target) {
         return [i, j];
       }
     }
@@ -12,3 +11,4 @@ var twoSum = function(nums, target) {
   return [];
 };
 
+console.log(twoSum([2, 7, 11, 15], 9));
