@@ -1,0 +1,3 @@
+function gcd(first, second) {
+    
+}
