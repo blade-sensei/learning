@@ -26,3 +26,23 @@ console.log(intersection([4,9,5], [9,4,9,8,4]))
 //result [9,4]
 // accepted  72ms 35.6MB
 
+function intersection1(nums1, nums2) {
+    //convert to hashmap
+    const map = {};
+    const returnMap = {};
+    for (let i = 0; i < nums2.length; i++) {
+        map[nums2[i]] = i;
+    }
+    //
+    for (let i = 0; i < nums1.length; i++) {
+        const value = nums1[i];
+        const valueFind = map[value];
+        if (!(valueFind === undefined) && !returnMap[value]) {
+            returnMap[value] = i;
+        }
+    }
+    return Object.keys(returnMap).map(number => Number(number));
+}
+
+console.log(intersection1([4,9,5], [9,4,9,8,4]))
+
