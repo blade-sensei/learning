@@ -1,20 +1,16 @@
 function intersection1(nums1, nums2) {
     //convert to hashmap
-    const map = {};
-    const returnMap = {};
-    for (let i = 0; i < nums2.length; i++) {
-        map[nums2[i]] = i;
-    }
-    //
-    for (let i = 0; i < nums1.length; i++) {
-        const value = nums1[i];
-        const valueFind = map[value];
-        if (!(valueFind === undefined) && !returnMap[value]) {
-            returnMap[value] = i;
+    
+    const map1 = new Set(nums1);
+    const map2 = new Set(nums2);
+    const returnMap = [];
+
+    for (let num of map1) {
+        if (map2.has(num)) {
+            returnMap.push(num);
         }
     }
-    return Object.keys(returnMap).map(number => Number(number));
+    return returnMap;
 }
 
-console.log(intersection1([1], [1]))
-
+console.log(intersection1([4,9,5], [9,4,9,8,4]))

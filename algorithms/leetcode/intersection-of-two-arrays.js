@@ -29,7 +29,7 @@ console.log(intersection([4,9,5], [9,4,9,8,4]))
 function intersection1(nums1, nums2) {
     //convert to hashmap
     const map = {};
-    const returnMap = {};
+    let returnMap = {};
     for (let i = 0; i < nums2.length; i++) {
         map[nums2[i]] = i;
     }
@@ -41,7 +41,24 @@ function intersection1(nums1, nums2) {
             returnMap[value] = i;
         }
     }
-    return Object.keys(returnMap).map(number => Number(number));
+    returnMap = Object.keys(returnMap);
+    return returnMap.map(number => Number(number));
+}
+
+function intersection2(nums1, nums2) {
+    //use set to delete repeated
+    // so at the end of the function we dont need to check for repeated
+    // values in our return array
+    const map1 = new Set(nums1);
+    const map2 = new Set(nums2);
+    const returnMap = [];
+
+    for (let num of map1) {
+        if (map2.has(num)) {
+            returnMap.push(num);
+        }
+    }
+    return returnMap;
 }
 
 console.log(intersection1([4,9,5], [9,4,9,8,4]))
