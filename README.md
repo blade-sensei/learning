@@ -40,6 +40,7 @@ Skills for engineer
   - [depth-first search and breadth-first search with graph but i can be used with tress](https://adrianmejia.com/data-structures-for-beginners-graphs-time-complexity-tutorial/#Breadth-frirst-search-BFS-Graph-search)
   - [binary tree 101](https://iq.opengenus.org/binary-search-tree/)
 - [ ] Sorting
+  - [all algorithms of sorting](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Sorting%20Algorithms/sorting.html)
 - [ ] Graphs
 
 ### Key concepts
