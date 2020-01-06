@@ -13,6 +13,22 @@ function lengthDigits(number) {
  *  For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows
  */
 
+ /**
+  * examples
+  * Example 1:
+
+Input: 123
+Output: 321
+Example 2:
+
+Input: -123
+Output: -321
+Example 3:
+
+Input: 120
+Output: 21
+  */
+
 function reverse(x) {
     const EXTREMS = {
         min: Math.pow(-2, 31),
