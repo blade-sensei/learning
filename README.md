@@ -180,8 +180,20 @@ Skills for engineer
 - [ ] change dom
 - [ ] events 
 - [ ] AJAX
+- [ ] InnerHTML
+- [ ] Object vs New Object
+- [ ] strict mode
+- [ ] Tricky parts
+  - [ ] Concatenation
+  - [ ] Compair number string
+  - [ ] Triple equals
+  - [ ] Convert String to Number
+  - [ ] Floats
+  - [ ] Callbacks
+  - [ ] apply and call
 - [ ] ES6
   - [ ] Shadow DOM
+  - [ ] This word
   - [ ] hosting
   - [ ] scope
   - [ ] prototype
