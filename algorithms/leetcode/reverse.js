@@ -49,4 +49,10 @@ function reverse(x) {
     return 0;
 };
 
+/**
+ * This solution doesnt work very well
+ * Read notes: The solution is to check before overflow MAX. so 1 digit before
+ * the end for example if MAX is 543 check in 54.
+ */
+
 reverse(-521);
