@@ -177,6 +177,9 @@ Skills for engineer
 ### JavaScript
 
 - [ ] DOM
+  - [intruction and difference DOM - view ](https://bitsofco.de/what-exactly-is-the-dom/) 
+  - [more precisly introduction with w3 org](https://www.w3.org/TR/WD-DOM/introduction.html)
+  - [French description](https://fr.wikipedia.org/wiki/Document_Object_Model)
 - [ ] selectors
 - [ ] change dom
 - [ ] events 
