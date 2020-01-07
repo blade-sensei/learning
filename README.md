@@ -54,6 +54,7 @@ Skills for engineer
 
 - [ ] strategy
 - [ ] singleton
+    - [why not to use see consequences](http://design-patterns.fr/singleton)
 - [ ] adapter
 - [ ] prototype
 - [ ] decorator
