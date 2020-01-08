@@ -55,6 +55,9 @@ Skills for engineer
 - [ ] strategy
 - [ ] singleton
     - [why not to use see consequences](http://design-patterns.fr/singleton)
+    - [global used dependency danger point of view](http://misko.hevery.com/2008/08/17/singletons-are-pathological-liars/)
+    - [implementation javascript](https://linux.m2osw.com/singleton-javascript-es6)
+    - [singleton is used as global variable/instance what is the bad side ? ](https://softwareengineering.stackexchange.com/questions/148108/why-is-global-state-so-evil) check first and second answer 
 - [ ] adapter
 - [ ] prototype
 - [ ] decorator
