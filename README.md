@@ -195,6 +195,7 @@ Skills for engineer
   - [ ] Floats
   - [ ] Callbacks
   - [ ] apply and call
+  - [ ] Invoked function
 - [ ] ES6
   - [ ] Shadow DOM
   - [ ] This word
