@@ -54,10 +54,12 @@ Skills for engineer
 
 - [ ] strategy
 - [ ] singleton
+    - [great introduction - essentials](https://refactoring.guru/design-patterns/singleton)
     - [why not to use see consequences](http://design-patterns.fr/singleton)
     - [global used dependency danger point of view](http://misko.hevery.com/2008/08/17/singletons-are-pathological-liars/)
     - [implementation javascript](https://linux.m2osw.com/singleton-javascript-es6)
     - [singleton is used as global variable/instance what is the bad side ? ](https://softwareengineering.stackexchange.com/questions/148108/why-is-global-state-so-evil) check first and second answer 
+    - [questions](https://stackoverflow.com/questions/2085953/unit-testing-with-singletons)
 - [ ] adapter
 - [ ] prototype
 - [ ] decorator
@@ -181,6 +183,7 @@ Skills for engineer
 
 - [ ] DOM
   - [intruction and difference DOM - view ](https://bitsofco.de/what-exactly-is-the-dom/) 
+  - [introductin see levels parts](https://www.geeksforgeeks.org/dom-document-object-model/)
   - [more precisly introduction with w3 org](https://www.w3.org/TR/WD-DOM/introduction.html)
   - [French description](https://fr.wikipedia.org/wiki/Document_Object_Model)
 - [ ] selectors
