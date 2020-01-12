@@ -187,10 +187,13 @@ Skills for engineer
   - [more precisly introduction with w3 org](https://www.w3.org/TR/WD-DOM/introduction.html)
   - [French description](https://fr.wikipedia.org/wiki/Document_Object_Model)
 - [ ] selectors
+  - [ ] Parents, children
+  - [ ] Nodes
 - [ ] change dom
 - [ ] events 
 - [ ] AJAX
 - [ ] InnerHTML
+  - [ ] Difference Inner et TextContent
 - [ ] Object vs New Object
 - [ ] strict mode
 - [ ] Tricky parts
