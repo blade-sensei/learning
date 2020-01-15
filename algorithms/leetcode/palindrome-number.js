@@ -33,4 +33,6 @@ function getLastDigit(number) {
  * description 
  * Coud you solve it without converting the integer to a string?
  * Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+ * We can delete if condition if we use return reverse === number || Math.trunc(..) to check condition in one line
+ * If the first condition doesnt work return the reseult of the second verification
  */
