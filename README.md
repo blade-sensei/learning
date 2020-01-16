@@ -65,6 +65,8 @@ Skills for engineer
 - [ ] decorator
 - [ ] visitor
 - [ ] factory, abstract factory
+  - [guru introduction](https://refactoring.guru/design-patterns/factory-method) 
+  - [french introduction](http://design-patterns.fr/fabrique)
 - [ ] facade
 - [ ] observer
 - [ ] proxy
