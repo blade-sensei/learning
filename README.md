@@ -188,6 +188,7 @@ Skills for engineer
   - [introductin see levels parts](https://www.geeksforgeeks.org/dom-document-object-model/)
   - [more precisly introduction with w3 org](https://www.w3.org/TR/WD-DOM/introduction.html)
   - [French description](https://fr.wikipedia.org/wiki/Document_Object_Model)
+- [road map](https://learnvanillajs.com/roadmap/)
 - [ ] selectors
   - [ ] Parents, children
   - [ ] Nodes
