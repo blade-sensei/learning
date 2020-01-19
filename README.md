@@ -189,6 +189,7 @@ Skills for engineer
   - [more precisly introduction with w3 org](https://www.w3.org/TR/WD-DOM/introduction.html)
   - [French description](https://fr.wikipedia.org/wiki/Document_Object_Model)
 - [road map](https://learnvanillajs.com/roadmap/)
+- project to train - snake game -datatable forms 
 - [ ] selectors
   - [ ] Parents, children
   - [ ] Nodes
