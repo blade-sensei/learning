@@ -67,6 +67,7 @@ Skills for engineer
 - [ ] factory, abstract factory
   - [guru introduction](https://refactoring.guru/design-patterns/factory-method) 
   - [french introduction](http://design-patterns.fr/fabrique)
+  - [french video real C# example](https://www.youtube.com/watch?v=s1lztsgZk4c)
 - [ ] facade
 - [ ] observer
 - [ ] proxy
