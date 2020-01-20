@@ -208,6 +208,8 @@ Skills for engineer
   - [ ] Convert String to Number
   - [ ] Floats
   - [ ] Callbacks
+  - [ ] Binding function 
+    - [intrd](https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/)
   - [ ] apply and call
   - [ ] Invoked function
 - [ ] ES6
