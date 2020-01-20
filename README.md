@@ -224,6 +224,15 @@ Skills for engineer
 - [ ] Testing
 - [ ] Debug in JS
 
+#### Javascript projects ideas
+
+- Card / Accordeon
+- Pagination table
+- Steper
+- Tabs
+- Loader before images
+- Modals
+- Sub/Override words when searching (dom search)
 
 ## Frontend middle
 
