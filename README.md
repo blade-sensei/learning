@@ -52,6 +52,8 @@ Skills for engineer
 
 ### Design Patterns
 
+- [ ] gang of four - 4 principal dessign patterns [introduction](https://www.journaldev.com/31902/gangs-of-four-gof-design-patterns)
+
 - [ ] strategy
 - [ ] singleton
     - [great introduction - essentials](https://refactoring.guru/design-patterns/singleton)
@@ -64,9 +66,10 @@ Skills for engineer
 - [ ] prototype
 - [ ] decorator
 - [ ] visitor
-- [ ] factory, abstract factory
+- [ ] abstract factory
   - [guru introduction](https://refactoring.guru/design-patterns/factory-method) 
   - [french introduction](http://design-patterns.fr/fabrique)
+- [ ] factory
   - [french video real C# example](https://www.youtube.com/watch?v=s1lztsgZk4c)
 - [ ] facade
 - [ ] observer
