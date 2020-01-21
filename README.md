@@ -55,6 +55,7 @@ Skills for engineer
 - [ ] gang of four - 4 principal dessign patterns [introduction](https://www.journaldev.com/31902/gangs-of-four-gof-design-patterns)
 
 - [ ] strategy
+  - [good introduction to strategy](https://www.journaldev.com/31902/gangs-of-four-gof-design-patterns)
 - [ ] singleton
     - [great introduction - essentials](https://refactoring.guru/design-patterns/singleton)
     - [why not to use see consequences](http://design-patterns.fr/singleton)
