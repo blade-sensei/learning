@@ -177,6 +177,7 @@ Skills for engineer
 
 ### CSS
 - [ ] definition
+- [ ] [value unit](https://developer.mozilla.org/fr/docs/Web/CSS/Valeurs_et_unit%C3%A9s_CSS)
 - [ ] override points
 - [ ] position
 - [ ] display
