@@ -63,6 +63,8 @@ Skills for engineer
     - [implementation javascript](https://linux.m2osw.com/singleton-javascript-es6)
     - [singleton is used as global variable/instance what is the bad side ? ](https://softwareengineering.stackexchange.com/questions/148108/why-is-global-state-so-evil) check first and second answer 
     - [questions](https://stackoverflow.com/questions/2085953/unit-testing-with-singletons)
+- [ ] builder
+    - [introduction](https://refactoring.guru/design-patterns/builder)
 - [ ] adapter
 - [ ] prototype
 - [ ] decorator
