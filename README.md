@@ -66,6 +66,7 @@ Skills for engineer
 - [ ] builder
     - [introduction](https://refactoring.guru/design-patterns/builder)
 - [ ] adapter
+    - [introduction english](https://refactoring.guru/design-patterns/adapter)
 - [ ] prototype
 - [ ] decorator
 - [ ] visitor
