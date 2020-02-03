@@ -67,6 +67,7 @@ Skills for engineer
     - [introduction](https://refactoring.guru/design-patterns/builder)
 - [ ] adapter
     - [introduction english](https://refactoring.guru/design-patterns/adapter)
+    - [two ways of implement (js)](https://medium.com/better-programming/design-patterns-adapter-efb73c5090e6)
 - [ ] prototype
 - [ ] decorator
 - [ ] visitor

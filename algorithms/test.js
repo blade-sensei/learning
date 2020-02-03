@@ -1,56 +1,50 @@
-/*
-* @param {string} s
-* @return {number}
-*/
-function romanToInt(s) {
-    let totalInt = 0;
-    const symbols = s.split('');
-    const romanNumber = {
-        'I': 1,
-        'V': 5,
-        'X': 10,
-        'L': 50,
-        'C': 100,
-        'D': 500,
-        'M': 1000
-    }
-    const combinations = {
-        'I': {
-            'V': 4,
-            'X': 9,
-        },
-        'X': {
-            'L': 40,
-            'C': 90,
-        },
-        'C': {
-            'D': 400,
-            'M': 900,
-        }
-    }
-
-    for (let i = 0; i < symbols.length; i++) {
-        const currentSymbol = symbols[i];
-        let currentValue = 0;
-        if (i === symbols.length - 1) {
-            currentValue = romanNumber[currentSymbol];
-        } else if (substractionValue([currentSymbol, symbols[i+1]], combinations)) {
-            currentValue = substractionValue([currentSymbol, symbols[i+1]], combinations);
-            i++;
-        } else {
-            currentValue = romanNumber[currentSymbol]
+/**
+ * @param {string[]} strs
+ * @return {string}
+ */
+ function longestCommonPrefix(strs) {
+    for (let i = 0; i < strs.length - 1; i++) {
+        let prefix = '';
+        let currentLongest = '';
+        const firstWord = strs[i];
+        const secondWord = strs[i+1];
+        if (i === 0) {
+            prefix = firstWord;
         }
 
-        totalInt += currentValue;
+        currentLongest = pref(firstWord, secondWord);
     }
-    return totalInt;
 };
 
-function substractionValue([first, second], combinations) {
-    if (combinations[first] && combinations[first][second]) {
-        return combinations[first][second]
+
+function pref(first, second) {
+    const arryaFirstWord = first.split('');
+    const arraySecondword = second.split('');
+    let prefix = '';
+    let index = 0;
+    let over = false;
+    while (!over) {
+        const letterF = arryaFirstWord[index];
+        const letterS = arraySecondword[index];
+        
+        if (wordMaximumOver(letterF, letterS) || compatible(letterF, letterS)) {
+            over = true;
+            return prefix;
+            // sortir boucle ?
+        } else {
+            prefix+= letterF;
+            index++;
+        }
     }
-    return 0;
+    return prefix;
 }
 
-romanToInt("MCMXCIV");
+function wordMaximumOver(first, second) {
+    return !first || !second;
+}
+
+function compatible(first, second) {
+    return first === second;
+}
+
+longestCommonPrefix(["flower","flow","flight"]);
