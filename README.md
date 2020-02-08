@@ -78,10 +78,13 @@ Skills for engineer
   - [french video real C# example](https://www.youtube.com/watch?v=s1lztsgZk4c)
 - [ ] facade
 - [ ] observer
+  - [guru introduction](https://refactoring.guru/design-patterns/observer)
+- [ ] 
 - [ ] proxy
 - [ ] delegate
 - [ ] command
 - [ ] state
+  - [guru introduction](https://refactoring.guru/design-patterns/state)
 - [ ] memento
 - [ ] iterator
 - [ ] composite
