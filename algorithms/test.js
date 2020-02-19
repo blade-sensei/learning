@@ -1,32 +1,22 @@
 /**
- * @param {character[]} s
- * @return {void} Do not return anything, modify s in-place instead.
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
  */
-var reverseString = function(s) {
-
-    const length = s.length;
-    const limit = getLimit(length);
-
-    for (let i = 0; i < limit; i++) {
-        const tempo = s[i];
-        const reverseIndex = length - 1 - i;
-        s[i] = s[reverseIndex];
-        s[reverseIndex] = tempo;
+/**
+ * @param {TreeNode} root
+ * @return {number}
+ */
+var maxDepth = function(root) {
+    let depth = 0;
+    let content = root.length + 1;
+    while (content > 1) {
+        content/= 2;
+        depth++;
     }
-    return s;
-    
+    return depth;
 };
 
-function even(number) {
-    return number % 2 === 0;
-}
-
-function getLimit(length) {
-
-    if (even(length)) {
-        return length / 2;
-    }
-    return Math.round(length/2);
-}
-
-reverseString(["h","e","l","l","o"]);
+console.log(maxDepth([3,9,20,null,null,15,7]));
