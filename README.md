@@ -233,6 +233,7 @@ Skills for engineer
   - [ ] class
   - [ ] strict
   - [ ] asyncronous
+    - [callbacks/promises](https://www.oreilly.com/library/view/you-dont-know/9781491905241/ch04.html)
 - [ ] Testing
 - [ ] Debug in JS
 
