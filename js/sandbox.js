@@ -154,8 +154,9 @@ function hello(data) {
 //  })
 //  .catch((error) => console.log(error));
 
-console.log('after callback');
+console.log('start');
 setTimeout(() => console.log('timeout'), 0);
+console.log('end')
 process.nextTick(() => console.log('tick'))
 for (let i = 0; i < 100; i++) {
   console.log('test');

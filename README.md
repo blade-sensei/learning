@@ -235,6 +235,10 @@ Skills for engineer
   - [ ] asyncronous
     - [callbacks/promises](https://www.oreilly.com/library/view/you-dont-know/9781491905241/ch04.html)
     - [event loop async](https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif)
+    - [setimeout 0](https://www.geekabyte.io/2014/01/javascript-effect-of-setting-settimeout.html)
+    - [schema tick](https://medium.com/the-node-js-collection/what-you-should-know-to-really-understand-the-node-js-event-loop-and-its-metrics-c4907b19da4c) a tick is an iteration
+    - [nexttick vs settimeout, immediate](http://voidcanvas.com/setimmediate-vs-nexttick-vs-settimeout/)
+    - [process](http://voidcanvas.com/nodejs-event-loop/)
 - [ ] Testing
 - [ ] Debug in JS
 
