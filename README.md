@@ -234,6 +234,7 @@ Skills for engineer
   - [ ] strict
   - [ ] asyncronous
     - [callbacks/promises](https://www.oreilly.com/library/view/you-dont-know/9781491905241/ch04.html)
+    - [event loop async](https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif)
 - [ ] Testing
 - [ ] Debug in JS
 

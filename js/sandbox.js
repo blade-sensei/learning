@@ -22,11 +22,15 @@ function promise3() {
 }
 
 async function all() {
-  const test = await Promise.all([fakePromise, promise2, promise3])
-  console.log(test);
+  try {
+    const test = await Promise.all([fakePromise(), promise2(), promise3()]) 
+    console.log(test);
+  } catch (e) {
+    console.log(e);
+  }
 }
 
-all();
+
 
 //callback du setTimeOut est mis en Callback Queue
 //Ressoue place Resolve et Reject en execution
@@ -136,12 +140,6 @@ async function over() {
 function hello(data) {
   console.log(`data is here: ${data}`);
 }
-
-(async function() {
-  const helloChange = await over();
-  hello(helloChange);   
-})()
-
 // readFileHello(function (data) {
 //   console.log(`i will write ${data}`);
 //   responseToHello(data, changeHelloFile)
@@ -157,4 +155,8 @@ function hello(data) {
 //  .catch((error) => console.log(error));
 
 console.log('after callback');
-
+setTimeout(() => console.log('timeout'), 0);
+process.nextTick(() => console.log('tick'))
+for (let i = 0; i < 100; i++) {
+  console.log('test');
+}
