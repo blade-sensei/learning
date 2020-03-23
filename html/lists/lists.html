@@ -8,14 +8,23 @@
         .list-item {
             padding-left: 10px;
         }
+
+        .close::after {
+            content: '\25B6';
+        }
+        .open::after {
+            content: '\25BC';
+        }
+        .open, .close {
+            font-size: 10px;
+        }
+
+        .children {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-
-    <div class="main">
-       
-    </div>
-    
-    <script src="./lists.js"></script>
+    <script src="lists.js"></script>
 </body>
 </html>

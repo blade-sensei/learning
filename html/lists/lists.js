@@ -48,25 +48,28 @@ const servers = [
 
 function createArrow(status) {
   const arrow = document.createElement('span');
-  arrow.innerHTML = status;
+  arrow.className = 'arrow-icon';
+  arrow.classList.add(status);
   return arrow;
 }
 
-const ARROW_ICON = {
-  CLOSE: '&#x25b8;',
-  OPEN: '&#9662;',
+const ARROW_STATUS = {
+  CLOSE: 'close',
+  OPEN: 'open',
 };
 
 const { body } = document;
 
 
 function createListItem(server) {
-  const arrow = createArrow(ARROW_ICON.OPEN);
+  const arrow = createArrow(ARROW_STATUS.OPEN);
   const item = document.createElement('div');
   item.className = 'list-item';
   item.appendChild(arrow);
   const content = document.createElement('span');
   if (server.children) {
+    content.classList.add('children');
+    arrow.classList.add('children');
     content.addEventListener('click', toggle);
   }
   content.textContent = server.name;
@@ -98,10 +101,27 @@ function toggle(e) {
   const status = serverList.style.display;
   const arrow = server.previousSibling;
   if (status === 'none') {
-    arrow.innerHTML = ARROW_ICON.OPEN;
+    arrow.classList.remove('close');
+    arrow.classList.add(ARROW_STATUS.OPEN);
     serverList.style.display = 'inline';
   } else {
-    arrow.innerHTML = ARROW_ICON.CLOSE;
+    arrow.classList.remove('open');
+    arrow.classList.add(ARROW_STATUS.CLOSE);
     serverList.style.display = 'none';
   }
 }
+
+function createButtonClose() {
+  const btn = document.createElement('button');
+  btn.textContent = 'close all';
+  return btn;
+}
+
+function createButtonOpen() {
+  const btn = document.createElement('button');
+  btn.textContent = 'open all';
+  return btn;
+}
+
+body.appendChild(createButtonClose());
+body.appendChild(createButtonOpen());
