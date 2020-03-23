@@ -105,4 +105,3 @@ function toggle(e) {
     serverList.style.display = 'none';
   }
 }
-
