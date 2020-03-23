@@ -85,7 +85,9 @@ function createServers(servers) {
     const element = createListItem(server);
     list.appendChild(element);
     if (server.children) {
-      element.appendChild(createServers(server.children));
+      const child = createServers(server.children);
+      child.className = 'child-server';
+      element.appendChild(child);
     }
   });
   return list;
@@ -114,13 +116,25 @@ function toggle(e) {
 function createButtonClose() {
   const btn = document.createElement('button');
   btn.textContent = 'close all';
+  btn.addEventListener('click', closeAll);
   return btn;
 }
 
 function createButtonOpen() {
   const btn = document.createElement('button');
   btn.textContent = 'open all';
+  btn.addEventListener('click', openAll);
   return btn;
+}
+
+function openAll() {
+  const serverItem = document.querySelectorAll('.child-server');
+  serverItem.forEach((server) => { server.style.display = 'inline'; });
+}
+
+function closeAll() {
+  const serverItem = document.querySelectorAll('.child-server');
+  serverItem.forEach((server) => { server.style.display = 'none'; });
 }
 
 body.appendChild(createButtonClose());
