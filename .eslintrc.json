@@ -1,0 +1,6 @@
+{
+    "extends": ["eslint-config-sensei"],
+    "rules": {
+        "no-shadow": 0
+    }
+}
