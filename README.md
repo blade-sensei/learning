@@ -240,6 +240,8 @@ Skills for engineer
     - [nexttick vs settimeout, immediate](http://voidcanvas.com/setimmediate-vs-nexttick-vs-settimeout/)
     - [process](http://voidcanvas.com/nodejs-event-loop/)
 - [ ] Testing
+  - [test tools comparator](https://blog.logrocket.com/comparing-react-testing-libraries/)
+- [ ] 
 - [ ] Debug in JS
 
 #### Javascript projects ideas
