@@ -258,6 +258,7 @@ Skills for engineer
 
 ### JavaScript
 - [ ] Learn a framework 'React'
+  - [about super, good blog](https://overreacted.io/fr/why-do-we-write-super-props/)
 - [ ] Testing Unit/Integration/E2E
 - [ ] Babel
 - [ ] Assyncronous
