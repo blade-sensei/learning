@@ -1,0 +1,16 @@
+.section {
+    height: 70px;
+    width: 120px;
+    background-color: aqua;
+    text-align: center;
+    border: solid black 5px;
+    display: inline-flex;
+}
+
+.text {
+    vertical-align: middle;
+    background-color: bisque;
+    height: 30px;
+    width: 70px;
+    display: inline-block;
+}
