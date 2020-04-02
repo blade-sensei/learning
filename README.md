@@ -261,6 +261,8 @@ Skills for engineer
 - [ ] Learn a framework 'React'
   - [about super, good blog](https://overreacted.io/fr/why-do-we-write-super-props/)
   - [tools to debug](https://github.com/facebook/react/tree/master/packages/react-devtools)
+  - tips
+    - Pouvez-vous la calculer en vous basant sur le reste de l’état ou les props de votre composant ? Si oui, ce n’est pas de l’état.
 - [ ] Testing Unit/Integration/E2E
 - [ ] Babel
 - [ ] Assyncronous
