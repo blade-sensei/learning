@@ -263,6 +263,7 @@ Skills for engineer
   - [tools to debug](https://github.com/facebook/react/tree/master/packages/react-devtools)
   - tips
     - Pouvez-vous la calculer en vous basant sur le reste de l’état ou les props de votre composant ? Si oui, ce n’est pas de l’état.
+    - [penser react](https://fr.reactjs.org/docs/thinking-in-react.html)
 - [ ] Testing Unit/Integration/E2E
 - [ ] Babel
 - [ ] Assyncronous
