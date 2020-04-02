@@ -1,16 +1,41 @@
+body, html {
+    height: 100vh;
+    padding-top: 10px;
+}
+
+.out {
+    display: inline-block;
+}
 .section {
-    height: 70px;
-    width: 120px;
+    margin-top: 10px;
+    height: 50px;
+    width: 100px;
     background-color: aqua;
     text-align: center;
-    border: solid black 5px;
-    display: inline-flex;
+    display: block;
+    float: left;
+    outline: blueviolet solid 10px;
+    
 }
 
 .text {
     vertical-align: middle;
     background-color: bisque;
-    height: 30px;
-    width: 70px;
     display: inline-block;
+}
+
+.border-section {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.borders {
+    height: 50px;
+    width: 100px;
+    background-color: aqua;
+    text-align: center;
+    display: block;
+    float: left;
+    border: blueviolet solid 10px;
+    
 }

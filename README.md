@@ -193,7 +193,8 @@ Skills for engineer
 - [ ] index
 - [ ] selector
 - [ ] debug in browser
-
+- [ ] others skills
+  - [ outline vs border: check html/border-outline page of this repo ](https://www.tutorialrepublic.com/css-tutorial/css-outline.php)
 ### JavaScript
 
 - [ ] DOM

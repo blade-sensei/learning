@@ -8,12 +8,46 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="section">
-        <span class="text">borders</span>
+    <div class="out">
+        <summary> Outline overlay each other so the first div 
+        <p>will be under the second div, that means only the border/outline of </p>
+        5 pixel will be see in the screen. BUT we lose 5 pixel in the content of the first
+    div.
+    <p> Outline will be expanded OUT our box. So it can take place TO Right/TOP/LEFT/BOTTOM</p>
+</summary>
+        <div class="section">
+            outline
+        </div>
+        <div class="section">
+            outline
+        </div>
+        <div class="section">
+            outline
+        </div>
     </div>
-    <div class="section">
-        <span class="text">borders</span>
+
+    <div class="border-section">
+        <summary>
+             <p>- Boardes never touchs in adjacent - so 5pixel of border-section
+            will be added to form like a border of 10px</p>
+            <p> - We dont lose content space, and the border will move our content BOTTOM - RIGHT</p>
+         </summary>
+        <div class="borders">
+            borders
+        </div>
+        <div class="borders">
+            borders
+        </div>
+        <div class="borders">
+            borders
+        </div>
     </div>
+
+    <li> Outlines do not take up space, because they always placed on top of the box of the element which may cause them to overlap other elements on the page. </li>
+ <li>Unlike borders, outlines won't allow us to set each edge to a different width, or set different colors and styles for each edge. An outline is the same on all sides.</li>
+Outlines don't have any impact on surrounding elements apart from overlapping.
+Unlike borders, outlines don't change the size or position of the element.
+
   
     
 
