@@ -1,0 +1,19 @@
+body, html {
+    height: 100vh;
+    padding-top: 10px;
+}
+.parent {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.child {
+    height: 60px;
+    width: 60px;
+    background-color: rgb(115, 255, 0);
+    display: block;
+    margin: 0 auto;
+}
