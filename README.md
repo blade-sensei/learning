@@ -264,6 +264,7 @@ Skills for engineer
   - tips
     - Pouvez-vous la calculer en vous basant sur le reste de l’état ou les props de votre composant ? Si oui, ce n’est pas de l’état.
     - [penser react](https://fr.reactjs.org/docs/thinking-in-react.html)
+    - passer etat:  Il ne doit y avoir qu’une seule « source de vérité » pour toute donnée qui change dans une application React. En général, l’état est d’abord ajouté au composant qui en a besoin pour s’afficher. Ensuite, si d’autres composants en ont également besoin, vous pouvez faire remonter l’état dans l’ancêtre commun le plus proche. Au lieu d’essayer de synchroniser les états de différents composants, vous devriez vous baser sur des données qui se propagent du haut vers le bas.
 - [ ] Testing Unit/Integration/E2E
 - [ ] Babel
 - [ ] Assyncronous
