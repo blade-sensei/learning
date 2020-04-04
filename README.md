@@ -244,6 +244,8 @@ Skills for engineer
   - [test tools comparator](https://blog.logrocket.com/comparing-react-testing-libraries/)
 - [ ] 
 - [ ] Debug in JS
+  - use some debug and for vs code ide use extension `chrome debug`
+  - [ ] use live server extension for vs code
 
 #### Javascript projects ideas
 
