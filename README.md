@@ -371,7 +371,10 @@ Skills for engineer
   - [ ] commits
   - [ ] merges
   - [ ] history
-  - [useful link](http://schacon.github.io/git/user-manual.html)
+  - useful link
+  -  http://schacon.github.io/git/user-manual.html
+  -  http://www-cs-students.stanford.edu/~blynn/gitmagic/ch08.html
+  - 
 - [ ] VS code/IDE
 - [ ] linters
 - [ ] webpack
