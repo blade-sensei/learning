@@ -4,6 +4,7 @@ Skills for engineer
 
 ## Basics Fundamentals 
 
+
 ###  Algorithms
 
 - [canvas for algo](https://www.hiredintech.com/classrooms/algorithm-design/lesson/78)
@@ -142,6 +143,10 @@ Skills for engineer
 - [ ] How to find
 
 ### Encoding
+
+### Links 
+
+[cs standford some posts](http://www-cs-students.stanford.edu/)
 
 ## System/Networking basics
 
@@ -366,6 +371,7 @@ Skills for engineer
   - [ ] commits
   - [ ] merges
   - [ ] history
+  - [useful link](http://schacon.github.io/git/user-manual.html)
 - [ ] VS code/IDE
 - [ ] linters
 - [ ] webpack
