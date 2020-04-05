@@ -30,6 +30,12 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/index.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug This file",
+            "program": "${file}"
         }
     ]
 }
