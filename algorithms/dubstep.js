@@ -7,34 +7,31 @@ For example, a song with words "I AM X" can transform into a dubstep remix as "W
 
 Recently, Jonny has heard Polycarpus's new dubstep track, but since he isn't into modern music, he decided to find out what was the initial song that Polycarpus remixed. Help Jonny restore the original song.
 
-the best solution is to use the regex pattern \(WUB)+\g  the + () the pattern to allow WUB repeated and g means to 
+the best solution is to use the regex pattern \(WUB)+\g  the + () the pattern to allow WUB repeated and g means to
 find all occurange in the string
  */
 
 
-function songDecoder(song){
- 
-    const songFiltered = song.replace(/WUB/g, ' ').trim();
-    return removeSpaces(songFiltered);
-    
-    
-    }
-    
-    function removeSpaces(string) {
-      const removed = [];
-      const stringToFilter = string.split('');
-      
-      let previous = '';
-      
-      stringToFilter.forEach(letter => {
-        if (letter !== previous ||  letter !== ' ' ) {
-          removed.push(letter);
-          previous = letter;
-        }
-      });
-      return removed.join('');
-    }
-    
-module.exports = {
-    songDecoder,
+function songDecoder(song) {
+  const songFiltered = song.replace(/WUB/g, ' ').trim();
+  return removeSpaces(songFiltered);
 }
+
+function removeSpaces(string) {
+  const removed = [];
+  const stringToFilter = string.split('');
+
+  let previous = '';
+
+  stringToFilter.forEach((letter) => {
+    if (letter !== previous || letter !== ' ') {
+      removed.push(letter);
+      previous = letter;
+    }
+  });
+  return removed.join('');
+}
+
+module.exports = {
+  songDecoder,
+};

@@ -10,64 +10,63 @@ N = 1041 should return 5
  */
 
 function maxGapBinary(N) {
-    // write your code in JavaScript (Node.js 8.9.4)
-    
+  // write your code in JavaScript (Node.js 8.9.4)
 
-    const binaryRepresentation = N.toString(2);
-    const binaryList = binaryRepresentation.split('').map(bit => {
-        return Number(bit);
-    });
-    
-    let status = {
-        startedSegment: false,
-        finishedSegment: false
+
+  const binaryRepresentation = N.toString(2);
+  const binaryList = binaryRepresentation.split('').map((bit) => {
+    return Number(bit);
+  });
+
+  let status = {
+    startedSegment: false,
+    finishedSegment: false,
+  };
+
+  let gap = 0;
+  let maxGap = 0;
+  binaryList.forEach((bit) => {
+    status = updateStatus(bit, status);
+
+    if (status.startedSegment) {
+      if (status.finishedSegment) {
+        maxGap = getMaxGap(gap, maxGap);
+        gap = 0;
+        status = restartStatus();
+      } else if (bit === 0) {
+        gap++;
+      }
     }
-    
-    let gap = 0;
-    let maxGap = 0;
-    binaryList.forEach(bit => {
-        status = updateStatus(bit, status);
-        
-        if (status.startedSegment) {
-            if (status.finishedSegment) {
-                maxGap = getMaxGap(gap, maxGap);
-                gap = 0;
-                status = restartStatus() 
-            } else if (bit === 0) {
-                gap++
-            }
-        }
-        
-    })
-    
-    return maxGap;
+  });
+
+  return maxGap;
 }
 
 function updateStatus(bit, status) {
-    if (bit === 1) {
-        if (status.startedSegment === true) {
-            status.finishedSegment = true;
-        } else {
-            status.startedSegment = true;
-        }
-    } 
-    return status;
+  if (bit === 1) {
+    if (status.startedSegment === true) {
+      status.finishedSegment = true;
+    } else {
+      status.startedSegment = true;
+    }
+  }
+  return status;
 }
 
 function getMaxGap(currentGap, currentMaxGap) {
-    if (currentGap > currentMaxGap) {
-        return currentGap
-    }
-    return currentMaxGap;
+  if (currentGap > currentMaxGap) {
+    return currentGap;
+  }
+  return currentMaxGap;
 }
 
 function restartStatus() {
-    return {
-        startedSegment: true,
-        finishedSegment: false,
-    }
+  return {
+    startedSegment: true,
+    finishedSegment: false,
+  };
 }
 
 module.exports = {
-    maxGapBinary,
-}
+  maxGapBinary,
+};

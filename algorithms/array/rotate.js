@@ -1,8 +1,8 @@
 /**
- * 
- * @param {*} A 
- * @param {*} K 
- * 
+ *
+ * @param {*} A
+ * @param {*} K
+ *
  * An array A consisting of N integers is given. Rotation of the array means that each element is shifted right by one index, and the last element of the array is moved to the first place. For example, the rotation of array A = [3, 8, 9, 7, 6] is [6, 3, 8, 9, 7] (elements are shifted right by one index and 6 is moved to the first place).
 
 The goal is to rotate array A K times; that is, each element of A will be shifted to the right K times.
@@ -43,34 +43,32 @@ In your solution, focus on correctness. The performance of your solution will no
 */
 
 function rotateArray(A, K) {
-    // write your code in JavaScript (Node.js 8.9.4)
-    
+  // write your code in JavaScript (Node.js 8.9.4)
 
-    if (K === A.length) {
-        return A;
-    }
-    
-    let rotatedArray = [];
-    
-    A.forEach((currentNumber, index) => {
-        let newIndex = index + K
-        newIndex = getRotatedIndex(newIndex, K, A.length);
-        rotatedArray[newIndex] = currentNumber;
-    })
-    
-    
-    return rotatedArray;
-    
+
+  if (K === A.length) {
+    return A;
+  }
+
+  const rotatedArray = [];
+
+  A.forEach((currentNumber, index) => {
+    let newIndex = index + K;
+    newIndex = getRotatedIndex(newIndex, K, A.length);
+    rotatedArray[newIndex] = currentNumber;
+  });
+
+
+  return rotatedArray;
 }
 
-function getRotatedIndex(index, rotationNumber,lengthArray) {
-    if (index > lengthArray - 1)  {
-         return getRotatedIndex(index - lengthArray, rotationNumber, lengthArray);
-    }
-    return index;
-    
+function getRotatedIndex(index, rotationNumber, lengthArray) {
+  if (index > lengthArray - 1) {
+    return getRotatedIndex(index - lengthArray, rotationNumber, lengthArray);
+  }
+  return index;
 }
 
 module.exports = {
-    rotateArray,   
-}
+  rotateArray,
+};

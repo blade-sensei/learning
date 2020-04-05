@@ -1,11 +1,11 @@
 function lengthDigits(number) {
-    let counterDigits = 0;
-    while (number) {
-        counterDigits++;
-        const divided = number / 10;
-        number = Math.trunc(divided);
-    }
-    return counterDigits;
+  let counterDigits = 0;
+  while (number) {
+    counterDigits++;
+    const divided = number / 10;
+    number = Math.trunc(divided);
+  }
+  return counterDigits;
 }
 /**
  * Assume we are dealing with an environment which could only store
@@ -13,7 +13,7 @@ function lengthDigits(number) {
  *  For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows
  */
 
- /**
+/**
   * examples
   * Example 1:
 
@@ -30,24 +30,24 @@ Output: 21
   */
 
 function reverse(x) {
-    const EXTREMS = {
-        min: Math.pow(-2, 31),
-        max: Math.pow(2, 31),
-    }
-    let numberToReverse = x;
-    let numberOfDigits = lengthDigits(numberToReverse);
-    let reversedNumber = 0;
-    while (numberToReverse) {
-        const lastDigit = numberToReverse % 10;
-        reversedNumber += lastDigit * (10 ** (numberOfDigits - 1));
-        numberToReverse = Math.trunc(numberToReverse / 10);
-        numberOfDigits--;
-    }
-    if (reversedNumber >= EXTREMS.min && reversedNumber <= EXTREMS.max) {
-        return reversedNumber;
-    }
-    return 0;
-};
+  const EXTREMS = {
+    min: Math.pow(-2, 31),
+    max: Math.pow(2, 31),
+  };
+  let numberToReverse = x;
+  let numberOfDigits = lengthDigits(numberToReverse);
+  let reversedNumber = 0;
+  while (numberToReverse) {
+    const lastDigit = numberToReverse % 10;
+    reversedNumber += lastDigit * (10 ** (numberOfDigits - 1));
+    numberToReverse = Math.trunc(numberToReverse / 10);
+    numberOfDigits--;
+  }
+  if (reversedNumber >= EXTREMS.min && reversedNumber <= EXTREMS.max) {
+    return reversedNumber;
+  }
+  return 0;
+}
 
 /**
  * This solution doesnt work very well
