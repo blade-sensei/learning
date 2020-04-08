@@ -4,15 +4,18 @@
  * @return {number}
  */
 var maxSubArray = function(nums) {
-  let a1 = 0
-  let a2 = nums[0]
-  nums.forEach((i,a) => {
-    a1 = Math.max(i, a1 + i)
-    a2 = Math.max(a2, a1)
-  })
-  return a2
+  if (nums.length === 1) return nums[0];
+  let currentMax = 0;
+  let globalMax = Infinity;
+  
+  for (let number of nums) {
+    currentMax = Math.max(currentMax + number, number);
+  
+    globalMax = Math.max(globalMax, currentMax);
+  }
+  return globalMax
 };
 
-const params = [1, 100, 4, 15, 9, 30]
+const params = [1]
 const test = maxSubArray(params);
 console.log(test);
