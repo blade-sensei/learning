@@ -8,19 +8,54 @@ var maxSubArray = function(nums) {
   let globalMax = -Infinity
   
   for (let number of nums) {
-    currentMax = Math.max(currentMax + number, 0);
+    currentMax = Math.max(currentMax + number, number);
     globalMax = Math.max(globalMax, currentMax);
     console.log('info ', currentMax, 'global ', globalMax)
   }
   return globalMax
 };
 
-const params = [-2, 10, 2, -30,  -13]
+const params = [-2, 30, 2]
 const test = maxSubArray(params);
 console.log(test);
 
 /**
  * if [-2, 10, 2, -12]
+ *      >
+ * For while iteration we get generate another subarray based on the previous
+ * one that has started in a specific index. Then we compare this to the CURRENT
+ * subarray like [-2] [10]
+ * 
+ * first iteration:
+ * 2 if the maximal sum to this index
+ * 
+ * second iteration
+ * previous maximal sum = -2
+ * generated subarray sum = -2+10 = 8
+ * compare current subarray[i] ([10]) and ([8]) 
+ * it seems that 8 is the maximal SUM IN the subarray[i+1]
+ * Has the [10] if > that [-2,10] we don't need to continu to ADD more 
+ * subarrays to [-2,10]. Be gonna try to generate other subarray based on
+ * [10]. 
+ * 
+ * During this process we gonna keep/save the Maximum Sum Accumulated
+ * until the index
+ * And the maximum of all maximums.
+ * 
+ * 
+ * 
+ * 
+ * All possible subarrays (CONTIGUOS) [2,-12] is a non contiguos subarray for example
+ * [-2] [-2,10] [-2,10, 2] [-2,10,2,-12]
+ *         [10]     [10,2]    [10,2,-12] 
+ *                     [2]       [2,-12]
+ *                                 [-12]
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
  * This implementation will remove negative sum_max sum of the current
  * max_sum. The logic behind this is that if we get negative, the next subarray (i+1, )
  * will be inevitably LESS if we keep this nagative max. 
