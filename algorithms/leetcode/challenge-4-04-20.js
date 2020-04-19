@@ -16,27 +16,24 @@ Requirements
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 var moveZeroes = function(nums) {
-  let zeros = 0;
-  nums.forEach(num => {
-    if (num === 0) {
-      zeros++;
-    }
-  });
-  const ans = [];
-  nums.forEach(num => {
-    if (num !== 0) {
-      ans.push(num);
-    }
-  });
+  let pointer = 0;
 
-  while(zeros > 0) {
-    ans.push(0);
-    zeros--;
+  console.log(nums);
+  for (let num of nums) {
+    if (num !== 0) {
+      nums[pointer] = num;
+      pointer++;
+    }
+  }
+
+  for (let i = pointer; i < nums.length; i++) {
+    nums[i] = 0;
   }
   
-  ans.forEach((number, index) => nums[index] = number);
+
 return nums;
 };
+
 
 const param = [0,1,0,3,12];
 const test = moveZeroes(param);
