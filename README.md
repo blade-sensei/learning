@@ -417,3 +417,7 @@ Skills for engineer
 
 - [ ] Singlepage SPA
 - [ ] PWA
+
+## Useful links
+
+- html icons unicode/hex + examples : https://www.htmlsymbols.xyz/
