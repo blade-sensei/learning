@@ -144,6 +144,8 @@ Skills for engineer
 
 ### Encoding
 
+- [ ] basic http://kunststube.net/encoding/
+
 ### Links 
 
 [cs standford some posts](http://www-cs-students.stanford.edu/)
