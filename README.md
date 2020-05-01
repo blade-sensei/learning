@@ -194,6 +194,7 @@ Skills for engineer
 - [ ] definition
 - [ ] [value unit](https://developer.mozilla.org/fr/docs/Web/CSS/Valeurs_et_unit%C3%A9s_CSS)
 - [ ] override points
+- [ ] model box https://www.w3schools.com/css/css_boxmodel.asp
 - [ ] position
 - [ ] display
 - [ ] float
