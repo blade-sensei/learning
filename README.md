@@ -421,6 +421,10 @@ Skills for engineer
 - [ ] Singlepage SPA
 - [ ] PWA
 
+## Design UX
+
+- [ ] buttons https://www.24joursdeweb.fr/2019/et-tu-cliques-a-cote-du-bouton/
+
 ## Useful links
 
 - html icons unicode/hex + examples : https://www.htmlsymbols.xyz/
