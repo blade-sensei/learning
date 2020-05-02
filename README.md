@@ -14,6 +14,10 @@ Skills for engineer
 - [algorith categories like brute, dynamic etc](https://itnext.io/algorithms-and-data-structures-in-javascript-a71548f902cb)
 - Big-O perf
 - [big-o with javascript](https://adrianmejia.com/most-popular-algorithms-time-complexity-every-programmer-should-know-free-online-tutorial-course/)
+- Training algorithms
+  - https://leetcode.com/
+  - https://www.hackerrank.com/interview/interview-preparation-kit?h_l=domains&h_r=hrw&utm_source=hrwCandidateFeedback
+- Interesting list for coding http://dhruvbird.com/61.html
 
 ### Reading code
 
