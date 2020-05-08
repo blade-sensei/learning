@@ -198,6 +198,7 @@ Skills for engineer
 
 ### CSS
 - [ ] definition
+  - [ ] https://dev.to/emmabostian/css-specificity-1kca
 - [ ] [value unit](https://developer.mozilla.org/fr/docs/Web/CSS/Valeurs_et_unit%C3%A9s_CSS)
 - [ ] override points
 - [ ] model box https://www.w3schools.com/css/css_boxmodel.asp
@@ -208,6 +209,8 @@ Skills for engineer
 - [ ] overflow
 - [ ] index
 - [ ] selector
+  - [ ] https://dev.to/emmabostian/css-specificity-1kca
+  - [ ] https://dev.to/ibrahima92/6-powerful-css-selectors-that-will-really-help-you-write-clean-css-4bab
 - [ ] debug in browser
 - [ ] others skills
   - [ outline vs border: check html/border-outline page of this repo ](https://www.tutorialrepublic.com/css-tutorial/css-outline.php)
