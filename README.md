@@ -203,7 +203,8 @@ Skills for engineer
 - [ ] model box https://www.w3schools.com/css/css_boxmodel.asp
 - [ ] position
 - [ ] display
-- [ ] float
+- [ ] float https://developer.mozilla.org/fr/docs/Web/CSS/float
+  - [ ] see also clear it's useful https://developer.mozilla.org/fr/docs/Web/CSS/clear
 - [ ] overflow
 - [ ] index
 - [ ] selector
