@@ -50,10 +50,10 @@ Skills for engineer
 
 ### Key concepts
 
-- [ ] KISS
+- [ ] KISS:  https://thevaluable.dev/kiss-principle-explained/
 - [ ] YAGNI
 - [ ] SOLID
-- [ ] DRY
+- [ ] DRY: https://thevaluable.dev/dry-principle-cost-benefit-example/
 
 ### Design Patterns
 
