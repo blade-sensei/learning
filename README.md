@@ -97,8 +97,8 @@ Skills for engineer
 
 ### Testing
 
-- [ ] types of test
-- [ ] good practices
+- [ ] types of test https://medium.com/swlh/levels-of-software-testing-b943ce41a2c7
+- [ ] good practices https://dzone.com/articles/unit-testing-best-practices-how-to-get-the-most-ou
 - [ ] practices
 
 ### Debug
