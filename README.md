@@ -123,15 +123,15 @@ Skills for engineer
 
 ### Web World
 
-- [ ] components
-- [ ] how they interact
+- [ ] components https://medium.com/@wereheavyweight/how-were-using-component-based-design-5f9e3176bab
+- [ ] how they interact 
 - [ ] difference internet and web
 
 ### Terminal commands
 
-- [ ] linux install/unistall packages
-- [ ] how package manager works
-- [ ] file, copy, cat, remove, create
+- [ ] linux install/unistall packages https://docs.cumulusnetworks.com/cumulus-linux-36/Installation-Management/Adding-and-Updating-Packages/
+- [ ] how package manager works  https://en.wikipedia.org/wiki/Package_manager
+- [ ] file, copy, cat, remove, create https://documentation.its.umich.edu/node/295
   - [ ] sot, grep, cat, awk, sed, sort
 - [ ] basic scripts
 - [ ] manager process
