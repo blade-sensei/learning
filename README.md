@@ -138,7 +138,7 @@ Skills for engineer
   - [ ] ps, top, htop, isof
 - [ ] change permissions and owner folders/files
 - [ ] network
-  - [ ] ping, tcp dump
+  - [ ] ping, tcp dump https://www.howtogeek.com/108511/how-to-work-with-the-network-from-the-linux-terminal-11-commands-you-need-to-know/
   - [ ] nmap
   - [ ] traceroute
 
