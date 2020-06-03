@@ -62,9 +62,7 @@ console.log(fruits[1]) //get the second element, 0 is the begining
 - find and specific element(s) with loops and if condition like
 
 ```javascript
-fruits.forEach((fruit) => {
-  if (fruit === 'orange') console.log(fruit)
-})
+fruits.find(fruit => fruit === 'orange');
 // we use a forEach iteration to get the orange fruit and print it.
 ```
 
@@ -95,6 +93,8 @@ https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Ar
 - Delete repeated numbers of array
 - Check if contains a number if they Array
 - Not the largest path in path matrix m*m
+
+++ https://www.geeksforgeeks.org/array-data-structure/
 
 # Note
 
