@@ -10,3 +10,7 @@ A linked list can store elements (like a box) each element will also get the ref
 ## Operations / use cases
 
 ## Exercices
+
+## Source
+
+https://www.geeksforgeeks.org/applications-of-linked-list-data-structure/
