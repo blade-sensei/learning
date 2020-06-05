@@ -36,6 +36,7 @@ Skills for engineer
     [list of algorithms for array by categories](https://www.geeksforgeeks.org/array-data-structure/)
     Intersection in array
 - [x] linked list
+  - [ ] https://www.youtube.com/watch?v=njTh_OwMljA
 - [ ] stack, queue
 - [ ] hash
 - [ ] binary search
