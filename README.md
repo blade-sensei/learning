@@ -36,9 +36,10 @@ Skills for engineer
     [list of algorithms for array by categories](https://www.geeksforgeeks.org/array-data-structure/)
     Intersection in array
 - [x] linked list
-  - [video](https://www.youtube.com/watch?v=njTh_OwMljA)
-  - [introduction](https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm)
-  - [introduction](https://www.geeksforgeeks.org/data-structures/linked-list/)
+  - video https://www.youtube.com/watch?v=njTh_OwMljA)
+  - introductions https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm 
+  
+    https://www.geeksforgeeks.org/data-structures/linked-list/
 - [ ] stack, queue
 - [ ] hash
 - [ ] binary search
@@ -146,8 +147,11 @@ Skills for engineer
   - [ ] traceroute
 
 ### Performance Big-O
+
 - [ ] definitions
+  - https://www.bigocheatsheet.com/
 - [ ] How to find
+- [ ] [Time Complexity of arrays/list](https://medium.com/@ashfaqueahsan61/time-complexities-of-common-array-operations-in-javascript-c11a6a65a168)
 
 ### Encoding
 
