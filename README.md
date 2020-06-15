@@ -40,6 +40,8 @@ Skills for engineer
   - introductions https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm 
   
     https://www.geeksforgeeks.org/data-structures/linked-list/
+    - lists dynamic time complexity https://medium.com/@sherryhsu/js-objects-and-arrays-which-one-is-faster-cfcdb1281704#:~:text=On%20the%20other%20hand%2C%20Insert,time%20complexity%20of%20Amortized%20Constant.
+    - https://medium.com/@satorusasozaki/amortized-time-in-the-time-complexity-of-an-algorithm-6dd9a5d38045
 - [ ] stack, queue
 - [ ] hash
 - [ ] binary search
@@ -152,6 +154,7 @@ Skills for engineer
   - https://www.bigocheatsheet.com/
 - [ ] How to find
 - [ ] [Time Complexity of arrays/list](https://medium.com/@ashfaqueahsan61/time-complexities-of-common-array-operations-in-javascript-c11a6a65a168)
+- amortized time https://yourbasic.org/algorithms/amortized-time-complexity-analysis/
 
 ### Encoding
 
