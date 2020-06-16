@@ -42,6 +42,7 @@ Skills for engineer
     https://www.geeksforgeeks.org/data-structures/linked-list/
     - lists dynamic time complexity https://medium.com/@sherryhsu/js-objects-and-arrays-which-one-is-faster-cfcdb1281704#:~:text=On%20the%20other%20hand%2C%20Insert,time%20complexity%20of%20Amortized%20Constant.
     - https://medium.com/@satorusasozaki/amortized-time-in-the-time-complexity-of-an-algorithm-6dd9a5d38045
+    - [Difference array and linked list](https://www.studytonight.com/data-structures/linked-list-vs-array)
 - [ ] stack, queue
 - [ ] hash
 - [ ] binary search
