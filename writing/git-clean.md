@@ -1,7 +1,8 @@
-AVOID CLEAN GIT HISTORY
-==
+# AVOID CLEAN GIT HISTORY
 
-## Messy :cry: 
+Here i will explain why i used linear history and why in order to get a clean git history. This is based on my experiences. If you have other practices, please feel free to share with me.
+
+## Messy 😭
 
 ![](https://i.imgur.com/OG5Jlgb.png)
 
@@ -12,11 +13,11 @@ The problem here is not to GET many branches, this is a normal situation but the
 
 ### The problems here
 
-**Hard to read**, Look at the history even if you don't need to find or revert a commit, visually you feel bad, as you see your messy home for example.
+😖 **Hard to read**, Look at the history even if you don't need to find or revert a commit, visually you feel bad, same as you are when you see messy home for example.
 
-**Hard to find/revert** to a commit of our history will be also be annoying, this will even can create other conflicts... so a bug fixes and maintenance will be more complicated.
+🕵️‍♂️ **Hard to find/revert** to a commit of our history will be also be annoying, this will even can create other conflicts... so a bug fixes and maintenance will be more complicated.
 
-**Filter or reate new bugs** when merging work to the another branch why ? Take the followed example:
+🐛 **Filter or reate new bugs** when merging work to the another branch why ? Take the followed example:
 
 
 - we have branche B pulled from dev branch
