@@ -1,6 +1,6 @@
 # AVOID CLEAN GIT HISTORY
 
-Here i will explain why i used linear history and how in order to get a clean git history. This is based on my experiences. If you have other practices, please feel free to share with me.
+Here i will explain why i used linear history and how, in order to get a clean git history. This is based on my experiences. If you have other practices, please feel free to share with me.
 
 # I'm lost 😭
 
@@ -25,7 +25,7 @@ Maybe not really if you work alone or work on small project/team, BUT i have alr
 - now you finished & you will merge
 - you fix conflicts
 - now it's merge
-- **the problem start here**  ⚠️
+- **the problem starts here**  ⚠️
 
 Even if you fixed conflicts you don't even know if the merged (dev branch) is working, but this is to late, you have already mixed the 2 branches.
 
@@ -36,7 +36,7 @@ Linar history works well to me, this one solution.
 🤔 Do i really **need** to see **old branches** ? Maybe not it depends
 
 
-## Linear History 🙏
+# Linear History 🙏
 
 ![](https://i.imgur.com/mK4IURp.png)
 
@@ -47,12 +47,12 @@ But this is a example of what i prefer to see in my projects.
 > You can also see that the messages are clean. I will write another post about that soon.
 
 
-## How i do to get a linear history
+# How i do to get a linear history
 
 - avoiding --no-ff option
 - using rebase instead of simple merge
 
-## Avoid Merge --no-ff
+## Avoid [merge --no-ff]
 
 You commits are directly following the origin branch ? So GIT will create a linear history **without creating a "new merge commit"**, just by mixing and move HEAD pointer.
 
@@ -67,7 +67,7 @@ Result will be this. It created a **"new merge commit"**
 ![](https://i.imgur.com/hNZADrt.gif)
 
 
-### Rebase -> my 🦸‍♂️
+## Rebase: my 🦸‍♂️
 
 ![](https://i.imgur.com/hlt8M5c.gif)
 
@@ -85,7 +85,7 @@ basically:
 - **merge**, as your /feature is directly following the HEAD of dev branch, you branch will merge without creating "new merge commit" (see first GIF).
 
 
-### Observation
+# Observation
 
 - Ok rebase, needs a little **more steps** compared to merge, but this was **useful** to me, i can improve tests and avoid bugs.
 - **This is not THE SOLUTION**, sometimes you need to keep track of an old branch, i don't know maybe you need to see when a feature branch was started and finished/merged, it depends of your needs, you should ask yourself you i need to see this branch in my history ? is it meaningful ? YES/NO ?
