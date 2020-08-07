@@ -1,25 +1,22 @@
-My way to get clean git history
+AVOID CLEAN GIT HISTORY
 ==
-
 
 ## Messy :cry: 
 
-![](https://i.imgur.com/ByZN7OC.png)
+![](https://i.imgur.com/OG5Jlgb.png)
 
-Have you already get the same git history ?
-Maybe if you work alone or work on small project/team not really, but i have already face this situation on standard projects (>10 members).
+Have you already encoutered the same git history ?
+Maybe not really if you work alone or work on small project/team, BUT i have already face this situation on standard projects (>10 members).
 
-The problem here is not to have many branches, this is normal, but there is other problems to me.
+The problem here is not to GET many branches, this is a normal situation but the problem is the WAY we manage these branches.
 
 ### The problems here
 
-Hard to read, look at the history even if you don't need to find or revert a commit, 
-visually to feel bad, as you see your messy home... for example.
+**Hard to read**, Look at the history even if you don't need to find or revert a commit, visually you feel bad, as you see your messy home for example.
 
-Find or back to a commit of our history will be also be annoying, this will even can create other conflicts... so a bug fixes and maintenance will be more complicated.
+**Hard to find/revert** to a commit of our history will be also be annoying, this will even can create other conflicts... so a bug fixes and maintenance will be more complicated.
 
-
-Filter, create bugs when merging work to the another branch why ? Take the followed example:
+**Filter or reate new bugs** when merging work to the another branch why ? Take the followed example:
 
 
 - we have branche B pulled from dev branch
@@ -27,12 +24,13 @@ Filter, create bugs when merging work to the another branch why ? Take the follo
 - now you finished and you will merge
 - you fix conflicts..
 - now it's merge
-- the problem start here
+- **the problem start here**
 
-Even if you fixed conflicts you don't even know if the merged (dev branch) is working, but this is late, you have already merge. Ok now you test, there is some bugs... 
-now you will revert ? Ok revert but you will create another commit on dev.. you are pollute the branch with unecessary commit and potentially creating bugs. 
+Even if you fixed conflicts you don't even know if the merged (dev branch) is working, but this is to late, you have already mixed the 2 branches.
 
-A good solution to me is the linar history.
+Ok now you test, there is some bugs... you will revert ? Revert but you will create another commit on dev.. SO you are polluting  the branch with unecessary commits and potentially creating bugs if you don't see/test before.
+
+Linar history works well to me, this one solution.
 
 ----
 
@@ -40,180 +38,51 @@ A good solution to me is the linar history.
 
 ![](https://i.imgur.com/mK4IURp.png)
 
-This is a google angular git history. I don't know exactly which internal rules or tools they use to get this.
+This is Angular(google) git history. I don't know exactly which internal rules or tools they use to get this.
 
 But this is a example of what i prefer to get in my projects.
 
+> You can also see that the messages are clean. I will write another post about that soo.
 
-## How can we do that
+
+## How i do to get a linear history
 
 - avoiding --no-ff option
-- using rebase instead of simpple merge
+- using rebase instead of simple merge
 
 ## Avoid Merge --no-ff
 
-![](https://i.imgur.com/hNZADrt.gif)
+You commits are directly following the origin branch ? So git will create a linear history without creating a "new merge commit", just by mixing and move HEAD pointer.
 
-If your commits are directly following the origin branch then git will only 
-
-ok
-----
-
-### Rebase
-
-![](https://i.imgur.com/hlt8M5c.gif)
-
-----
-
-### Merge ff
 
 ![](https://i.imgur.com/e1pZ7xH.gif)
 
 
 
-### Rules
+This case can change, it depends on:
+- Is the target branch ahead (more changes) ?
+- Gitlab/Github merges configuration (default --no-ff ? )
 
-- [x] 72 chars title 
-- [x] Body explains why and what
-- [x] Imperative (add, fix, change)
-- [x] English
-- [x] Avoid many changes in one commit (split commits)
+Result will be this. It created a **"new merge commit"**
 
-----
-
-### Source
-
-[source des règles](https://hashnode.com/post/what-tips-and-guidelines-do-you-follow-while-writing-git-commit-messages-cimorctip0010oz53hibbt5a3)
-
-----
+![](https://i.imgur.com/hNZADrt.gif)
 
 
-## Naming
+### Rebase: My hero
 
-Respectez ce pattern :exclamation:  `[type] contexte ou scope: sujet (#ticket)`
+![](https://i.imgur.com/hlt8M5c.gif)
 
-- __type__: Type du commit (feat, docs, style...)  
-- __scope__: Sur quoi le changement s'applique, une route, un composant, un fichier, une feature
-- __sujet__: Expliquer quoi et pourquoi
-- __ticket__: Numéro du ticket (facultatif)
+Mixed to branch in order to get linear history needs to follow next steps
 
-`Le #ticket est facultatif.`
-
-----
-
-### Types
+- /feature branch is ready to be mixed ? OK
+- update (pull from origin) the target branch (dev)
+- rebase on top of dev branch (for example): **now /feature is updated** too and ready to test
+- do you local tests (unit, functional, etc..)
+- **merge**, as your /feature is directly following the HEAD of dev branch, you branch will merge without creating "new merge commit" (see first GIF).
 
 
-type(contexte): le sujet, résumé 
+### Observation
 
-- __feat__: nouvelle fonctionnalités pour l'utilisateur
-- __fix__: bug fix
-- __docs__: documentations
-- __style__: css, fonts, ajout de classes html
-- __typo__: format, syntaxe, eslint, orthographe
-- __refactor__: refactorisation, renommmage de fichier
-- __test__: ajout/modification de tests
-- __chore__: tâches de build, configurations, installation de libs (package.json, gitignore ...)
-
-
-----
-
-#### Exemples
-
-```markdown
-feat(comments): add edition page component (#253)
-fix(login): fix redirection after sign in (#7311)
-test(route user/news): add unit test with Jasmine
-style(items): change font color ...
-typo(comments) js: fix eslint object spaces 
-refactor(user component): rename ...  
-docs(changelog): add release feature for 3.0.0
-chore(gitignore): add idea ignoring files 
-```
-
-----
-
-### Angular commits
-
-![](https://i.imgur.com/my0yxb4.png)
-
----
-
-<!-- .slide: data-background="#1A237E" -->
-# Gitflow
-
-[gitflow](https://nvie.com/posts/a-successful-git-branching-model/)
-
----
-
-<!-- .slide: data-background="#1A237E" -->
-Git tips
-==
-
-----
-
-## Git rebase
-
-- Historique propre
-
-```shell=
-git checkout cible
-git rebase branche origine
-```
-
-----
-
-<!-- .slide: data-background="#1A237E" -->
-## Git stash
-
-----
-
-### Cas d'utilisation
-- Changer de branche et sauvegarder sont travail sans pour autant commit le travail en cours
-
-
-```shell=
-git stash save "mon stash"
-git stash apply stash@{id}
-git stash show stash@{id} -p
-```
-
-[liens utiles sur stash](https://medium.freecodecamp.org/useful-tricks-you-might-not-know-about-git-stash-e8a9490f0a1a)
-
-
-----
-
-## Git amend
-
-- Changer le titre de mon __dernier commit__
-- J'ai oublié de rajouter une changement dans __le dernier commit__
-
-```shell=
-git commit --amend
-ou
-git add -A
-git commit --amend
-```
-
-----
-
-## Git rebase iteratif
-
-- Rassembler des commits en 1 seul
-- Editer (renommer, rajouter) un ancien commit
-
-```shell=
-git squash 
-git fixup //pareil que squash met ne garde pas les noms des commits à fusioner
-git edit
-```
-
-----
-
-## Git reset --soft --hard
-
-- Revenir sur un commit précis et ne pas perdre les changements
-
-```shell=
-git reset --soft commitId
-```
+- Ok rebase, need a little more steps to merge, but this was usefull to me, i can test and avoid bugs.
+- This is not THE SOLUTION, sometime you need to keep track of an old branch, i don't know maybe too see when a feature branch was started and ended/merged, it depends of your needs, you should ask yourself you i need to see this branch on my history ? is it helpful ? YES/NO ?
+- As rebase creates "new commits" than you feature branch, if you team mate has pulled his work from your /feature branch he might have conflicts when he will merge to /dev branch (MAYBE). This is a little bit tricky, see how REBASE work here: https://git-scm.com/book/en/v2/Git-Branching-Rebasing. If you need me to explain it please let me know.
