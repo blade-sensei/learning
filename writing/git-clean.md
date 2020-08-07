@@ -1,4 +1,4 @@
-# AVOID CLEAN GIT HISTORY
+# GET CLEAN GIT HISTORY
 
 Here i will explain why i used linear history and how, in order to get a clean git history. This is based on my experiences. If you have other practices, please feel free to share with me.
 
@@ -6,7 +6,7 @@ Here i will explain why i used linear history and how, in order to get a clean g
 
 ![](https://i.imgur.com/OG5Jlgb.png)
 
-Have you already encoutered the same git history ?
+Have you already encountered the same git history ?
 Maybe not really if you work alone or work on small project/team, BUT i have already face this situation on standard projects (>10 members).
 
 **The problem** here is not to GET many branches, this is a normal situation but the problem is **THE WAY** we **manage** these branches.
