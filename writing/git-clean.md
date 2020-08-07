@@ -2,16 +2,16 @@
 
 Here i will explain why i used linear history and why in order to get a clean git history. This is based on my experiences. If you have other practices, please feel free to share with me.
 
-## Messy 😭
+## I'm lost 😭
 
 ![](https://i.imgur.com/OG5Jlgb.png)
 
 Have you already encoutered the same git history ?
 Maybe not really if you work alone or work on small project/team, BUT i have already face this situation on standard projects (>10 members).
 
-The problem here is not to GET many branches, this is a normal situation but the problem is the WAY we manage these branches.
+**The problem** here is not to GET many branches, this is a normal situation but the problem is **THE WAY** we **manage** these branches.
 
-### The problems here
+## The problems 
 
 😖 **Hard to read**, Look at the history even if you don't need to find or revert a commit, visually you feel bad, same as you are when you see messy home for example.
 
@@ -21,17 +21,19 @@ The problem here is not to GET many branches, this is a normal situation but the
 
 
 - we have branche B pulled from dev branch
-- dev branch keep moving, meanwhile you work on feature
-- now you finished and you will merge
-- you fix conflicts..
+- dev branch keeps moving, meanwhile you work on feature
+- now you finished & you will merge
+- you fix conflicts
 - now it's merge
-- **the problem start here**
+- **the problem start here**  ⚠️
 
 Even if you fixed conflicts you don't even know if the merged (dev branch) is working, but this is to late, you have already mixed the 2 branches.
 
-Ok now you test, there is some bugs... you will revert ? Revert but you will create another commit on dev.. SO you are polluting  the branch with unecessary commits and potentially creating bugs if you don't see/test before.
+Ok There is some bugs? I can revert BUT you will create another commit on dev.. SO you are **polluting** the branch with **unecessary commits** and potentially creating bugs if you don't see/test before. 
 
 Linar history works well to me, this one solution.
+
+🤔 Do i really **need** to see **old branches** ? Maybe not it depends
 
 ----
 
