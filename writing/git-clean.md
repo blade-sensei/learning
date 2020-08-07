@@ -47,13 +47,16 @@ But this is a example of what i prefer to get in my projects.
 
 ## How can we do that
 
-Using rebase and avoiding --no-ff
+- avoiding --no-ff option
+- using rebase instead of simpple merge
 
 ## Avoid Merge --no-ff
 
 ![](https://i.imgur.com/hNZADrt.gif)
 
+If your commits are directly following the origin branch then git will only 
 
+ok
 ----
 
 ### Rebase
