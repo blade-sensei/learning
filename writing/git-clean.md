@@ -1,6 +1,6 @@
 # AVOID CLEAN GIT HISTORY
 
-Here i will explain why i used linear history and why in order to get a clean git history. This is based on my experiences. If you have other practices, please feel free to share with me.
+Here i will explain why i used linear history and how in order to get a clean git history. This is based on my experiences. If you have other practices, please feel free to share with me.
 
 # I'm lost 😭
 
