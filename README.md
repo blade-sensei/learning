@@ -402,7 +402,7 @@ Skills for engineer
   - useful link
   -  http://schacon.github.io/git/user-manual.html
   -  http://www-cs-students.stanford.edu/~blynn/gitmagic/ch08.html
-  - 
+  - write message: https://dev.to/chrissiemhrk/git-commit-message-5e21
 - [ ] VS code/IDE
 - [ ] linters
 - [ ] webpack
