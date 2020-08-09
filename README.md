@@ -167,6 +167,7 @@ Skills for engineer
 
 ## System/Networking basics
 
+- database architectures: https://dzone.com/articles/database-architectures-amp-use-cases-explained?edition=620294&utm_source=Weekly%20Digest&utm_medium=email&utm_campaign=Weekly%20Digest%202020-08-05
 - [ ] OSI
 - [ ] HTTP
 - [ ] UDP
