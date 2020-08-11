@@ -62,12 +62,13 @@ Must know is AAA (arrange, act, assert).
 
 > Tips : Avoid many 'expect' for only one test, to keep Single Responsibility.
 
-# Example
-
-[Simple unit test of my getToken function]
+# Examples
 
 > I will use AVA library for tests
 > https://github.com/avajs/ava
+
+
+[Simple unit test of my getToken function]
 
 
 ```javascript
