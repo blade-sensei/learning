@@ -13,40 +13,44 @@ Unit test
 
 
 # A simple good test:
-==
 
 Has this specifications:
 
 ## Clean code
 
-Test code **remains "code"** so we should also try to respect good practices (ex: DRY, KISS, Single Responsibility... ), linters, recent methods of your langage ... 
-In order to keep the  **freliability, understanding et maintainability.** for your team.
+Test code **remains "code"** so we should also try to respect good practices (ex: DRY, KISS, Single Responsibility... ), linters, recent methods of your langage.
+
+
+In order to keep the  **reliability, understanding et maintainability.** for your team.
 
 ## Independence
-**"Unit"**. A single should **not depend on other test**, **avoid** as much as possible the **dependance** of other systems of your software/app like instantiations. You can use mock [data or stubs](https://martinfowler.com/articles/mocksArentStubs.html).  
+**"Unit"**. Should **not depend on the other tests**. For example tests **should be able to be run in any order.**
 
-For example tests **should be able to be run in any order.**
+ **Avoid** as much as possible the **dependance** of other systems of your software/app like instantiations of database (for example), you can use mock [data or stubs](https://martinfowler.com/articles/mocksArentStubs.html) to avoid this.
+
 
 ## Test the necessary
 
-I don't know if everyone will be aggree with this BUT.
+I don't know if everyone will be aggree with this, but ...
 
-You don't need to test all functions/routes/libs(...), or at least not right now... Prioritize the code that you change most often.  To me this is important because sometime we see HUGE work to do in order to cover all our app... We can start step by step and cover just 1 small part of our app. (let me know your opinion :) )
+You don't need to test all functions/routes/libs(...), or at least not right now... **Prioritize** the code that you change most often.
 
-The same of the scenarios of a unit test, we can over 1,2 or only 3 scenarios.
+To me this is important because sometimes we see a **HUGE work** to do in order to cover all our app... We can **start step by step** and cover just 1 small part of our app. (let me know your opinion :) )
+
+Same with the scenarios of a unit test, we can cover 1,2 or only 3 scenarios/behaviours.
 
 ## Undertanding
 
-Naming. We should undertand the test when see the test name.
+**Naming**. We should undertands the test when see the test name.
 
-This is good patter that works for me.
+This is good pattern that works for me:
 
 The name should be composed by the description, then the pattern 'should' (result we expect) et optionally, 'when' that describes the scenary or context.
 
-> Tips : If the test become bigger, divide into small pieces.
+> Tips : If the test becomes bigger, divide it into small pieces.
 
-Structure/Phases
-==
+## Phases/Structure
+
 
 Must know is AAA (arrange, act, assert).
 
@@ -54,44 +58,87 @@ Must know is AAA (arrange, act, assert).
 
 - Act: basically call the function/unit work that we want to test
 
-- Assert: Define the result you expect
-
+- Assert: define the result that you expect
 
 > Tips : Avoid many 'expect' for only one test, to keep Single Responsibility.
 
-### Exemple sur modelLoopbackTester
+# Example
 
-Les fonctions 'before', 'setVar' et 'extend' sont des exemples d'une phase arrange.
-```javascript=
-test.before = async function setupLoggedUser(userId) { };
-test.extend("user", {});
-test.setVar("user", accessToken);
+[Simple unit test of my getToken function]
+
+> I will use AVA library for tests
+> https://github.com/avajs/ava
+
+
+```javascript
+
+test('hasRequiredParameters should be true when body request has the required parameters', (t) => {
+  // ARRANGE
+  const requiredParameters = ['username', 'password'];
+  const bodyRequest = {
+    username: 'usernameTest',
+    password: 'passwordTest',
+  };
+
+  // ACT + ASSERT
+
+  t.is(
+    requestHelper.hasRequiredParameters(requiredParameters, bodyRequest),
+    true,
+    'hasRequiredParameters should be true'
+  );
+});
+
+test('hasRequiredParameters should be false when body request has not the required parameters', (t) => {
+  const requiredParameters = ['username', 'password'];
+  const bodyRequest = {
+    test: 'usernameTest',
+    password: 'passwordTest',
+  };
+
+  t.is(
+    requestHelper.hasRequiredParameters(requiredParameters, bodyRequest),
+    false,
+    'hasRequiredParameters should be false'
+  );
+});
+
 ```
 
-### Exemple sur modelLoopbackTester
+[Test prelight request]
 
-```javascript=
-test.load(ModelTestJson);
+```javascript
+
+test('isPreFlightRequest should be true when request method is OPTIONS', (t) => {
+  // ARRANGE
+  const mockRequest = {
+    method: 'OPTIONS',
+  };
+
+  // ARRANGE
+  const ispreFlightRequest = cors.isPreFlightRequest(mockRequest);
+
+  //ASSERT
+  t.is(ispreFlightRequest, true, 'ispreFlightRequest should return true');
+});
+
+
+test('isPreFlightRequest should be throw when request has not method property', (t) => {
+  const mockRequest = {};
+  const error = t.throws(() => {
+    cors.isPreFlightRequest(mockRequest);
+  }, Error);
+
+  t.is(typeof error, typeof new Error(), 'ispreFlightRequest should throw error');
+});
 ```
 
-ModelTestJson.json
-```json=
- {
-    "model": "zindics",
-    "url": "getGraphData/${keyGraph}/date/${dateGraph}"
-  }
-```
-
-Dans le json on précise quel unité/route on veut tester.
+![](https://i.imgur.com/JGRO8LK.png)
 
 
-### Exemple sur modelLoopbackTester
+## Bonus
 
-```json=
-"expect": {
-    "statusCode": 401
-}
-```
-
-**expect** correspodant à la définition des résultats attendus
+You can also read this 
+- https://martinfowler.com/articles/mocksArentStubs.html
+- https://martinfowler.com/articles/mocksArentStubs.html
 
