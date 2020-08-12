@@ -6,46 +6,51 @@ Unit test
 
 ## Benefit of Unit testing (UT)
 
-- **Verify** if a change (code) has **created a bug** or **change** the **behaviour** somewhere in the application
-- Find the root of the bug easily
-- **Improve software quality**
-- Your teammates will thank you
+- ✅ **Verify** if a change (code) has **created a bug** or **changed** the **behavior** somewhere in the application
+- 🐛 Find the root of the bug easily
+- 📈 **Improve software quality**
+- 🙌 Your teammates will thank you
 
 
 # A simple good test:
 
 Has this specifications:
 
-## Clean code
+### Clean code
 
-Test code **remains "code"** so we should also try to respect good practices (ex: DRY, KISS, Single Responsibility... ), linters, recent methods of your langage.
-
-
-In order to keep the  **reliability, understanding et maintainability.** for your team.
-
-## Independence
-**"Unit"**. Should **not depend on the other tests**. For example tests **should be able to be run in any order.**
-
- **Avoid** as much as possible the **dependance** of other systems of your software/app like instantiations of database (for example), you can use mock [data or stubs](https://martinfowler.com/articles/mocksArentStubs.html) to avoid this.
+Test code **remains "code"** so we should also try to respect good practices (ex: DRY, KISS, Single Responsibility... ), linters, recent langage...
 
 
-## Test the necessary
+👉 In order to keep the  **reliability, understanding et maintainability.** for your team.
 
-I don't know if everyone will be aggree with this, but ...
+### Independence
+**"Unit"**. Should **not depend on the other tests**. For example:  tests should be able to be run in any order.
 
-You don't need to test all functions/routes/libs(...), or at least not right now... **Prioritize** the code that you change most often.
+ **Avoid** as much as possible the **dependance** of other systems/code of your software/app like instantiations for example, you can use mock [data or stubs](https://martinfowler.com/articles/mocksArentStubs.html) to avoid this.
 
-To me this is important because sometimes we see a **HUGE work** to do in order to cover all our app... We can **start step by step** and cover just 1 small part of our app. (let me know your opinion :) )
 
-Same with the scenarios of a unit test, we can cover 1,2 or only 3 scenarios/behaviours.
+### Test the necessary  
 
-## Undertanding
+> I don't know if everyone will be agree with this, but ...
 
-**Naming**. We should undertands the test when see the test name.
+We don't need to test all functions/routes/libs(...) or at least not right now... 😌
+
+- **Prioritize** the code that you change most often.
+
+We can be discouraged by the **HUGE work** to cover all our app... We can **start step by step** and cover just 1 small part of our app. (let me know your opinion 🙏 )
+
+
+### Understanding  📖
+
+**Naming**. We should understand the test when see the test name.
 
 This is good pattern that works for me:
 
-The name should be composed by the description, then the pattern 'should' (result we expect) et optionally, 'when' that describes the scenary or context.
+```
+[unit name] ... [should] ... [when] ... context
+```
+
+The name should be composed by the description, then the pattern 'should' (result we expect) et optionally, 'when' that describes the scenario or context.
 
 > Tips : If the test becomes bigger, divide it into small pieces.
 
@@ -106,7 +111,7 @@ test('hasRequiredParameters should be false when body request has not the requir
 
 ```
 
-[Test prelight request]
+[Test preFlight request]
 
 ```javascript
 
@@ -133,7 +138,7 @@ test('isPreFlightRequest should be throw when request has not method property', 
   t.is(typeof error, typeof new Error(), 'ispreFlightRequest should throw error');
 });
 ```
-
+### Run
 ![](https://i.imgur.com/JGRO8LK.png)
 
 
@@ -143,3 +148,4 @@ You can also read this
 - https://martinfowler.com/articles/mocksArentStubs.html
 - https://martinfowler.com/articles/mocksArentStubs.html
 
+# Thank for reading 🙇‍♂️
