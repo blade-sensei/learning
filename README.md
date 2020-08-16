@@ -301,6 +301,8 @@ Skills for engineer
     - [penser react](https://fr.reactjs.org/docs/thinking-in-react.html)
     - passer etat:  Il ne doit y avoir qu’une seule « source de vérité » pour toute donnée qui change dans une application React. En général, l’état est d’abord ajouté au composant qui en a besoin pour s’afficher. Ensuite, si d’autres composants en ont également besoin, vous pouvez faire remonter l’état dans l’ancêtre commun le plus proche. Au lieu d’essayer de synchroniser les états de différents composants, vous devriez vous baser sur des données qui se propagent du haut vers le bas.
     - scale https://medium.com/javascript-in-plain-english/setting-up-a-large-scale-react-application-2d50bc8a5ddb
+
+  - [structure:](https://www.google.com/url?q=https://medium.com/@robertsavian/my-awesome-react-redux-structure-6044e5007e22?source%3Demail-4c2a6c84c32-1596848470982-digest.reader------0-59------------------35d41802_f9b1_4629_a235_8bb6ccc6740e-1-c8174d72_7ceb_405a_9836_2c1e4c9c7b14----%26sectionName%3Dtop&source=gmail&ust=1597681728950000&usg=AFQjCNGkTiExte48xLLXp9jCakVjCmuzvA)
 - [ ] Testing Unit/Integration/E2E
 - [ ] Babel
 - [ ] Assyncronous
