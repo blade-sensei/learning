@@ -364,6 +364,9 @@ Skills for engineer
   - [ ] XSS
   - [ ] CSRF
 
+- Nodejs
+  - [Libraries](https://blog.bitsrc.io/23-insanely-useful-nodejs-libraries-you-should-know-in-2020-5a9b570d5416?source=email-4c2a6c84c32-1597539738315-digest.reader------0-49------------------9a33ddc9_d9c6_4070_9219_066aad4f8af7-1-182c334e_d8b6_408b_89e9_be3e7777009a----)
+
 ## Backend advance
 
 - [ ] Serverless
