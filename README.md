@@ -306,6 +306,17 @@ Skills for engineer
 
   - [structure:](https://www.google.com/url?q=https://medium.com/@robertsavian/my-awesome-react-redux-structure-6044e5007e22?source%3Demail-4c2a6c84c32-1596848470982-digest.reader------0-59------------------35d41802_f9b1_4629_a235_8bb6ccc6740e-1-c8174d72_7ceb_405a_9836_2c1e4c9c7b14----%26sectionName%3Dtop&source=gmail&ust=1597681728950000&usg=AFQjCNGkTiExte48xLLXp9jCakVjCmuzvA)
 
+- React Libraries
+  - https://medium.com/swlh/usefetch-a-custom-react-hook-36d5f5819d8
+
+- [React advance](https://www.google.com/url?q=https://medium.com/@dhanraj_acharya/concepts-to-become-an-advanced-react-developer-684d90c086c2?source%3Demail-4c2a6c84c32-1595898033932-digest.reader------0-59------------------7fd33b40_e88b_47be_b178_d8ebce2ff8e7-1-2db565a1_d200_4af5_ba8d_d5c1f1466138----%26sectionName%3Dtop&source=gmail&ust=1598178026959000&usg=AFQjCNHJGD1PeWHrFN9BHDI2mNRMRMjEGA)
+  - Fragments
+  - Hooks
+  - Context
+  - Composition
+  - Refs
+  - [Optimization](https://reactjs.org/docs/optimizing-performance.html)
+  - Flow
 
 - [ ] Testing Unit/Integration/E2E
 - [ ] Babel
@@ -457,3 +468,5 @@ Skills for engineer
 ## Useful links
 
 - html icons unicode/hex + examples : https://www.htmlsymbols.xyz/
+
+- Accessibility web: https://webaim.org/intro/
