@@ -24,10 +24,52 @@ function sum(array) {
 }
 ///
 
+const shiftWord = (word, left, right ) => {
+    const wordLetters = word.split('');
+    if (wordLetters.length <= 1) return word;
+    const wordIndexesMap = { ...wordLetters} 
+    let wordIndexesShifted = Object.keys(wordLetters).map(index => Number(index));
+    wordIndexesShifted = shiftLeft(wordIndexesShifted, left);
+    wordIndexesShifted = shiftRight(wordIndexesShifted, right);
+    const wordShiftedLetters = wordIndexesShifted.map(index => {
+        return wordIndexesMap[index];
+    });
+    return wordShiftedLetters.join('');
+}
+
+const shiftLeft = (wordIndexes, shift) => {
+    const restShift = getRestShift(wordIndexes.length, shift);
+    const shiftedIndexes = [];
+    if (restShift === 0) return word;
+    wordIndexes.forEach((indexWord, index) => {
+        let nextIndex = index - restShift;
+        if (nextIndex < 0) {
+            nextIndex = wordIndexes.length + nextIndex;
+        }
+        shiftedIndexes[nextIndex] = indexWord;
+    });
+    return shiftedIndexes;
+}
+
+const getRestShift = (indexesLength, shift) => shift % indexesLength;
+
+const shiftRight = (wordIndexes, shift) => {
+    const restShift = getRestShift(wordIndexes.length, shift);
+    const shiftedIndexes = [];
+    if (restShift === 0) return word;
+    wordIndexes.forEach((indexWord, index) => {
+        let nextIndex = index + restShift;
+        if (nextIndex > wordIndexes.length - 1) {
+            nextIndex = wordIndexes.length - nextIndex;
+        }
+        shiftedIndexes[nextIndex] = indexWord;
+    });
+    return shiftedIndexes;
+}
 
 
-const test = [2, 1, 8, 5] ;
+const test = 'happy';
+const left = 3;
+const right = 1;
 
-
-console.log(reductionCost(test));
-console.log('test');
+console.log(shiftWord(test, left, right));
