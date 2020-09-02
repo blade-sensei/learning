@@ -1,22 +1,33 @@
-/**
- * Definition for a binary tree node.
- * function TreeNode(val) {
- *     this.val = val;
- *     this.left = this.right = null;
- * }
- */
-/**
- * @param {TreeNode} root
- * @return {number}
- */
-const maxDepth = function (root) {
-  let depth = 0;
-  let content = root.length + 1;
-  while (content > 1) {
-    content /= 2;
-    depth++;
-  }
-  return depth;
-};
+function reductionCost(num) {
+    if (num < 2 || num.length > 2**50) return 0;
+    let totalCost = [];
 
-console.log(maxDepth([3, 9, 20, null, null, 15, 7]));
+    let numbers = [...num];
+    const number = 0;
+    while(numbers.length > 1) {
+        numbers = sortingAscending(numbers);
+        const cost = numbers[number] + numbers[number+1];
+        totalCost.push(cost);
+        numbers[number+1] = cost;
+        numbers.shift();
+    }
+
+    return sum(totalCost);
+}
+
+function sortingAscending(array) {
+    return array.sort((first, second) => first-second);
+}
+
+function sum(array) {
+    return array.reduce((a, b)=> a + b, 0);
+}
+///
+
+
+
+const test = [2, 1, 8, 5] ;
+
+
+console.log(reductionCost(test));
+console.log('test');
