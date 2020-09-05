@@ -1,6 +1,10 @@
 // https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/727/
 
 
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
 var removeDuplicates = function(nums) {
   let globalIndex = 0;
   while(hasDuplicates(nums)) {
@@ -8,7 +12,7 @@ var removeDuplicates = function(nums) {
       const uniqueValue = nums[globalIndex];
       
       while(isNextTheSame(uniqueValue, startIndexDuplicates, nums)) {
-          nums.splice(startIndexDuplicates, startIndexDuplicates + 1);
+          nums.splice(startIndexDuplicates + 1, 1);
       }
       
       globalIndex++;
