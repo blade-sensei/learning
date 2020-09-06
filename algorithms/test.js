@@ -1,15 +1,18 @@
-
 /**
  * @param {number[]} nums
- * @return {boolean}
- * https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/578/
+ * @return {number}
+ * https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/549/
  */
-var containsDuplicate = function(nums) {
-    const sorted = nums.sort((a,b) => a-b);
-    for (let i = 1; i < sorted.length; i++ ) {
-        if (sorted[i] === sorted[i-1]) {
-            return true;
+var singleNumber = function(nums) {
+    let found = [];
+    
+    for (let i = 0; i < nums.length; i++) {
+        if (found.includes(nums[i])) {
+            found = found.filter((num) => num !== nums[i]);
+        } else {
+            found.push(nums[i]);
         }
     }
-    return false;
+    console.log(found[0]);
+    return found[0]
 };
