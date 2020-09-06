@@ -1,61 +1,19 @@
 /**
- * @param {number[]} prices
- * @return {number}
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {void} Do not return anything, modify nums in-place instead.
  */
-var maxProfit = function(prices) {
-    let benefits = [];
-    let currentDayToBuy = 0;
-    while(!isDayToBuyExceed(currentDayToBuy, prices.length)) {
-        const dayToBuy = currentDayToBuy;
-        const bestDayToSell = getBenefitDay(dayToBuy, prices);
-        const benefit = getBenefit(dayToBuy, bestDayToSell, prices);
-        benefits.push(benefit);
-        console.error(benefits);
-        currentDayToBuy = bestDayToSell + 1;
-        
+var rotate = function(nums, k) {
+    let r = 0;
+    while (r < k) {
+        const lastNum = nums[nums.length - 1];
+        let previous = nums[0];
+        for (let internalIndex = 1; internalIndex < nums.length; internalIndex++ ) {
+            const current = nums[internalIndex];
+            nums[internalIndex] = previous;
+            previous = current;
+        }
+        nums[0] = lastNum;
+        r++;
     }
-    return sumBenefits(benefits);
-    
 };
-
-function getBestDayToBuy(start, prices) {
-    let bestDayToBuy = start;
-    let min = prices[start];
-    for (let i = start + 1; i <= prices.length -1; i++) {
-        if (prices[i] <= min) {
-            min = prices[i];
-            bestDayToBuy = i;
-        }
-    }
-    return bestDayToBuy;
-    
-}
-
-function sumBenefits(benefits) {
-    return benefits.reduce((first, second) => first + second, 0);
-}
-
-function getBenefit(dayToBuy, dayToSell, remainDays) {
-    return remainDays[dayToSell] - remainDays[dayToBuy];
-}
-
-function isDayToBuyExceed(noDay, noDays) {
-    return  (noDay >= noDays - 1)
-}
-
-function getBenefitDay(start, prices) {
-    let bestDayToSell = start;
-    let max = prices[start];
-    for (let i = start + 1; i <= prices.length - 1; i++ ) {
-        if (prices[i] < max) {
-            return bestDayToSell;
-        }
-        max = prices[i]
-        bestDayToSell = i;
-
-    }
-    return bestDayToSell;
-}
-
-const test = [2,4,1];
-console.log(maxProfit(test));
