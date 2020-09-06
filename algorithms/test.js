@@ -1,19 +1,15 @@
+
 /**
  * @param {number[]} nums
- * @param {number} k
- * @return {void} Do not return anything, modify nums in-place instead.
+ * @return {boolean}
+ * https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/578/
  */
-var rotate = function(nums, k) {
-    let r = 0;
-    while (r < k) {
-        const lastNum = nums[nums.length - 1];
-        let previous = nums[0];
-        for (let internalIndex = 1; internalIndex < nums.length; internalIndex++ ) {
-            const current = nums[internalIndex];
-            nums[internalIndex] = previous;
-            previous = current;
+var containsDuplicate = function(nums) {
+    const sorted = nums.sort((a,b) => a-b);
+    for (let i = 1; i < sorted.length; i++ ) {
+        if (sorted[i] === sorted[i-1]) {
+            return true;
         }
-        nums[0] = lastNum;
-        r++;
     }
+    return false;
 };
