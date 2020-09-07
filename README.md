@@ -475,3 +475,5 @@ Skills for engineer
 - html icons unicode/hex + examples : https://www.htmlsymbols.xyz/
 
 - Accessibility web: https://webaim.org/intro/
+
+- [What i learn from senior](https://medium.com/better-programming/things-i-learned-from-a-senior-software-engineer-3cf622f3d835?source=email-4c2a6c84c32-1599353808618-digest.reader------0-59------------------faa28c04_649e_443e_81ee_a0575e433256-1-99c2b642_771d_443e_89c8_7128f90d8c86----)
