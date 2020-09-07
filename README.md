@@ -298,6 +298,7 @@ Skills for engineer
   - [tools to debug](https://github.com/facebook/react/tree/master/packages/react-devtools)
   - react hooks basics mistakes: https://medium.com/better-programming/3-mistakes-junior-developers-make-with-react-function-component-state-8a744ab99a0d
   - hooks https://blog.logrocket.com/use-hooks-and-context-not-react-and-redux/
+  - useEffect https://medium.com/swlh/useeffect-4-tips-every-developer-should-know-54b188b14d9c
   - tips
     - Pouvez-vous la calculer en vous basant sur le reste de l’état ou les props de votre composant ? Si oui, ce n’est pas de l’état.
     - [penser react](https://fr.reactjs.org/docs/thinking-in-react.html)
