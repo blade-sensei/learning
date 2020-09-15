@@ -7,8 +7,8 @@
 - Full React hooks: https://www.youtube.com/watch?v=9xhKH43llhU&list=PLN3n1USn4xlmyw3ebYuZmGp60mcENitdM
 
 - Node.js + TypeScript: https://www.youtube.com/watch?v=1UcLoOD1lRM
-- [x] TypeScript Basics: https://www.youtube.com/watch?v=se72XMlG1Ro
-- TS Generics: https://www.youtube.com/watch?v=nViEqpgwxHE
+- [x] TypeScript Basics: https://www.youtube.com/watch?v=se72XMlG1Ro
+- [x] TS Generics: https://www.youtube.com/watch?v=nViEqpgwxHE
 
 - Understand hooks internal: https://www.youtube.com/watch?v=1jWS7cCuUXw&t=764s
 
