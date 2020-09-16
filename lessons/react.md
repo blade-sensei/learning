@@ -4,7 +4,7 @@
 - [x] Full tutorial: https://www.youtube.com/watch?v=p6c7QA9ofvI&list=PLN3n1USn4xlntqksY83W3997mmQPrUmqM
 
 - [x] React hooks: https://www.youtube.com/watch?v=f687hBjwFcM
-- [ ] Full React hooks: https://www.youtube.com/watch?v=9xhKH43llhU&list=PLN3n1USn4xlmyw3ebYuZmGp60mcENitdM
+- [x] Full React hooks: https://www.youtube.com/watch?v=9xhKH43llhU&list=PLN3n1USn4xlmyw3ebYuZmGp60mcENitdM
 
 - Node.js + TypeScript: https://www.youtube.com/watch?v=1UcLoOD1lRM
 - [x] TypeScript Basics: https://www.youtube.com/watch?v=se72XMlG1Ro
