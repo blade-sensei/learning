@@ -1,6 +1,6 @@
 # Links to start
 
-- Introduction Typescript React : https://www.youtube.com/watch?v=Z5iWr6Srsj8&t=830s
+- [x] Introduction Typescript React : https://www.youtube.com/watch?v=Z5iWr6Srsj8&t=830s
 - [x] Full tutorial: https://www.youtube.com/watch?v=p6c7QA9ofvI&list=PLN3n1USn4xlntqksY83W3997mmQPrUmqM
 
 - React hooks: https://www.youtube.com/watch?v=f687hBjwFcM
