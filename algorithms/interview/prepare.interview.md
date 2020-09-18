@@ -26,10 +26,12 @@ Some of the questions are for junior/mid or event senior but it's also good to k
 ### Backend
 
 - review this questions: https://www.fullstack.cafe/blog/backend-developer-interview-questions
+- nodejs: https://www.fullstack.cafe/blog/node-js-interview-questions
 
 ### Frontend
 
 - https://www.fullstack.cafe/blog/front-end-developer-interview-questions
+- react: https://www.fullstack.cafe/blog/react-js-interview-questions
 
 
 ## Practice
