@@ -52,3 +52,8 @@ Some of the questions are for junior/mid or event senior but it's also good to k
   - https://www.freecodecamp.org/news/how-to-approach-any-algorithm-interview-without-panicking-b6d7ae5c050/ 
 
 - Prepare for do CLEAN code "small functions" "good variable names" are the most essential
+
+## Questions
+
+- web: https://tms-outsource.com/blog/posts/web-developer-interview-questions/
+- problems: https://www.indeed.com/career-advice/interviewing/web-developer-interview-questions
