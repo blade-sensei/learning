@@ -480,3 +480,4 @@ Skills for engineer
 - [What i learn from senior](https://medium.com/better-programming/things-i-learned-from-a-senior-software-engineer-3cf622f3d835?source=email-4c2a6c84c32-1599353808618-digest.reader------0-59------------------faa28c04_649e_443e_81ee_a0575e433256-1-99c2b642_771d_443e_89c8_7128f90d8c86----)
 - Work routine: https://levelup.gitconnected.com/the-16-hour-developer-workout-6a9e10afa8c2
 - [runtimes v8 vs chakra](https://developers.redhat.com/blog/2016/05/31/javascript-engine-performance-comparison-v8-charkra-chakra-core-2/)
+- [why is nodejs single thread](https://stackoverflow.com/questions/17959663/why-is-node-js-single-threaded)
