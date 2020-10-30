@@ -358,6 +358,8 @@ Skills for engineer
 - [ ] Take a framework
 - [ ] Websockets
 - [ ] Dependendy Injection
+  - [ ] https://www.youtube.com/watch?v=EPv9-cHEmQw
+  - [ ] https://www.freecodecamp.org/news/a-quick-intro-to-dependency-injection-what-it-is-and-when-to-use-it-7578c84fa88f/
 - [ ] Database
   - [ ] ORM
 
@@ -457,6 +459,10 @@ Skills for engineer
 - [ ] Test-driven
 - [ ] CI
 - [ ] Behavior-driven
+
+### Clean Code
+
+- [ ] First introduction to clean code by Uncle Bob: https://www.youtube.com/watch?v=7EmboKQH8lM
 
 ## Network
 
