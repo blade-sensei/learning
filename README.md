@@ -109,6 +109,8 @@ Skills for engineer
 - [ ] types of test https://medium.com/swlh/levels-of-software-testing-b943ce41a2c7
 - [ ] good practices https://dzone.com/articles/unit-testing-best-practices-how-to-get-the-most-ou
 - [ ] practices
+- [ ] Mock or real API calls: https://www.confluent.io/blog/choosing-between-mock-api-and-real-backend/
+- [ ] About Stubs and Mocks for API testing: https://www.valentinog.com/blog/fake/
 
 ### Debug
 
