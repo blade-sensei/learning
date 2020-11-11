@@ -346,6 +346,7 @@ Skills for engineer
 
 - [ ] GO/Java/Python
 - [ ] Testing
+  - [ ] https://dev.to/jackcaldwell/mocking-es6-class-methods-with-jest-bd7 Class mock
 - [ ] Debug tools
 - [ ] Deployment
 - [ ] Packaging
