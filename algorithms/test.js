@@ -1,7 +1,8 @@
 const conflicts = {
   first: 'first',
   test: 'test',
-  lol: 'ok'
+  lol: 'ok',
+  second: 'second-conf',
 };
 
 console.log(conflicts);
