@@ -1,6 +1,7 @@
 const conflicts = {
   first: 'first',
-  test: 'test'
+  test: 'test',
+  lol: 'ok'
 };
 
 console.log(conflicts);
