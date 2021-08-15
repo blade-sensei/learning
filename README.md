@@ -481,6 +481,21 @@ Skills for engineer
 
 - [ ] buttons https://www.24joursdeweb.fr/2019/et-tu-cliques-a-cote-du-bouton/
 
+## Programming Books
+
+- Clean Architecture: A Craftsman's Guide to Software Structure and Design: A Craftsman's Guide to Software Structure and Design (Robert C.
+- Growing Object-Oriented Software, Guided by Tests
+- The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws
+- Refactoring: Improving the Design of Existing Code
+- Test Driven Development: By Example
+- Design Patterns: Elements of Reusable Object-Oriented Software
+- Implementing Domain-Driven Design
+- Domain-Driven Design: Tackling Complexity in the Heart of Software
+
+![books1](https://user-images.githubusercontent.com/14896541/129491059-dd2854b1-ead2-4f71-9789-658611d0c076.PNG)
+![books2](https://user-images.githubusercontent.com/14896541/129491063-dc70cf03-c42a-42d7-89a3-1b1b18b68651.PNG)
+
+
 ## Useful links
 
 - html icons unicode/hex + examples : https://www.htmlsymbols.xyz/
