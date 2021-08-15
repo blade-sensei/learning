@@ -492,8 +492,6 @@ Skills for engineer
 - Implementing Domain-Driven Design
 - Domain-Driven Design: Tackling Complexity in the Heart of Software
 
-![books1](https://user-images.githubusercontent.com/14896541/129491059-dd2854b1-ead2-4f71-9789-658611d0c076.PNG)
-![books2](https://user-images.githubusercontent.com/14896541/129491063-dc70cf03-c42a-42d7-89a3-1b1b18b68651.PNG)
 
 
 ## Useful links
