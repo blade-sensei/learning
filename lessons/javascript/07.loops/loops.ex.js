@@ -6,6 +6,8 @@
  * ["BMW 3 Series", "Audi A5", "Fiat Panda ", "Tesla Model X", "Nissan Leaf"];
  */
 
+const carNames = ["BMW 3 Series", "Audi A5", "Fiat Panda ", "Tesla Model X", "Nissan Leaf"];
+
 /**
  * create another array using the carNames to create a variable "Cars"
  * this array will contain objects, each object is will have the property name
@@ -14,12 +16,24 @@
  * output: [{name: "BMW 3 Series"}, {"name": "Tesla Model X"}, ......so on]
  */
 
+const Cars = []
+for (let i = 0; i < carNames.length; i++) {
+    Cars.push({ name: carNames[i] });
+}
+
 /**
  * given the new array, you will add a car type
  * if the brand is "Tesla" or "Nissan" add a type: "electric"
  * otherwise add the type: "gas"
  * output: [{name: "BMW 3 Series", type: "gas"}, .... {name: "Tesla Model X", type: "electric"}, ......so on]
  */
+
+for (let i = 0; i < carNames.length; i++) {
+    if (Cars.name === 'Tesla' || 'Nissan') {
+        Cars[i].type = "électrique";
+} else {
+    Cars[i].type = "essence";
+}}
 
 /**
  * given the new array, you will add a new car "Ford Focus Electric" which is an electric car
