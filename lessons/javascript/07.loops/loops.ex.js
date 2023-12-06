@@ -62,6 +62,6 @@ const electricCars =  Cars.filter(function(car) {
  */
 
 function convert (Cars) {
-    const message = name + 'is: '+ type
+    const message = 'the car:' + car.name + 'is: '+ car.type
     Cars.forEach((car) => console.log(message))
 }
