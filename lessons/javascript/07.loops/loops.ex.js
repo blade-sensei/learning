@@ -30,18 +30,29 @@ for (let i = 0; i < carNames.length; i++) {
 
 for (let i = 0; i < carNames.length; i++) {
     if (Cars.name === 'Tesla' || 'Nissan') {
-        Cars[i].type = "électrique";
+        Cars[i].type = "Electric";
 } else {
-    Cars[i].type = "essence";
+    Cars[i].type = "gas";
 }}
 
 /**
  * given the new array, you will add a new car "Ford Focus Electric" which is an electric car
  */
+const newCar = {name: "Ford Focus", type: "Electric"}
+
+const addCar = (car) => {
+    Cars.push(car);
+};
+addCar(newCar);
 
 /**
  * given the new array, create a new array which contains only electric cars
  */
+
+const electricCars =  Cars.filter(function(car) {
+    return (Cars.type === "Electric");
+});
+
 
 /**
  * given the new array, create a function to print a message "the car: [name] is : [type]"
@@ -49,3 +60,8 @@ for (let i = 0; i < carNames.length; i++) {
  * the car: Tesla Model X is: electric
  * the car: ....
  */
+
+function convert (Cars) {
+    const message = name + 'is: '+ type
+    Cars.forEach((car) => console.log(message))
+}
