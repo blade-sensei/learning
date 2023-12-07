@@ -33,6 +33,15 @@ function info(message) {
  * print: "this is a log message: 6"
  */
 
+const log = info;
+
+function multiply(track, a, b) {
+  const result = a * b;
+  track(result);
+}
+
+multiply(log, 3, 2)
+
 function changeObject(object) {
   const copy = object;
 
@@ -42,4 +51,6 @@ function changeObject(object) {
 const object = { code: 'js', editor: 'sublime' };
 changeObject(object);
 // guess the oupout
-// object has changed ?
+// object has changed ? oui, object = { code: 'js', editor: 'vscode' }
+
+

@@ -15,9 +15,9 @@ x = 30;
 
 const r = s + z;
 
-// z = ?
-// s = ?
-// r = ?
+z = 54
+s = 80
+r = 114
 
 /**
  * strings
@@ -28,17 +28,16 @@ const k = 'food';
 let c = g;
 c = k;
 g = 'changed';
-
 const t = g + ' ' + 'random';
 const h = c + ' test';
 
 const y = c + 'title';
 const p = t + ' and ' + h;
 
-// t = ?
-// h = ?
-// y =  ?
-// z = ?
+t = 'changed' + ' ' + 'random'
+h = 'food' + ' test'
+y =  'food' + 'title'
+z = 54
 
 /**
  * references
