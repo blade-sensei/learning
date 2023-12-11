@@ -29,6 +29,6 @@ function splitVariables(variables) {
 
 console.log(minimumKits(5, [5, 3, 4, 1, 2]));
 
-function sum(list) {
-  return list.reduce((a, b) => a + b, 0);
+function sum(numbers) {
+  return numbers.reduce((a, b) => a + b, 0);
 }
