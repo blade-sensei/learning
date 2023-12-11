@@ -22,8 +22,8 @@ function convertVariablesToIntegers(vars) {
   return vars.map((variable) => Number(variable));
 }
 
-function splitVariables(variables) {
-  const [testCasesLength, ...testCasesVariables] = variables;
+function splitVariables(variablesList) {
+  const [testCasesLength, ...testCasesVariables] = variablesList;
   return [testCasesLength, testCasesVariables];
 }
 
