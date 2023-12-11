@@ -18,8 +18,8 @@ function getVariableInArray(testInput) {
   return variables;
 }
 
-function convertVariablesToIntegers(variables) {
-  return variables.map((variable) => Number(variable));
+function convertVariablesToIntegers(vars) {
+  return vars.map((variable) => Number(variable));
 }
 
 function splitVariables(variables) {
