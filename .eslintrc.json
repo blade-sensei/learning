@@ -1,6 +1,9 @@
 {
-    "extends": ["eslint-config-sensei"],
-    "rules": {
-        "no-shadow": 0
-    }
+  "extends": ["airbnb-base"],
+  "rules": {
+    "no-shadow": 0
+  },
+  "env": {
+    "jest": true
+  }
 }
