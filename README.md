@@ -109,6 +109,8 @@ Skills for engineer
 - [ ] types of test https://medium.com/swlh/levels-of-software-testing-b943ce41a2c7
 - [ ] good practices https://dzone.com/articles/unit-testing-best-practices-how-to-get-the-most-ou
 - [ ] practices
+- [ ] Mock or real API calls: https://www.confluent.io/blog/choosing-between-mock-api-and-real-backend/
+- [ ] About Stubs and Mocks for API testing: https://www.valentinog.com/blog/fake/
 
 ### Debug
 
@@ -344,6 +346,7 @@ Skills for engineer
 
 - [ ] GO/Java/Python
 - [ ] Testing
+  - [ ] https://dev.to/jackcaldwell/mocking-es6-class-methods-with-jest-bd7 Class mock
 - [ ] Debug tools
 - [ ] Deployment
 - [ ] Packaging
@@ -358,6 +361,8 @@ Skills for engineer
 - [ ] Take a framework
 - [ ] Websockets
 - [ ] Dependendy Injection
+  - [ ] https://www.youtube.com/watch?v=EPv9-cHEmQw
+  - [ ] https://www.freecodecamp.org/news/a-quick-intro-to-dependency-injection-what-it-is-and-when-to-use-it-7578c84fa88f/
 - [ ] Database
   - [ ] ORM
 
@@ -458,6 +463,10 @@ Skills for engineer
 - [ ] CI
 - [ ] Behavior-driven
 
+### Clean Code
+
+- [ ] First introduction to clean code by Uncle Bob: https://www.youtube.com/watch?v=7EmboKQH8lM
+
 ## Network
 
 - [skills](https://www.zippia.com/network-engineer-jobs/skills/)
@@ -471,6 +480,19 @@ Skills for engineer
 ## Design UX
 
 - [ ] buttons https://www.24joursdeweb.fr/2019/et-tu-cliques-a-cote-du-bouton/
+
+## Programming Books
+
+- Clean Architecture: A Craftsman's Guide to Software Structure and Design: A Craftsman's Guide to Software Structure and Design (Robert C.
+- Growing Object-Oriented Software, Guided by Tests
+- The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws
+- Refactoring: Improving the Design of Existing Code
+- Test Driven Development: By Example
+- Design Patterns: Elements of Reusable Object-Oriented Software
+- Implementing Domain-Driven Design
+- Domain-Driven Design: Tackling Complexity in the Heart of Software
+
+
 
 ## Useful links
 
