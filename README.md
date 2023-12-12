@@ -481,6 +481,36 @@ Skills for engineer
 
 - [ ] buttons https://www.24joursdeweb.fr/2019/et-tu-cliques-a-cote-du-bouton/
 
+## DDD (Domain Driven Design)
+
+
+### Links
+
+- [Book](https://learning.oreilly.com/library/view/patterns-principles-and/9781118714706/)
+  
+## Clean Architecture
+
+### Links
+
+- [D'une architecture web MVC à une architecture Clean Hexagonale - Céline Gilet 
+](https://www.youtube.com/watch?v=e3K0_URBxRI&t=2363s)
+
+- [Simple french intro](https://www.youtube.com/watch?v=2H1rdx3al_8&t=673s)
+
+
+- [Uncle Bob clean architecture](https://www.youtube.com/watch?v=Nsjsiz2A9mg&t=2496s)
+
+- https://leandeep.com/clean-architecture/
+
+
+## TDD (Test Driven Design)
+
+### Links
+
+- [Interesting](https://www.youtube.com/watch?v=KyFVA4Spcgg&t=2559s)
+
+- [Uncle bob about TDD](https://www.youtube.com/watch?v=58jGpV2Cg50)
+
 ## Programming Books
 
 - Clean Architecture: A Craftsman's Guide to Software Structure and Design: A Craftsman's Guide to Software Structure and Design (Robert C.
