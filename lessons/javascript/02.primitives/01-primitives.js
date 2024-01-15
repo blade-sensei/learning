@@ -2,6 +2,7 @@
 
 // **strings**
 // different forms to create a string
+
 const string1 = 'Une chaîne de caractères primitive';
 const string2 = 'Là encore une valeur de chaîne de caractères primitive';
 const string3 = 'Et ici aussi';
@@ -27,7 +28,7 @@ console.log('this value', test);
 let variableWithoutValue;
 console.log('this value', variableWithoutValue);
 
-// FYI to how the type of your variable use the "keyword" typeof
+// FYI to know the type of your variable use the "keyword" typeof
 const theTypeOfMyVar = typeof number;
 console.log(typeof number);
 console.log(typeof string1);

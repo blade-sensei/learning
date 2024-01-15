@@ -35,7 +35,7 @@ function Objects2() {
   // To find an element we use the "INDEX" and index like saying: "The Rang/Position of the element in the array"
   // note that the position number starts by 0
   // if we use the INDEX = 0, it means the FIRST element of the array
-  // INDEX = 3 means the THIRD element
+  // INDEX = 3 means the FOURTH element
 
   const first = simple[0];
   const game = arrayContainsArray[2];

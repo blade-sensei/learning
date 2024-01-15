@@ -1,34 +1,26 @@
-function minimumKits(totalKits, kitsStrength) {
-  const chooseKits = [];
-  let aliceTotalStrength = 0;
-  let bobTotalStrength = 0;
-  let kitIndex = 0;
-  while (bobTotalStrength <= aliceTotalStrength) {
-    aliceTotalStrength = sum(kitsStrength.slice(kitIndex + 1));
-    const kit = kitsStrength[kitIndex];
-    bobTotalStrength += kit;
-    chooseKits.push(kit);
-    kitIndex++;
-  }
-  return chooseKits.length;
+function doStep1(init, callback) {
+  const result = init + 1;
+  callback(result);
 }
 
-function getVariableInArray(testInput) {
-  const variables = testInput.split('\n');
-  return variables;
+function doStep2(init, callback) {
+  const result = init + 2;
+  callback(result);
 }
 
-function convertVariablesToIntegers(vars) {
-  return vars.map((variable) => Number(variable));
+function doStep3(init, callback) {
+  const result = init + 3;
+  callback(result);
 }
 
-function splitVariables(variablesList) {
-  const [testCasesLength, ...testCasesVariables] = variablesList;
-  return [testCasesLength, testCasesVariables];
+function doOperation() {
+  doStep1(0, (result1) => {
+    doStep2(result1, (result2) => {
+      doStep3(result2, (result3) => {
+        console.log(`result: ${result3}`);
+      });
+    });
+  });
 }
 
-console.log(minimumKits(5, [5, 3, 4, 1, 2]));
-
-function sum(numbers) {
-  return numbers.reduce((a, b) => a + b, 0);
-}
+doOperation();
