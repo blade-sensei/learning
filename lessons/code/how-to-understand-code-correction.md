@@ -1,0 +1,17 @@
+| ligne/vars | menu       | prix | numero | commande                                                     | commande2            | terminal                                                     |
+| ---------- | ---------- | ---- | ------ | ------------------------------------------------------------ | -------------------- | ------------------------------------------------------------ |
+|            | "marFirst" |      |        |                                                              |                      |                                                              |
+|            |            | 7    |        |                                                              |                      |                                                              |
+|            |            |      | "20"   |                                                              |                      |                                                              |
+|            |            |      |        | menu: marfirst<br />prixCommande: 7<br />numeroCommande: "20" |                      |                                                              |
+|            |            |      |        |                                                              |                      | menu: marfirst<br />prixCommande: 7<br />numeroCommande: "20" |
+|            |            |      |        | menu: bigmac<br />prixCommande: 12<br />numeroCommande: "20" |                      |                                                              |
+|            |            |      |        |                                                              |                      | menu: bigmac<br />prixCommande: 12<br />numeroCommande: "20  |
+|            |            |      |        |                                                              | numeroCommande: "19" |                                                              |
+|            |            |      |        |                                                              |                      | "bonjour client" undefined                                   |
+|            |            |      |        |                                                              |                      | "456789778"<br />{<br />menu: bigmac<br />prixCommande: 12<br />numeroCommande: "20"} |
+|            |            |      |        |                                                              |                      |                                                              |
+|            |            |      |        |                                                              |                      |                                                              |
+|            |            |      |        |                                                              |                      |                                                              |
+|            |            |      |        |                                                              |                      |                                                              |
+
