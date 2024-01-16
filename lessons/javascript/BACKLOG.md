@@ -16,17 +16,17 @@ DEV Niveau 1
 - objects 🟢
   - Récupérer des données, rajouter des données 🟢
 - savoir voir les correspondance quand on copie une données / comment la valeur est copié / traversé 🟢
-- savoir le parcours d'une app 🔵
-  - lecture 🔵
-  - execution 🔵
-  - importation ordre 🔵
-- définition vs call 🔵
+- savoir le parcours d'une app 🟠 [lessons/code/how-to-understand-code.md/lecture-interpretion](../../lessons/code/how-to-understand-code.md#lecture--interpréation)
+  - lecture 🟠
+  - execution 🟠
+  - importation ordre 🟠 [lessons/code/how-to-understand-code.md/importation](../../lessons/code/how-to-understand-code.md)
+- définition vs call 🟠 [functions](../javascript/05.functions/01-Functions.md)
 - arrays: 🟢
   - array dans array 🟢
 - function 🟢
   - stockage d'une fonction dans variables / objects 🟢
-  - function anonyme 🟠
-  - des callbacks 🟠
+  - function anonyme 🔵
+  - des callbacks 🔵
     - syncrone + example 🟠 (faire une lib qui donne par le retour de la func)
     - callback hell
 - Game
