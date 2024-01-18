@@ -140,6 +140,8 @@ function totalPrix() {
 totalPrix();
 ```
 
+
+
 Parcours d'execution par ligne 
 
 - import du fichier mathématiques
