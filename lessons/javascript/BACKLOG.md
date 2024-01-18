@@ -20,15 +20,15 @@ DEV Niveau 1
   - lecture 🟢
   - execution 🟢
   - importation ordre 🟢 [lessons/code/how-to-understand-code.md/importation](../../lessons/code/how-to-understand-code.md)
-- définition vs call 🟠 [functions](../javascript/05.functions/01-Functions.md)
+- définition vs call 🟢 [functions](../javascript/05.functions/01-Functions.md)
 - arrays: 🟢
   - array dans array 🟢
 - function 🟢
   - stockage d'une fonction dans variables / objects 🟢
-  - function anonyme 🔵
-  - des callbacks 🔵
+  - function anonyme 🟠
+  - des callbacks 🟠
     - syncrone + example 🟠 (faire une lib qui donne par le retour de la func)
-    - callback hell
+    - callback hell 🟠
 - Game
 
 DEV Niveau 2
