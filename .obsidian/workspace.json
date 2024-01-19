@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/javascript/05.functions/02.Functions-callback.md",
+                "file": "lessons/javascript/05.functions/05.Functions-anonym.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lessons/javascript/05.functions/02.Functions-callback.md",
+                "file": "lessons/javascript/05.functions/05.Functions-anonym.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lessons/javascript/05.functions/02.Functions-callback.md",
+                "file": "lessons/javascript/05.functions/05.Functions-anonym.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lessons/javascript/05.functions/02.Functions-callback.md"
+                "file": "lessons/javascript/05.functions/05.Functions-anonym.md"
               }
             }
           }
@@ -148,11 +148,13 @@
   },
   "active": "e8c3300f94c91b46",
   "lastOpenFiles": [
-    "lessons/javascript/05.functions/01-Functions.md",
     "lessons/javascript/05.functions/02.Functions-callback.md",
+    "lessons/javascript/05.functions/01-Functions.md",
     "lessons/javascript/05.functions/05.Functions-anonym.md",
-    "1_YoTPCR_l1ApgGGfMp6ZzmQ.png",
+    "lessons/practice/Level 1 Test.md",
+    "lessons/practice/jeux-de-loie.md",
     "Untitled.md",
+    "1_YoTPCR_l1ApgGGfMp6ZzmQ.png",
     "lessons/code/how-to-understand-code.md"
   ]
 }
