@@ -86,10 +86,10 @@ for (let i = 0; i <= list.length; i++) {
 }
 ```
 
-- description d'erreur: 
-- solution: 
-- si i = 2, quel sera le(s) message(s) dans la console ? 
-- si i = 1, quel sera le(s) message(s) dans la console ? 
+- description d'erreur?: 
+- solution?: 
+- si i = 2, quel sera le(s) message(s) dans la console ? :
+- si i = 1, quel sera le(s) message(s) dans la console ? :
 
 ## 5. Callbacks
 
