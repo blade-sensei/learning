@@ -25,10 +25,10 @@ DEV Niveau 1
   - array dans array 🟢
 - function 🟢
   - stockage d'une fonction dans variables / objects 🟢
-  - function anonyme 🟠
-  - des callbacks 🟠
-    - syncrone + example 🟠 (faire une lib qui donne par le retour de la func)
-    - callback hell 🟠
+  - function anonyme 🟢
+  - des callbacks 🟢
+    - syncrone + example 🟢 (faire une lib qui donne par le retour de la func)
+    - callback hell 🟢
 - Game
 
 DEV Niveau 2

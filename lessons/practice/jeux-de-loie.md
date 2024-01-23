@@ -23,7 +23,6 @@ Le jeu de l’oie comprend des cases particulières. Voilà les règles concern
 - **Les cases de l’oie : 9 – 18 – 27 – 36 – 45 – 54** qui ont un dessin d’oie.  
     **Avancer du même montant que son lancé effectué**. Par exemple, si j’ai atterri sur une case “oie” en ayant réalisé 8 au lancer, j’avance encore de 8 cases. 
 - **Le pont : case 6 : aller directement à la case 12.**
-- **Le labyrinthe : la case 42 : retourner à la case 30.** 
 - **La tête de mort : la case 58 :** Oui, un vrai signe de mort… Du calme, vous n’allez pas perdre la partie 😅. Vous êtes juste contraint de….. **recommencer la partie depuis le début. Retour donc à la case 1 !**
 
 Au début de la partie seulement: 

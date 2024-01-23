@@ -110,3 +110,37 @@ function filter(array, conditionFiltrage) {
 - rajouter le code qui va permettre de filtrer que les nombres supérieurs à 40. afin de se retrouver avec une liste: [54, 200]
 - écrire le code qui permet d'executer tout le programme
 
+## 6. Lecture / Ecriture
+
+
+```javascript
+
+console.log('calcul B');
+function add(a, b) {
+  console.log('Calcul a + b')
+  return a+b;
+}
+
+function printTotalPrix() {
+  console.log('articles')
+  //code à completer ici
+  console.log('prix total', total);
+}
+
+const panier = [
+ {name: "BD Asterix", prix: 10},
+ {name: "DVD Pokemon", prix: 20},
+]
+
+console.log('calcul A');
+printTotalPrix(panier);
+```
+
+- Si on execute ce code, il a des erreurs, à vous de réparer et faire en sorte d'avoir la fonction "printTotalPrix" fonctionnelle. Elle doit à la fin afficher le prix total 
+- Peut tu indiquer (dans l'ordre d'apparition) les messages qui vont être affichés dans la console ?
+- Maintenant modifier le code afin d'ajouter une condition quand le panier est vide.
+	```javascript
+	printTotalPrix();
+	//print total prix doit SEULEMENT afficher un message "panier vide"
+	  
+	```
