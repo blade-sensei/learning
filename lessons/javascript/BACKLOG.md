@@ -34,33 +34,34 @@ DEV Niveau 1
 DEV Niveau 2
 
 - Expression statement 🟠 [lessons/javascript/11.expression-statement/01-Expression-And-Statement.md](../javascript/11.expression-statement/01-Expression-And-Statement.md)
-- objects 2 🟠
-  - attention avec les références [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md)
+- objects 2 | array 2🟠
+  - attention avec les références 🟠 [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md)
     - example de passage en param de function qui n'est pas "pure" 
+  - realiser des copies d objects/arrays 🔵
 - functions 2 🔵
-  - comment utiliser les fonctions pour faire de l'orienté object
+  - comment utiliser les fonctions pour faire de l'orienté object 🔵
   - arrow function pourquoi ?
-- L'asyncroyne 🔵
-  - promises
-  - await / async
-  - Comment faire de l'ecriture/lecture fichiers
-    - transformer JS. JSON
-- conditions 2
-  - court circuit
-  - opérators logiques complexe
-  - inverser un opérator logique
-- operators
-  - logique
-  - arithmetique
-    - ++ -- %
-  - assignation
-    - += -=
-  - comparaison
-  - operator this
+- conditions 2 🔵
+  - court circuit 🔵
+  - opérators logiques complexe 🔵
+  - inverser un opérator logique 🔵
+- operators 🔵
+  - logique 🔵
+  - arithmetique 🔵
+    - ++ -- % 🔵
+  - assignation 🔵
+    - += -= 🔵
+  - comparaison 🔵
+  - operator this 🔵
 - hoisting
-- scopes
-  - global
-  - local
+- scopes 🔵
+  - global 🔵
+  - local 🔵
+- L'asyncroyne 🔵
+  - promises 🔵
+  - await / async 🔵
+  - Comment faire de l'ecriture/lecture fichiers 🔵
+    - transformer JS. JSON 🔵
 - les classes
   - POO 
     - pourquoi méthodes publique
