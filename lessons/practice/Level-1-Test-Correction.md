@@ -1,4 +1,3 @@
-
 ## 1.  Vocabulaire
 
 En utilisant les mots 
@@ -38,22 +37,23 @@ hello();
 ```
 
 
-- on  [...] une variable "a" et on [...] une valeur "test".
-- on [...] une variable "b".
-- on [...] la valeur "code" à la variable "a"
-- on [...] une variable "client"
-- le type de variable "client" est un: [...]
-- l'object client possède 2 [...] , avec la première comme type: [...]
-- client.commande  est de type  [...]
-- on [...] la fonction "hello" qui a en [...] un client
-- si on [...] , la fonction hello va être exécutée
+- on [déclare] une variable "a" et on [assigne] une valeur "test".
+- on [déclare] une variable "b".
+- on [re-assigne] la valeur "code" à la variable "a"
+- on [déclare] une variable "client"
+- le type de variable "client" est un: [objet]
+- l'object client possède 3 [propriétés] , avec la première comme type: [string]
+- client.commande est de type [function]
+- on [définit] la fonction "hello" qui a un [paramètre] un client
+- si on [appelle] , la fonction hello va être exécutée
 
 ## 2.  Types de données
 
 - donner les deux groupe de "type de variables"
-	- [....]
+	- [primitives]
+	- [objects]
 		- donner au moins 3 types de variable pour ce groupe
-	- [....]
+		- [boolean, number, string]
 
 ## 3. Copies
 
@@ -67,13 +67,12 @@ const s = x + a;
 const r = s + z;
 ```
 Si ce code est exécuté alors donner les valeurs de:
-- b 
-- x
-- z
-- s
-- r
-- a
-
+- b = 20
+- x = 10
+- z = 60
+- s = 60
+- r = 120
+- a = 50
 ## 4. Où est l'erreur
 
 ```javascript
@@ -86,10 +85,14 @@ for (let i = 0; i <= list.length; i++) {
 }
 ```
 
-- description d'erreur?: 
-- solution?: 
-- si i = 2, quel sera le(s) message(s) dans la console ? :
-- si i = 1, quel sera le(s) message(s) dans la console ? :
+- description d'erreur?:  `Cannot read property 'toString' of undefined`
+	- on ne peut pas utiliser la fonction toString() sur une valeur undefined
+	- si on utilise <=, alors  i pourra avoir la valeur de la taille de la liste, c'est à dire 5, mais si on a i = 5 lorsqu'on fera list[i],  on va récupérer une valeur "undefined", car il n'y a pas de 6eme élément dans la liste
+- solution?:  dans la boucle for utiliser la condition avec le signe inférieur < et non pas <= 
+- si i = 2, quel sera le(s) message(s) dans la console ? : numero: 3
+- si i = 1, quel sera le(s) message(s) dans la console ? :  c'est mon numéro préféré
+
+> 🚨 ICI c'est il y a un petit piège, si i = 2 alors on aura list[2] ce qui correspond à la 3eme valeur de la liste donc 3.. donc if (3 === 2) donnera FALSE.. 
 
 ## 5. Callbacks
 
@@ -105,6 +108,24 @@ function filter(array, conditionFiltrage) {
    }
    return listeFinal;
 }
+
+// code qui est correcte: 👍
+function conditionFiltrage(element) {
+  if(element > 40) {
+    return true
+  } else {
+    return false
+  }
+}
+filter(list, conditionFiltrage)
+
+// code qui est idéal: ⭐️⭐️⭐️
+function conditionFiltrage(element) {
+  return element > 40;
+}
+filter(list, conditionFiltrage)
+
+
 ```
 
 - rajouter le code qui va permettre de filtrer que les nombres supérieurs à 40. afin de se retrouver avec une liste: [54, 200]
@@ -121,10 +142,18 @@ function add(a, b) {
   return a+b;
 }
 
-function printTotalPrix() {
-  console.log('articles')
-  //code à completer ici
+function printTotalPrix(panier) {
+ if (!panier) {
+   console.log('panier vide');
+ } else {
+
+  console.log('articles');
+  let total = 0;
+  for (const element of panier) {
+    total = add(total, element.prix);
+  }
   console.log('prix total', total);
+ }
 }
 
 const panier = [
@@ -134,6 +163,7 @@ const panier = [
 
 console.log('calcul A');
 printTotalPrix(panier);
+printTotalPrix(); //panier vide
 ```
 
 - Si on execute ce code, il y a des erreurs, à vous de réparer et faire en sorte d'avoir la fonction "printTotalPrix" fonctionnelle. Elle doit à la fin afficher le prix total 

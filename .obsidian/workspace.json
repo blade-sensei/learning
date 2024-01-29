@@ -4,22 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "81f206d4d7fe6b87",
+        "id": "91103330845584fd",
         "type": "tabs",
         "children": [
           {
-            "id": "e8c3300f94c91b46",
+            "id": "1f78e5bcb23cff34",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/practice/jeux-de-loie.md",
+                "file": "lessons/javascript/11.expression-statement/01-Expression-And-Statement.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "30343c2579db3704",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "lessons/javascript/03.objects/02-objects-references.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5c50c8bde7a0c492",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "lessons/javascript/03.objects/02-objects-references.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bd84a6a32a82dcea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "lessons/javascript/03.objects/02-objects-references.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lessons/practice/jeux-de-loie.md",
+                "file": "lessons/javascript/03.objects/02-objects-references.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lessons/practice/jeux-de-loie.md",
+                "file": "lessons/javascript/03.objects/02-objects-references.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lessons/practice/jeux-de-loie.md"
+                "file": "lessons/javascript/03.objects/02-objects-references.md"
               }
             }
           }
@@ -146,15 +183,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e8c3300f94c91b46",
+  "active": "bd84a6a32a82dcea",
   "lastOpenFiles": [
-    "lessons/practice/Level 1 Test.md",
-    "lessons/practice/jeux-de-loie.md",
-    "lessons/javascript/BACKLOG.md",
+    "lessons/javascript/03.objects/02-copies-object-arrays.md",
+    "lessons/javascript/03.objects/02-objects-references.md",
     "lessons/javascript/05.functions/05.Functions-anonym.md",
     "lessons/javascript/05.functions/02.Functions-callback.md",
+    "lessons/practice/Level-1-Test-Correction.md",
+    "lessons/practice/Level 1 Test.md",
+    "Pasted image 20240125160113.png",
+    "Pasted image 20240125160103.png",
+    "Pasted image 20240125151824.png",
+    "Pasted image 20240125151625.png",
+    "lessons/javascript/11.expression-statement/01-Expression-And-Statement.md",
     "lessons/javascript/05.functions/01-Functions.md",
-    "Untitled.md",
+    "lessons/practice/jeux-de-loie.md",
+    "lessons/javascript/11.expression-statement/01-Expression-And-Statement.js",
+    "lessons/javascript/11.expression-statement/ExpressionStatement.test.js",
+    "lessons/javascript/11.expression-statement/01-ExpresionStatements.js",
+    "lessons/javascript/11.expression-statement",
+    "lessons/javascript/BACKLOG.md",
     "1_YoTPCR_l1ApgGGfMp6ZzmQ.png",
     "lessons/code/how-to-understand-code.md"
   ]
