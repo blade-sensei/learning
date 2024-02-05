@@ -67,6 +67,26 @@ function casesSpeciales (de1, resultatDes, positionPion) {
     }
 }
 
+let startTime = 0;
+let endTime = 0;
+
+function demarrerTimer() {
+    startTime = Date.now();
+}
+
+function arreterTimer() {
+    endTime = Date.now();
+    let tempsEcoule = endTime - startTime;
+    return tempsEcoule;
+}
+
+function afficherTemps(tempsEcoule) {
+    let secondes = Math.floor(tempsEcoule / 1000);
+    let minutes = Math.floor(secondes / 60);
+    secondes = secondes % 60;
+    console.log(colors.green(`Temps écoulé: ${minutes} minute(s) et ${secondes} seconde(s)`));
+}
+
 
 prompt.start();
 
@@ -91,6 +111,12 @@ function jouer (de1) {
         if (err) { 
             console.log('il y a eu une erreur'); 
         } else {
+
+            if (tour === 1) {
+                demarrerTimer();
+                console.log(colors.green("Le chrono à démaré"))
+            }
+
             console.log('\nTour :', tour);
             
             let resultatDes = lancerDes();
@@ -103,11 +129,13 @@ function jouer (de1) {
             affichePlateau ()
 
             if(positionPion < 63) {
-                // affichePlateau ()
+
                 tour++;
                 jouer();
             } else if (positionPion === 63) {
-                // affichePlateau ()
+                let tempsEcoule = arreterTimer();
+                afficherTemps(tempsEcoule);
+
                 console.log(prompt.message = colors.rainbow('*** Vous avez gagné ! ***'));
             } else if (positionPion > 63) {
                 console.log(colors.blue('Vous avez dépassé la case 63'));
