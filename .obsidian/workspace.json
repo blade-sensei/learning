@@ -13,43 +13,43 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/javascript/11.expression-statement/01-Expression-And-Statement.md",
+                "file": "lessons/javascript/BACKLOG.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "30343c2579db3704",
+            "id": "293e060155c40799",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/javascript/03.objects/02-objects-references.md",
+                "file": "lessons/javascript/BACKLOG.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5c50c8bde7a0c492",
+            "id": "e513517b2e5d3e21",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/javascript/03.objects/02-objects-references.md",
+                "file": "lessons/javascript/08-operators/Logical_operators.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "bd84a6a32a82dcea",
+            "id": "72b3858d4cf3df00",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/javascript/03.objects/02-objects-references.md",
+                "file": "lessons/javascript/02.primitives/Type_de_données.Primitives.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lessons/javascript/03.objects/02-objects-references.md",
+                "file": "lessons/javascript/02.primitives/Type_de_données.Primitives.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lessons/javascript/03.objects/02-objects-references.md",
+                "file": "lessons/javascript/02.primitives/Type_de_données.Primitives.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lessons/javascript/03.objects/02-objects-references.md"
+                "file": "lessons/javascript/02.primitives/Type_de_données.Primitives.md"
               }
             }
           }
@@ -183,26 +183,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bd84a6a32a82dcea",
+  "active": "72b3858d4cf3df00",
   "lastOpenFiles": [
+    "Operators_arithmetique.md",
+    "lessons/javascript/BACKLOG.md",
+    "lessons/javascript/08-operators/Logical_operators.md",
+    "lessons/javascript/08-operators/Operators.md",
+    "lessons/javascript/02.primitives/Type_de_données.Primitives.md",
+    "6-types-javascript-objet-primitif.png",
+    "lessons/javascript/01.declare-assign/déclarer_assigner.md",
+    "Untitled.md",
+    "lessons/javascript/08-operators/Operators_assigment.md",
+    "lessons/javascript/08-operators/Operators_Précedence.md",
+    "lessons/javascript/08-operators/Operators_de_comparaison.md",
+    "lessons/javascript/11.expression-statement/01-Expression-And-Statement.md",
+    "OR-gate.gif",
+    "AND-gate-..gif",
     "lessons/javascript/03.objects/02-copies-object-arrays.md",
+    "lessons/javascript/Untitled",
     "lessons/javascript/03.objects/02-objects-references.md",
-    "lessons/javascript/05.functions/05.Functions-anonym.md",
+    "lessons/practice/Level 1 Test.md",
+    "lessons/practice/jeux-de-loie.md",
     "lessons/javascript/05.functions/02.Functions-callback.md",
     "lessons/practice/Level-1-Test-Correction.md",
-    "lessons/practice/Level 1 Test.md",
+    "lessons/javascript/05.functions/05.Functions-anonym.md",
     "Pasted image 20240125160113.png",
     "Pasted image 20240125160103.png",
     "Pasted image 20240125151824.png",
     "Pasted image 20240125151625.png",
-    "lessons/javascript/11.expression-statement/01-Expression-And-Statement.md",
     "lessons/javascript/05.functions/01-Functions.md",
-    "lessons/practice/jeux-de-loie.md",
     "lessons/javascript/11.expression-statement/01-Expression-And-Statement.js",
     "lessons/javascript/11.expression-statement/ExpressionStatement.test.js",
     "lessons/javascript/11.expression-statement/01-ExpresionStatements.js",
     "lessons/javascript/11.expression-statement",
-    "lessons/javascript/BACKLOG.md",
     "1_YoTPCR_l1ApgGGfMp6ZzmQ.png",
     "lessons/code/how-to-understand-code.md"
   ]

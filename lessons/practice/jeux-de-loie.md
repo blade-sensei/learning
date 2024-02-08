@@ -62,9 +62,11 @@ vous êtes maintenant sur la case: 9
 case spécial !: le 9, vous avancez encore de: 4
 vous êtes maintenant sur la case: 13
 
-
 ```
 
+## Bonus
+
+- afficher le temps debut de partie et fin de partie pour avoir le delta à la fin.
 ## Références 
 
 - règles: https://regles2jeux.fr/regle-du-jeu-de-loie/
