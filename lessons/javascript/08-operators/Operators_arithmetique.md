@@ -135,3 +135,14 @@ const c = -(a) + -(-b);
 
 
 
+## Operators avancées (% et **)
+
+### Exercice
+
+- Donner le reste de la division 10 / 3, le résultat attendu est 1
+- Calculer la puissance de 3 de 100
+
+Pour avoir un peu d'aide -> [Remainder](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder) (`%`) et [Exponentiation operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation) (`**`)
+
+
+

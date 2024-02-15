@@ -81,7 +81,7 @@ if (numero === 10 || pays === "France") {
 } else {
    console.log('Jouer pas important')
 }
-
+```
 
 
 ## Références

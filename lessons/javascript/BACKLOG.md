@@ -39,22 +39,16 @@ DEV Niveau 2
 	- comparaison 🟠 [lessons/javascript/08-operators/Operators_de_comparaison.md](lessons/javascript/08-operators/Operators_de_comparaison.md)
 	  - logique 🟠 [lessons/javascript/08-operators/Logical_operators.md](lessons/javascript/08-operators/Logical_operators.md)
 		  - précédence des operators 🟠
-	- arithmetique 🟠
-    - increment ++ -- %  ** (exponentielle) 🟠
-    - unary (-) (inverser valeur) 🟠
-    - assignation 🟠
-	    - += -= 🟠
+	- arithmetique 🟠  [lessons/javascript/08-operators/Operators_arithmetique.md](../../lessons/javascript/08-operators/Operators_arithmetique.md)
+    - increment ++ -- %  ** (exponentielle) 🟠 [increments](../../lessons/javascript/08-operators/Operators_arithmetique.md#increment-et-decrement-operator)
+    - unary (-) (inverser valeur) 🟠  [unaire negation](../../lessons/javascript/08-operators/Operators_arithmetique.md#négation-unaire)
+    - assignation 🟠 
+	    - += -= 🟠  [unaire negation](../../lessons/javascript/08-operators/Operators_assigment#Assignation + calcul)
   - operator this 🔵
-- conditions 2 🔵 
-  - court circuit 🔵
-  - opérators logiques complexe 🔵 (je ne sais plus, crois que c'est déjà fait dans le chapitre operators)
-  - inverser un opérator logique 🔵
-
+-  - Falsy + Truthy
 - functions 2 🔵
-  - Comment utiliser les conditions simplifier une fonction 🔵
   - comment utiliser les fonctions pour faire de l'orienté object 🔵
   - arrow function pourquoi ?
-  
 - objects 2 | array 2🟠
   - attention avec les références 🟠 [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md)
     - example de passage en param de function qui n'est pas "pure" 🟠  [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md/#passage-en-paramètre-fonction)
@@ -63,7 +57,9 @@ DEV Niveau 2
 - scopes 🔵
   - global 🔵
   - local 🔵
+  - Let | Cost | Var (pour prouver que ces keyword sont scopes)
 - Modules
+  - export | import avec module.exports 
 - Les classes
   - POO 
     - pourquoi méthodes publique
@@ -79,26 +75,41 @@ DEV Niveau 2
 - Faire une app jeux
 
 DEV Niveau 3
+- JS
+  - Falsy + Truthy
+  - conditions 2 🔵 
+    - court circuit 🔵
+  - Operators 3
+    - logique
+      - Negation (!) pour eviter les status === false
+    - arithmetique 🔵
+      - Unary (unaire plus) '+' 🔵 (pour transformer un number)
+  - functions 2 🔵
+    - Comment utiliser les conditions simplifier une fonction 🔵
+  - relational operator (in, instanceof, typeof)
+  - ternary operator (comment raccourci un else if pour assigner une valeur)
+  - hoisting
 - NPM
   - yarn / pnpm 
   - package json
-- Operators 3
-  - arithmetique 🔵
-    - Unary (unaire plus) '+' 🔵
-- relational operator (in, instanceof, typeof
-- ternary operator
 - nodeJS
   - pourquoi ?
   - API?
     - what is HTTP
     - API REST
+    - Premier application API
+    - Routes
+    - Request -> Response
+      - Http Status
+    - Query \ Params
 - L'asyncroyne 🔵
   - promises 🔵
   - await / async 🔵
   - Comment faire de l'ecriture/lecture fichiers 🔵
     - transformer JS. JSON 🔵
+  
+--- FIN de Niveau 3 partie (on fera un API basique) et en partie 2 une API avec clean architecture
 - ES6
-- hoisting
 - eslint / prettier
 - Clean architecture
   - Façade pattern
@@ -149,3 +160,9 @@ JavaScript Niveau 5
 - Backend App V2 (on legacy)
 - Backend App 2 (from scratch)
 
+
+Niveau ++ (Bonus)
+
+- conditions ++ 🔵 
+  - court circuit 🔵
+  - inverser un opérator logique - Loi de morgan 🔵
