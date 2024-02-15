@@ -43,12 +43,14 @@ DEV Niveau 2
     - increment ++ -- %  ** (exponentielle) 🟠 [increments](../../lessons/javascript/08-operators/Operators_arithmetique.md#increment-et-decrement-operator)
     - unary (-) (inverser valeur) 🟠  [unaire negation](../../lessons/javascript/08-operators/Operators_arithmetique.md#négation-unaire)
     - assignation 🟠 
-	    - += -= 🟠  [unaire negation](../../lessons/javascript/08-operators/Operators_assigment#Assignation + calcul)
+	    - += -= 🟠  [unaire negation](../../lessons/javascript/08-operators/Operators_assigment#assignation--calcul)
   - operator this 🔵
--  - Falsy + Truthy
+    - avec les fonction pour créer des objets 
+    - comment changer le this vers un autre objet (avec call)
+- Falsy + Truthy
 - functions 2 🔵
   - comment utiliser les fonctions pour faire de l'orienté object 🔵
-  - arrow function pourquoi ?
+  - arrow function pourquoi ? (operator this)
 - objects 2 | array 2🟠
   - attention avec les références 🟠 [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md)
     - example de passage en param de function qui n'est pas "pure" 🟠  [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md/#passage-en-paramètre-fonction)
@@ -65,7 +67,7 @@ DEV Niveau 2
     - pourquoi méthodes publique
     - privé
     - static
-- Git
+- Git 2
   - le staging
   - git vs git origin
   - git stash
@@ -166,3 +168,5 @@ Niveau ++ (Bonus)
 - conditions ++ 🔵 
   - court circuit 🔵
   - inverser un opérator logique - Loi de morgan 🔵
+- functions
+  - apply call bind pour le framework (demande à Franck)
