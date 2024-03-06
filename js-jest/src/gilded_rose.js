@@ -54,10 +54,9 @@ class Shop {
     return item.name == this.sulfuras
   }
 
-
   updateQuality() {
     for (const item of this.items) {
-       //inverse le if et le else pour avoir if (this.isItemThatIncreaseValueWhenIsOld) ? 
+      //inverse le if et le else pour avoir if (this.isItemThatIncreaseValueWhenIsOld) ? 
       //peut être plus lisible
       if (this.isVintageItem(item)) {
         //securité pour ne pas dépasser la limite max
@@ -139,3 +138,6 @@ module.exports = {
   Shop,
   Inventory,
 };
+
+//replacer le for par un switch -> items -> pollyphormis
+//Item Brige
