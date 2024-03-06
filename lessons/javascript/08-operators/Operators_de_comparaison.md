@@ -32,7 +32,7 @@ if (menu === "sushi") {
 
 ## Exercices
 
-```
+```js
 1. Donnez les résultat de `result, pokemonFort et passeEnCaissePrio`   selon les résultats des comparaisons
 
 const typeUtilisateur = "client";
@@ -45,7 +45,8 @@ const list = ["5"];
 const passeEnCaissePrio = list.length <= 5
 ```
 
-```Ecrire les conditions suivantes en JS:
+```js
+Ecrire les conditions suivantes en JS:
 1. On veut déterminer si la personne est majeur (par rapport à son âge legal en france)
 2. On veut déterminer que l'état civil d'une personne n'est pas "marié" si la condition est bonne alors il faut afficher "Personne autorisé"
 3. Si une personne a une liste d'articles (array), on veut déterminer si elle possède moins de dix articles, si c'est le cas alors afficher le message "Passer à la caisse express"
@@ -55,15 +56,15 @@ const passeEnCaissePrio = list.length <= 5
 
 ## Correction
 
-```
+```js
 result -> false
 pokemonFort -> true
 passeEnCaissePrio -> true
 ```
 
-```
+```js
 1. const personne = (age >= 18)
-2. if (etatCivil != marié) {console.log('Personne autorisée')
+2. if (etatCivil != marié) { console.log('Personne autorisée') }
 3. if(array.lenght <= 10) { console.log('Passer à la caisse express')}
 4. if(pays != France) { console.log('hello)} else {'Bonjour'}
 
