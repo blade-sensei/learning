@@ -19,14 +19,14 @@ const a = 40; //ici on déclare et on assigne au même temps
 	- ensuite le résultat va être **assigné** à nouveau (reassigné)
 
 ```js
-const x = 10
+let x = 10
 x += 30;
 ```
 
 - cela revient à écrire
 
 ```js
-const x = 10
+let x = 10
 x = x + 30;
 ```
 

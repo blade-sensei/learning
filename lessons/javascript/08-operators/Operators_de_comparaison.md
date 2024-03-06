@@ -33,13 +33,15 @@ if (menu === "sushi") {
 ## Exercices
 
 ```
-1. Remplez par true ou false selon les résultats
+1. Donnez les résultat de `result, pokemonFort et passeEnCaissePrio`   selon les résultats des comparaisons
 
-
+const typeUtilisateur = "client";
 const result = (typeUtilisateur === "admin")
 
+const pokemon = "Salameche";
 const pokemonFort =  pokemon != "Bulbizarre"
 
+const list = ["5"];
 const passeEnCaissePrio = list.length <= 5
 ```
 
@@ -51,3 +53,19 @@ const passeEnCaissePrio = list.length <= 5
 5. Veuillez écrire autrement la condition de l'étape 3. Pour avoir le même résultat
 ```
 
+## Correction
+
+```
+result -> false
+pokemonFort -> true
+passeEnCaissePrio -> true
+```
+
+```
+1. const personne = (age >= 18)
+2. if (etatCivil != marié) {console.log('Personne autorisée')
+3. if(array.lenght <= 10) { console.log('Passer à la caisse express')}
+4. if(pays != France) { console.log('hello)} else {'Bonjour'}
+
+5. if(array.lenght < 11) { console.log('Passer à la caisse express')}
+```

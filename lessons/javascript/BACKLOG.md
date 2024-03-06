@@ -6,6 +6,14 @@
 🟢 présenté
 ```
 
+DEV Niveau 0 Base
+- comment déclarer une variable pour stocker une donnée
+- types de variables
+  - 3 types de base (primitives)
+  - object pour stocker un ensemble 
+- structure et utilisation d'une fonction
+  - paramètres
+  - définition et appel
 
 DEV Niveau 1
 
@@ -74,6 +82,8 @@ DEV Niveau 2
   - git rebase / pull rebase
   - git merge vs rebase
   - git cherry pick
+  - git log / reset HEARD - SOFT
+  - vscode pluging : Git Graph
 - Faire une app jeux
 
 DEV Niveau 3

@@ -134,7 +134,6 @@ const c = -(a) + -(-b);
 ```
 
 
-
 ## Operators avancées (% et **)
 
 ### Exercice

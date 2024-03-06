@@ -19,7 +19,6 @@ si non (soit condition 1 = false ou la condition 2 = false) {
 - Il sera utilisé pour déterminer une condition global en combinant d'autres conditions
 - Utiliser un operator logique va au final permettre (en général) d'avoir un "boolean" comme résultat, c'est à dire soit `true` soit `false`
 
-
 ### ET Logique (&&)
 
 - condition global -> (condition1) ET (condition2)
@@ -57,7 +56,7 @@ si non (soit condition 1 = false et la condition 2 = false) {
 1. Remplacer par TRUE ou FALSE chaque partie de condition et donner le résultat final
 
 let res = (typeUtilisateur === "admin" || userId === "abc");
-res = couleur === "bleu" && couleur === "jaune"
+res = couleur === "bleu" && couleur2 === "jaune"
 ```
 
 ```

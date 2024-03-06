@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "91103330845584fd",
+        "id": "a2da2fb2d4a6d843",
         "type": "tabs",
         "children": [
           {
-            "id": "1f78e5bcb23cff34",
+            "id": "3daa4d89bcd454f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "293e060155c40799",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "lessons/javascript/08-operators/Operators_assigment.md",
+                "file": "lessons/javascript/BACKLOG.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "lessons/javascript/BACKLOG.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "lessons/javascript/BACKLOG.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "lessons/javascript/BACKLOG.md"
               }
             }
           }
@@ -158,28 +146,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1f78e5bcb23cff34",
+  "active": "3daa4d89bcd454f4",
   "lastOpenFiles": [
-    "OBJ.md",
+    "lessons/javascript/08-operators/Operators_de_comparaison.md",
     "Untitled.md",
-    "README.md",
-    "Pasted image 20240125160113.png",
+    "lessons/javascript/08-operators/Operators_arithmetique.md",
+    "lessons/javascript/08-operators/Operators_Précedence.md",
+    "lessons/javascript/BACKLOG.md",
+    "lessons/javascript/08-operators/Logical_operators.md",
+    "lessons/javascript/08-operators/Operators.md",
+    "lessons/javascript/08-operators/Operators_assigment.md",
+    "lessons/javascript/11.expression-statement/01-Expression-And-Statement.md",
     "Pasted image 20240125160103.png",
     "Pasted image 20240125151824.png",
-    "OR-gate.gif",
-    "1_YoTPCR_l1ApgGGfMp6ZzmQ.png",
-    "lessons/javascript/BACKLOG.md",
-    "lessons/javascript/08-operators/Operators_assigment.md",
-    "lessons/javascript/08-operators/Operators_arithmetique.md",
-    "lessons/javascript/08-operators/Operators.md",
-    "lessons/javascript/08-operators/Logical_operators.md",
-    "lessons/javascript/08-operators/Operators_Précedence.md",
-    "lessons/javascript/08-operators/Operators_de_comparaison.md",
-    "lessons/javascript/02.primitives/Type_de_données.Primitives.md",
-    "6-types-javascript-objet-primitif.png",
-    "lessons/javascript/01.declare-assign/déclarer_assigner.md",
-    "lessons/javascript/11.expression-statement/01-Expression-And-Statement.md",
     "AND-gate-..gif",
+    "6-types-javascript-objet-primitif.png",
+    "1_YoTPCR_l1ApgGGfMp6ZzmQ.png",
+    "Pasted image 20240125160113.png",
+    "README.md",
+    "OBJ.md",
+    "OR-gate.gif",
+    "lessons/javascript/02.primitives/Type_de_données.Primitives.md",
+    "lessons/javascript/01.declare-assign/déclarer_assigner.md",
     "lessons/javascript/03.objects/02-copies-object-arrays.md",
     "lessons/javascript/Untitled",
     "lessons/javascript/03.objects/02-objects-references.md",
