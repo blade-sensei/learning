@@ -1,5 +1,5 @@
 
-## Assignation 
+## Rappel: Assignation 
 
 - Assigner veut dire "associer" ou "donner" une **valeur** à une variable
 - On utilise le signe `=` pour assigner

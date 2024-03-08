@@ -14,6 +14,8 @@ DEV Niveau 0 Base
 - structure et utilisation d'une fonction
   - paramètres
   - définition et appel
+- Modules 🔵
+  - export | import avec module.exports 
 
 DEV Niveau 1
 
@@ -42,55 +44,58 @@ DEV Niveau 1
 
 DEV Niveau 2
 
-- Expression statement 🟠 [lessons/javascript/11.expression-statement/01-Expression-And-Statement.md](../javascript/11.expression-statement/01-Expression-And-Statement.md)
-- operators 🟠
-	- comparaison 🟠 [lessons/javascript/08-operators/Operators_de_comparaison.md](lessons/javascript/08-operators/Operators_de_comparaison.md)
-	  - logique 🟠 [lessons/javascript/08-operators/Logical_operators.md](lessons/javascript/08-operators/Logical_operators.md)
-		  - précédence des operators 🟠
-	- arithmetique 🟠  [lessons/javascript/08-operators/Operators_arithmetique.md](../../lessons/javascript/08-operators/Operators_arithmetique.md)
-    - increment ++ -- %  ** (exponentielle) 🟠 [increments](../../lessons/javascript/08-operators/Operators_arithmetique.md#increment-et-decrement-operator)
-    - unary (-) (inverser valeur) 🟠  [unaire negation](../../lessons/javascript/08-operators/Operators_arithmetique.md#négation-unaire)
-    - assignation 🟠 
-	    - += -= 🟠  [unaire negation](../../lessons/javascript/08-operators/Operators_assigment#assignation--calcul)
-  - operator this 🔵
-    - avec les fonction pour créer des objets 
-    - comment changer le this vers un autre objet (avec call)
-- Falsy + Truthy
-- functions 2 🔵
-  - comment utiliser les fonctions pour faire de l'orienté object 🔵
-  - arrow function pourquoi ? (operator this)
-- objects 2 | array 2🟠
-  - attention avec les références 🟠 [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md)
-    - example de passage en param de function qui n'est pas "pure" 🟠  [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md/#passage-en-paramètre-fonction)
-  - realiser des copies d objects/arrays 🟠 [lessons/javascript/03.objects/02-copies-object-arrays.md](../javascript/03.objects/02-copies-object-arrays.md)
-    - shallow copy et deep copy  [lessons/javascript/03.objects/02-copies-object-arrays.md](../javascript/03.objects/02-copies-object-arrays.md/#1-shadow-copy)
+- Expression statement 🟢 [lessons/javascript/11.expression-statement/01-Expression-And-Statement.md](../javascript/11.expression-statement/01-Expression-And-Statement.md)
+- operators 🟢
+	- comparaison 🟢 [lessons/javascript/08-operators/Operators_de_comparaison.md](lessons/javascript/08-operators/Operators_de_comparaison.md)
+	  - logique 🟢 [lessons/javascript/08-operators/Logical_operators.md](lessons/javascript/08-operators/Logical_operators.md)
+		  - précédence des operators 🟢
+	- arithmetique 🟢  [lessons/javascript/08-operators/Operators_arithmetique.md](../../lessons/javascript/08-operators/Operators_arithmetique.md)
+    - increment ++ -- %  ** (exponentielle) 🟢 [increments](../../lessons/javascript/08-operators/Operators_arithmetique.md#increment-et-decrement-operator)
+    - unary (-) (inverser valeur) 🟢  [unaire negation](../../lessons/javascript/08-operators/Operators_arithmetique.md#négation-unaire)
+    - assignation 🟢 
+	    - += -= 🟢  [unaire negation](../../lessons/javascript/08-operators/Operators_assigment#assignation--calcul)
+  - operator this 🟠 [lessons/javascript/08-operators/Operator_this_lvl_1.md](lessons/javascript/08-operators/Operator_this_lvl_1.md)
+	  - c'est quoi le this 
+- operator (in, instanceof, typeof) 🟠
+	- In operator (pour parcours d'objects ou array index) 🟠 [lessons/javascript/08-operators/Operator_IN.md](../../lessons/javascript/08-operators/Operator_IN.md)
+	- instanceof / typeof 🟠 [lessons/javascript/08-operators/Operator_Typeof.md](../../lessons/javascript/08-operators/Operator_Typeof.md)
 - scopes 🔵
-  - global 🔵
-  - local 🔵
-  - Let | Cost | Var (pour prouver que ces keyword sont scopes)
-- Modules
-  - export | import avec module.exports 
-- Les classes
-  - POO 
-    - pourquoi méthodes publique
-    - privé
-    - static
-- Git 2
-  - le staging
-  - git vs git origin
-  - git stash
-  - git rebase / pull rebase
-  - git merge vs rebase
-  - git cherry pick
-  - git log / reset HEARD - SOFT
-  - vscode pluging : Git Graph
+	- global, local
+	- Let | Cost | Var (pour prouver que ces keyword sont scopes)
+- objects 2 | array 2 🟠
+	- attention avec les références 🟠 [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md)
+    - example de passage en param de function qui n'est pas "pure" 🟠  [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md/#passage-en-paramètre-fonction)
+	- realiser des copies d objects/arrays 🟠 [lessons/javascript/03.objects/02-copies-object-arrays.md](../javascript/03.objects/02-copies-object-arrays.md)
+    - shallow copy et deep copy  [lessons/javascript/03.objects/02-copies-object-arrays.md](../javascript/03.objects/02-copies-object-arrays.md/#1-shadow-copy)
+- functions 2 🔵
+	- comment utiliser les fonctions pour faire de l'orienté object 
+	- construction / instantiation
+- Eval + Game 
+
+DEV Niveau 2.1
+- JS
+	- Falsy + Truthy [lessons/javascript/12.other-concepts/Truthy_and_Falsy.md](../../lessons/javascript/12.other-concepts/Truthy_and_Falsy.md)
+	- conditions 2 🔵 
+    - court circuit pour exécuter du code avec condition ou alors assignation 🔵
+- Les classes 🔵
+	- POO 
+	    - pourquoi méthodes publique
+	    - privé
+	    - static
+- Git 2 🔵
+	- le staging
+	- git vs git origin
+	- git stash
+	- git rebase / pull rebase
+	- git merge vs rebase
+	- git cherry pick
+	- git log / reset HEARD - SOFT
+	- vscode pluging : Git Graph
 - Faire une app jeux
+
 
 DEV Niveau 3
 - JS
-  - Falsy + Truthy
-  - conditions 2 🔵 
-    - court circuit 🔵
   - Operators 3
     - logique
       - Negation (!) pour eviter les status === false
@@ -98,9 +103,7 @@ DEV Niveau 3
       - Unary (unaire plus) '+' 🔵 (pour transformer un number)
   - functions 2 🔵
     - Comment utiliser les conditions simplifier une fonction 🔵
-  - relational operator (in, instanceof, typeof)
   - ternary operator (comment raccourci un else if pour assigner une valeur)
-  - hoisting
 - NPM
   - yarn / pnpm 
   - package json
@@ -175,8 +178,15 @@ JavaScript Niveau 5
 
 Niveau ++ (Bonus)
 
+- destructuring expression
+- spread operator
+- hoisting
 - conditions ++ 🔵 
   - court circuit 🔵
   - inverser un opérator logique - Loi de morgan 🔵
 - functions
   - apply call bind pour le framework (demande à Franck)
+- This:
+	- utilisation de call bind apply
+	- - example de context qui change: https://www.codeheroes.fr/2018/01/10/javascript-le-mot-cle-this/  🔵
+	- - arrow function pourquoi ? (operator this)
