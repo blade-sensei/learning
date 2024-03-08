@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/javascript/07.loops/For_in.md",
+                "file": "lessons/javascript/12.other-concepts/Scopes_lvl_1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lessons/javascript/07.loops/For_in.md",
+                "file": "lessons/javascript/12.other-concepts/Scopes_lvl_1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lessons/javascript/07.loops/For_in.md",
+                "file": "lessons/javascript/12.other-concepts/Scopes_lvl_1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lessons/javascript/07.loops/For_in.md"
+                "file": "lessons/javascript/12.other-concepts/Scopes_lvl_1.md"
               }
             }
           }
@@ -148,10 +148,13 @@
   },
   "active": "0e0cd715e509039b",
   "lastOpenFiles": [
+    "1_BwARRnm0-gFoh-Rq_ubbwQ.png",
+    "lessons/javascript/12.other-concepts/hosting.md",
+    "lessons/javascript/07.loops/For_in.md",
+    "lessons/javascript/12.other-concepts/Scopes_lvl_1.md",
     "lessons/javascript/08-operators/Operator_Typeof.md",
     "lessons/javascript/08-operators/Operator_IN.md",
     "lessons/javascript/08-operators/Untitled.md",
-    "lessons/javascript/07.loops/For_in.md",
     "lessons/javascript/BACKLOG.md",
     "lessons/javascript/08-operators/Operator_this_lvl_1.md",
     "lessons/javascript/03.objects/02-objects-references.md",
@@ -180,9 +183,6 @@
     "OR-gate.gif",
     "lessons/javascript/02.primitives/Type_de_données.Primitives.md",
     "lessons/practice/Level 1 Test.md",
-    "lessons/practice/jeux-de-loie.md",
-    "lessons/javascript/05.functions/02.Functions-callback.md",
-    "lessons/practice/Level-1-Test-Correction.md",
     "Pasted image 20240125151625.png",
     "lessons/javascript/11.expression-statement/01-Expression-And-Statement.js",
     "lessons/javascript/11.expression-statement/ExpressionStatement.test.js",

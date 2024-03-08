@@ -59,8 +59,8 @@ DEV Niveau 2
 - operator (in, instanceof, typeof) 🟠
 	- In operator (pour parcours d'objects ou array index) 🟠 [lessons/javascript/08-operators/Operator_IN.md](../../lessons/javascript/08-operators/Operator_IN.md)
 	- instanceof / typeof 🟠 [lessons/javascript/08-operators/Operator_Typeof.md](../../lessons/javascript/08-operators/Operator_Typeof.md)
-- scopes 🔵
-	- global, local
+- scopes 🔵 [lessons/javascript/12.other-concepts/Scopes_lvl_1.md](../../lessons/javascript/12.other-concepts/Scopes_lvl_1.md)
+	- global, local, blockscope
 	- Let | Cost | Var (pour prouver que ces keyword sont scopes)
 - objects 2 | array 2 🟠
 	- attention avec les références 🟠 [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md)
@@ -190,3 +190,7 @@ Niveau ++ (Bonus)
 	- utilisation de call bind apply
 	- - example de context qui change: https://www.codeheroes.fr/2018/01/10/javascript-le-mot-cle-this/  🔵
 	- - arrow function pourquoi ? (operator this)
+
+Common Errors
+
+- Modifying Objects During Iteration
