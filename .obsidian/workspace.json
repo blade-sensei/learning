@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/javascript/12.other-concepts/Scopes_lvl_1.md",
+                "file": "lessons/javascript/BACKLOG.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lessons/javascript/12.other-concepts/Scopes_lvl_1.md",
+                "file": "lessons/javascript/BACKLOG.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lessons/javascript/12.other-concepts/Scopes_lvl_1.md",
+                "file": "lessons/javascript/BACKLOG.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lessons/javascript/12.other-concepts/Scopes_lvl_1.md"
+                "file": "lessons/javascript/BACKLOG.md"
               }
             }
           }
@@ -148,42 +148,46 @@
   },
   "active": "0e0cd715e509039b",
   "lastOpenFiles": [
-    "1_BwARRnm0-gFoh-Rq_ubbwQ.png",
-    "lessons/javascript/12.other-concepts/hosting.md",
-    "lessons/javascript/07.loops/For_in.md",
+    "lessons/javascript/03.objects/02-copies-object-arrays.md",
+    "lessons/javascript/03.objects/02-objects-references.md",
+    "lessons/javascript/BACKLOG.md",
+    "lessons/javascript/05.functions/03.Function-for-object-oriented-programming.md",
+    "lessons/javascript/05.functions/05.Functions-anonym.md",
+    "lessons/javascript/12.other-concepts/object-oriented-programming/01.OOP-Base.md",
+    "classe-d-objet.png",
+    "2_uml.webp",
+    "lessons/javascript/08-operators/Operators_Précedence.md",
+    "lessons/javascript/08-operators/Operators_de_comparaison.md",
+    "lessons/javascript/08-operators/Operators_arithmetique.md",
+    "lessons/javascript/08-operators/Logical_operators.md",
+    "lessons/javascript/05.functions/01-Functions.md",
+    "0_sJcCz-q5pIZbgmsK.png",
+    "lessons/javascript/12.other-concepts/object-oriented-programming/Class-heritage.md",
+    "Object oriented programming concepts in Java.jpg",
+    "lessons/javascript/Untitled",
+    "Untitled 1",
     "lessons/javascript/12.other-concepts/Scopes_lvl_1.md",
     "lessons/javascript/08-operators/Operator_Typeof.md",
     "lessons/javascript/08-operators/Operator_IN.md",
+    "lessons/javascript/12.other-concepts/object-oriented-programming",
+    "Untitled.md",
+    "1_BwARRnm0-gFoh-Rq_ubbwQ.png",
+    "lessons/javascript/12.other-concepts/hosting.md",
+    "lessons/javascript/07.loops/For_in.md",
     "lessons/javascript/08-operators/Untitled.md",
-    "lessons/javascript/BACKLOG.md",
     "lessons/javascript/08-operators/Operator_this_lvl_1.md",
-    "lessons/javascript/03.objects/02-objects-references.md",
-    "lessons/javascript/08-operators/Operators_arithmetique.md",
     "lessons/javascript/08-operators/Operators_assigment.md",
-    "lessons/javascript/08-operators/Logical_operators.md",
-    "lessons/javascript/08-operators/Operators_de_comparaison.md",
     "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
     "lessons/javascript/12.other-concepts",
     "Untitled",
     "lessons/javascript/01.declare-assign/déclarer_assigner.md",
-    "lessons/javascript/03.objects/02-copies-object-arrays.md",
-    "Untitled.md",
     "Untitled 1.md",
-    "lessons/javascript/08-operators/Operators_Précedence.md",
     "lessons/javascript/08-operators/Operators.md",
-    "lessons/javascript/11.expression-statement/01-Expression-And-Statement.md",
     "Pasted image 20240125160103.png",
     "Pasted image 20240125151824.png",
     "AND-gate-..gif",
     "6-types-javascript-objet-primitif.png",
     "1_YoTPCR_l1ApgGGfMp6ZzmQ.png",
-    "Pasted image 20240125160113.png",
-    "README.md",
-    "OBJ.md",
-    "OR-gate.gif",
-    "lessons/javascript/02.primitives/Type_de_données.Primitives.md",
-    "lessons/practice/Level 1 Test.md",
-    "Pasted image 20240125151625.png",
     "lessons/javascript/11.expression-statement/01-Expression-And-Statement.js",
     "lessons/javascript/11.expression-statement/ExpressionStatement.test.js",
     "lessons/javascript/11.expression-statement/01-ExpresionStatements.js",

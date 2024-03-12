@@ -1,33 +1,15 @@
-const pierre = {
-  tel: "012434523",
-  addresse: {
-    rue: "Parmentier",
-    numero: 12
-  },
-  prenom: "Pierre",
+function salleClass(nom, etage, nomBatiment) {
+  //attributs 
+   this.nom = nom; 
+   this.etage = etage;
+   this.nomBatiment = nomBatiment;
+
+   this.reserverSalle = function () {
+    this.reserve = true;
+   }
  }
- 
- pierre.addresse.ville = "Saint Denis";
- const copineDePierre = pierre;
- copineDePierre.prenom = "Margot";
- copineDePierre.tel = "062341254";
- copineDePierre.addresse.ville = "Paris"
- 
- console.log(pierre.addresse.ville);
- console.log(copineDePierre.addresse.ville);
- console.log(pierre.tel);
- console.log(copineDePierre.tel);
+ const salle = new salleClass('Molière', 3, 'A'); //new est un operator pour instancier 
 
-function rupture(pierre) {
-  pierre.addresse = {
-    rue: "Ailleurs",
-    numero: 0,
-    ville: "Loin"
-  }
-  return pierre;
-}
+salle.reserverSalle();
 
-const newPierre = rupture(pierre);
-console.log('ancien pierre', pierre.addresse);
-console.log('new pierre seul two', newPierre.addresse);
-console.log('ex copine', copineDePierre.addresse);
+console.log(salle);

@@ -1,4 +1,3 @@
-Comment expliquer concept de base
 
 - Le scopes permettent de limiter l'utilisation des variable dans un espace défini, c'est une sorte de bulle
 - En général il sont déterminés par les accolades { } les functions, les if, else, for etc (sauf pour les objets..)
@@ -55,8 +54,6 @@ if (true) {
 console.log('same scope as username declaration', username);
 ```
 
-Quel est l'erreur
-
 ## Scopes functions
 
 ```js
@@ -88,7 +85,7 @@ function hello() {
 hello();
 console.log(message);
 //par contre que si on rajoute const message = "test" juste avant le if ?
-//dans ce cas message du "if" fais référence au message parent du scope le plus propre
+//dans ce cas message du "if" fais référence au message parent du scope le plus proche
 ```
 
 ## Exercices
@@ -97,4 +94,4 @@ console.log(message);
 
 ```
 
-Des erreurs avec les callbacks
+

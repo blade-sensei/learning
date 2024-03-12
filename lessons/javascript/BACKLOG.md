@@ -48,7 +48,7 @@ DEV Niveau 2
 - operators 🟢
 	- comparaison 🟢 [lessons/javascript/08-operators/Operators_de_comparaison.md](lessons/javascript/08-operators/Operators_de_comparaison.md)
 	  - logique 🟢 [lessons/javascript/08-operators/Logical_operators.md](lessons/javascript/08-operators/Logical_operators.md)
-		  - précédence des operators 🟢
+		  - précédence des operators 🟠
 	- arithmetique 🟢  [lessons/javascript/08-operators/Operators_arithmetique.md](../../lessons/javascript/08-operators/Operators_arithmetique.md)
     - increment ++ -- %  ** (exponentielle) 🟢 [increments](../../lessons/javascript/08-operators/Operators_arithmetique.md#increment-et-decrement-operator)
     - unary (-) (inverser valeur) 🟢  [unaire negation](../../lessons/javascript/08-operators/Operators_arithmetique.md#négation-unaire)
@@ -56,20 +56,20 @@ DEV Niveau 2
 	    - += -= 🟢  [unaire negation](../../lessons/javascript/08-operators/Operators_assigment#assignation--calcul)
   - operator this 🟠 [lessons/javascript/08-operators/Operator_this_lvl_1.md](lessons/javascript/08-operators/Operator_this_lvl_1.md)
 	  - c'est quoi le this 
-- operator (in, instanceof, typeof) 🟠
-	- In operator (pour parcours d'objects ou array index) 🟠 [lessons/javascript/08-operators/Operator_IN.md](../../lessons/javascript/08-operators/Operator_IN.md)
-	- instanceof / typeof 🟠 [lessons/javascript/08-operators/Operator_Typeof.md](../../lessons/javascript/08-operators/Operator_Typeof.md)
-- scopes 🔵 [lessons/javascript/12.other-concepts/Scopes_lvl_1.md](../../lessons/javascript/12.other-concepts/Scopes_lvl_1.md)
-	- global, local, blockscope
-	- Let | Cost | Var (pour prouver que ces keyword sont scopes)
-- objects 2 | array 2 🟠
+- operator (in, instanceof, typeof) 🟢
+	- In operator (pour parcours d'objects ou array index) 🟢 [lessons/javascript/08-operators/Operator_IN.md](../../lessons/javascript/08-operators/Operator_IN.md)
+	- instanceof / typeof 🟢 [lessons/javascript/08-operators/Operator_Typeof.md](../../lessons/javascript/08-operators/Operator_Typeof.md)
+	- For In operator 🟠 [lessons/javascript/08-operators/Operator_IN.md](../../lessons/javascript/07.loops/For_in.md)
+- scopes 🟢 [lessons/javascript/12.other-concepts/Scopes_lvl_1.md](../../lessons/javascript/12.other-concepts/Scopes_lvl_1.md)
+	- global, local, blockscope 🟢
+- objects 2 | array 2 
 	- attention avec les références 🟠 [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md)
     - example de passage en param de function qui n'est pas "pure" 🟠  [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md/#passage-en-paramètre-fonction)
 	- realiser des copies d objects/arrays 🟠 [lessons/javascript/03.objects/02-copies-object-arrays.md](../javascript/03.objects/02-copies-object-arrays.md)
-    - shallow copy et deep copy  [lessons/javascript/03.objects/02-copies-object-arrays.md](../javascript/03.objects/02-copies-object-arrays.md/#1-shadow-copy)
-- functions 2 🔵
-	- comment utiliser les fonctions pour faire de l'orienté object 
-	- construction / instantiation
+    - shallow copy et deep copy  [lessons/javascript/03.objects/02-copies-object-arrays.md](../../lessons/javascript/03.objects/02-copies-object-arrays.md/#1-shadow-copy)
+- functions 2 🟠
+	- comment utiliser les fonctions pour faire de l'orienté object  🟠
+	- construction / instantiation 🟠
 - Eval + Game 
 
 DEV Niveau 2.1
@@ -79,9 +79,12 @@ DEV Niveau 2.1
     - court circuit pour exécuter du code avec condition ou alors assignation 🔵
 - Les classes 🔵
 	- POO 
-	    - pourquoi méthodes publique
-	    - privé
-	    - static
+		- concepte de encapsulation
+		    - pourquoi méthodes publique
+		    - privé
+		    - static
+		- héritage pour partager des propriétés de base
+		- polymorphisme pour la modularité / extension du code + saine
 - Git 2 🔵
 	- le staging
 	- git vs git origin
@@ -140,8 +143,7 @@ JavaScript Niveau 4
   - le TSconfig
     - régles utiles
     - ts avancé
-  - les class
-    - Class / private
+  - les class 2
     - Interfaces
     - Type union vs Enum
     - POO 2
@@ -190,6 +192,8 @@ Niveau ++ (Bonus)
 	- utilisation de call bind apply
 	- - example de context qui change: https://www.codeheroes.fr/2018/01/10/javascript-le-mot-cle-this/  🔵
 	- - arrow function pourquoi ? (operator this)
+	- memohization 
+- 
 
 Common Errors
 
