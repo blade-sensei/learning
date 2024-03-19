@@ -1,8 +1,8 @@
-const Inventory ={
+const Inventory = {
   backstagePass: "Backstage passes to a TAFKAL80ETC concert",
   agedBrie: "Aged Brie",
   sulfuras: "Sulfuras, Hand of Ragnaros",
-}
+};
 
 class Item {
   constructor(name, sellIn, quality) {
@@ -35,79 +35,78 @@ class Shop {
   }
 
   isVintageItem(item) {
-    return item.name == this.agedBrie || item.name == this.backstagePass
+    return item.name == this.agedBrie || item.name == this.backstagePass;
+  }
+
+  isClassicItem(item) {
+    return item.name !== this.agedBrie && item.name !== this.backstagePass && item.name !== this.sulfuras;
   }
 
   incrementQuality(item) {
-    item.quality = item.quality + 1;
+    if (this.canIncrementQuality(item)) {
+      item.quality = item.quality + 1;
+    }
   }
 
   isItemExpired(item) {
-    return item.sellIn < 0
+    return item.sellIn < 0;
   }
 
   canIncrementQuality(item) {
-    return item.quality < this.maxQuality
+    return item.quality < this.maxQuality;
   }
 
   isInExpirableItem(item) {
-    return item.name == this.sulfuras
+    return item.name == this.sulfuras;
   }
 
   updateQuality() {
     for (const item of this.items) {
-      //inverse le if et le else pour avoir if (this.isItemThatIncreaseValueWhenIsOld) ? 
+      //inverse le if et le else pour avoir if (this.isItemThatIncreaseValueWhenIsOld) ?
       //peut être plus lisible
 
 
       //item classique
-      if (!this.isVintageItem(item)  && !this.isInExpirableItem(item)) {
+      if (this.isClassicItem(item)) {
         this.defaultDecrementQuality(item);
-        item.sellIn = item.sellIn - 1;
+        this.decreaseExpirationSellIn(item);
         if (this.isItemExpired(item)) {
-          this.defaultDecrementQuality(item)
+          this.defaultDecrementQuality(item);
         }
-        continue;
       }
 
-      if (this.isVintageItem(item)) {
-        //securité pour ne pas dépasser la limite max
-        if (this.canIncrementQuality(item)) {
-          //a améliorer ou refacto cette partie
-          if (this.isAgeBrieItem(item)) {
-            this.incrementQuality(item)
-          }
-          else if (this.isBackStagePassItem(item)) {
-            this.incrementQuality(item)
-            item.quality = this.getQualityForBackstagePass(item);
-          }
+      //item ageBrie
+      if (this.isAgeBrieItem(item)) {
+        this.incrementQuality(item);
+        this.decreaseExpirationSellIn(item);
+      }
+
+      if (this.isBackStagePassItem(item)) {
+        this.incrementQuality(item);
+        this.decreaseExpirationSellIn(item);
+        item.quality = this.getQualityForBackstagePass(item);
+
+        if (this.isItemExpired(item)) {
+          this.makeBackstagePassUnusable(item);
         }
       }
+
+      //
+
       //faire la distinction entre classics iteams et sulfuras
 
       //gene iteam au mieu de rien
-      if (!this.isInExpirableItem(item)) {
-        item.sellIn = item.sellIn - 1;
-      }
 
       //fonction manageExpiredItem -> voir une class
-      if (this.isItemExpired(item)) {
-        //funciton is age abri
-        if (this.isAgeBrieItem(item)) {
-          //rajouter un test pour assurer qu on passe par incrementQuality en ayant un boolean
-          if (this.canIncrementQuality(item)) {
-            this.incrementQuality(item)
-          }
-        }
-        if (!this.isAgeBrieItem(item)) {
-          if (this.isBackStagePassItem(item)) {
-            this.makeBackstagePassUnusable(item);
-          }
-        }
-      }
     }
 
     return this.items;
+  }
+
+  decreaseExpirationSellIn(item) {
+    if (!this.isInExpirableItem(item)) {
+      item.sellIn = item.sellIn - 1;
+    }
   }
 
   isBackStagePassItem(item) {
@@ -130,9 +129,7 @@ class Shop {
       if (quality < this.maxQuality) {
         return quality + 2;
       }
-    }
-
-    else if (item.sellIn < this.almostLastMinutePass) {
+    } else if (item.sellIn < this.almostLastMinutePass) {
       if (quality < this.maxQuality) {
         return quality + 1;
       }

@@ -33,6 +33,7 @@ describe("Gilded Rose", function() {
     const gildedRose = new Shop([new Item("Aged Brie", 2, 0)]);
     const items = gildedRose.updateQuality();
     expect(items[0].quality).toBe(1);
+    expect(items[0].sellIn).toBe(1);
   });
 
   it("quality is never >= 50", function() {
@@ -58,6 +59,7 @@ describe("Gilded Rose", function() {
     const gildedRose = new Shop([new Item("Backstage passes to a TAFKAL80ETC concert", 12, 20)]);
     const items = gildedRose.updateQuality();
     expect(items[0].quality).toBe(21);
+    expect(items[0].sellIn).toBe(11);
   });
 
   it("should increase quality by 2 if item is Backstage passes to a TAFKAL80ETC concert and sellIn is <= 10", function() {
