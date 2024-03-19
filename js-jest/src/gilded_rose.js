@@ -58,6 +58,18 @@ class Shop {
     for (const item of this.items) {
       //inverse le if et le else pour avoir if (this.isItemThatIncreaseValueWhenIsOld) ? 
       //peut être plus lisible
+
+
+      //item classique
+      if (!this.isVintageItem(item)  && !this.isInExpirableItem(item)) {
+        this.defaultDecrementQuality(item);
+        item.sellIn = item.sellIn - 1;
+        if (this.isItemExpired(item)) {
+          this.defaultDecrementQuality(item)
+        }
+        continue;
+      }
+
       if (this.isVintageItem(item)) {
         //securité pour ne pas dépasser la limite max
         if (this.canIncrementQuality(item)) {
@@ -65,16 +77,13 @@ class Shop {
           if (this.isAgeBrieItem(item)) {
             this.incrementQuality(item)
           }
-          if (this.isBackStagePassItem(item)) {
+          else if (this.isBackStagePassItem(item)) {
             this.incrementQuality(item)
             item.quality = this.getQualityForBackstagePass(item);
           }
         }
       }
       //faire la distinction entre classics iteams et sulfuras
-      else {
-        this.defaultDecrementQuality(item);
-      } 
 
       //gene iteam au mieu de rien
       if (!this.isInExpirableItem(item)) {
@@ -90,11 +99,9 @@ class Shop {
             this.incrementQuality(item)
           }
         }
-        else {
-          if (this.isBackStagePassItem(item))
-          this.makeBackstagePassUnusable(item);
-          else {
-            this.defaultDecrementQuality(item)
+        if (!this.isAgeBrieItem(item)) {
+          if (this.isBackStagePassItem(item)) {
+            this.makeBackstagePassUnusable(item);
           }
         }
       }
@@ -118,17 +125,18 @@ class Shop {
   //peut etre faire une class BackStagePass qui prend un iteam et qui calcul le quality
   getQualityForBackstagePass(item) {
     let quality = item.quality;
-    if (item.sellIn < this.almostLastMinutePass) {
-      if (quality < this.maxQuality) {
-        quality = quality + 1;
-      }
-    }
+
     if (item.sellIn < this.lastMinutePass) {
       if (quality < this.maxQuality) {
-        quality = quality + 1;
+        return quality + 2;
       }
     }
 
+    else if (item.sellIn < this.almostLastMinutePass) {
+      if (quality < this.maxQuality) {
+        return quality + 1;
+      }
+    }
     return quality;
   }
 }
