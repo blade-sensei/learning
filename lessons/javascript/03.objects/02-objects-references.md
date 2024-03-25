@@ -1,5 +1,5 @@
 
-- Ce chapitre, va vous donner des informations supplémentaire sur le fonctionnement des type objets
+- Ce chapitre, va vous donner des informations supplémentaire sur le fonctionnement des [types](../02.primitives/Type_de_données.Primitives.md) objets 
 - Afin d'éviter des erreurs / bugs (qui vont arriver très tôt dans votre apprentissage), il est important de comprendre les notions de "références"
 
 ## Copies / Changements
@@ -19,14 +19,16 @@ console.log(personneCopie); //{ name: 'Is not Patrick anymore' }
 
 
 Pour expliquer pourquoi la variable personne a changé 🤔:
-- lors qu'ont crée un object et on l'assigner à une variable, la variable ne possède pas les valeurs de chaque propriété, enfaite la variable va contenir, une "référence", c'est à dire un "code" qui va lui permettre d'accéder **au lieu où sont stockés** les valeurs/propriétés de objects
-- 🗃️ C'est un peu comme si "personne" avait plutôt le numéro d'un "casier" le casier numéro "100ER", avec ce numéro on peut aller dans la salle des casiers et ouvrir le casier numéro "100ER" et voir le contenue de "personne"
-- Donc lors qu'on fait `let personneCopie = personne`  comme info ne fait que contenir le numero de casier, alors ce même numéro de casier va être copié à la variable `personneCopie`
-- ℹ️ on dit que info et info1 "pointent" vers la même référence, maintenant chaque changement dans 1 des 2 objets va changer aussi l'autre object.
+- lors qu'ont crée un object et on l'assigner à une variable, la variable ne possède pas les valeurs de chaque propriété, enfaite la variable va contenir, une "référence", c'est à dire un "code/identifiant" qui va lui permettre d'accéder **au lieu où sont stockés** les valeurs/propriétés de objects
+- 🗃️ C'est un peu comme si la variable "personne" avait plutôt le numéro d'un "casier" le casier numéro "100ER", avec ce numéro on peut aller dans la salle des casiers et ouvrir le casier numéro "100ER" et voir le contenue de "personne"
+- Donc lors qu'on fait `let personneCopie = personne`  comme "personne" ne fait que contenir le numero de casier, alors ce même numéro de casier va être copié à la variable `personneCopie`
+- ℹ️ on dit que personne et personneCopie "pointent" vers la même référence, maintenant chaque changement dans 1 des 2 objets va changer aussi l'autre object.
 
 
 ![[Pasted image 20240125160113.png]]
 
+
+- Ici info et "info1" pointent vers l'adresse XX65
 
 ![[Pasted image 20240125151824.png]]
 

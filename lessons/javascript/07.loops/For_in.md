@@ -13,7 +13,16 @@ for (const property in object) {
 
 ## Exercices
 
-```
+```bash
 On souhaite créer une fonction qui va prendre un objet en paramètre et va transformer en majuscule chaque clé de cet object
 ```
 
+
+```bash
+exercice 2
+Faire une fonction qui va prendre un objet en paramètre qui a des clés avec underscore et la remplacer par de dash. 
+
+input = { camel_case = "test" }
+output = { camel-case = "test" }
+
+```

@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0e0cd715e509039b",
+            "id": "8eee0c10efbab0f2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "beacaa0f22fe09a9",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.11"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,20 +157,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0e0cd715e509039b",
+  "active": "beacaa0f22fe09a9",
   "lastOpenFiles": [
     "lessons/javascript/03.objects/02-copies-object-arrays.md",
-    "lessons/javascript/03.objects/02-objects-references.md",
     "lessons/javascript/BACKLOG.md",
+    "lessons/javascript/03.objects/02-objects-references.md",
+    "lessons/javascript/02.primitives/Type_de_données.Primitives.md",
+    "lessons/javascript/08-operators/Operators_Précedence.md",
+    "lessons/javascript/07.loops/For_in.md",
+    "lessons/javascript/08-operators/Logical_operators.md",
     "lessons/javascript/05.functions/03.Function-for-object-oriented-programming.md",
     "lessons/javascript/05.functions/05.Functions-anonym.md",
     "lessons/javascript/12.other-concepts/object-oriented-programming/01.OOP-Base.md",
     "classe-d-objet.png",
     "2_uml.webp",
-    "lessons/javascript/08-operators/Operators_Précedence.md",
     "lessons/javascript/08-operators/Operators_de_comparaison.md",
     "lessons/javascript/08-operators/Operators_arithmetique.md",
-    "lessons/javascript/08-operators/Logical_operators.md",
     "lessons/javascript/05.functions/01-Functions.md",
     "0_sJcCz-q5pIZbgmsK.png",
     "lessons/javascript/12.other-concepts/object-oriented-programming/Class-heritage.md",
@@ -173,7 +186,6 @@
     "Untitled.md",
     "1_BwARRnm0-gFoh-Rq_ubbwQ.png",
     "lessons/javascript/12.other-concepts/hosting.md",
-    "lessons/javascript/07.loops/For_in.md",
     "lessons/javascript/08-operators/Untitled.md",
     "lessons/javascript/08-operators/Operator_this_lvl_1.md",
     "lessons/javascript/08-operators/Operators_assigment.md",

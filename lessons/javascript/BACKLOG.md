@@ -48,7 +48,7 @@ DEV Niveau 2
 - operators 🟢
 	- comparaison 🟢 [lessons/javascript/08-operators/Operators_de_comparaison.md](lessons/javascript/08-operators/Operators_de_comparaison.md)
 	  - logique 🟢 [lessons/javascript/08-operators/Logical_operators.md](lessons/javascript/08-operators/Logical_operators.md)
-		  - précédence des operators 🟠
+		  - précédence des operators 🟢
 	- arithmetique 🟢  [lessons/javascript/08-operators/Operators_arithmetique.md](../../lessons/javascript/08-operators/Operators_arithmetique.md)
     - increment ++ -- %  ** (exponentielle) 🟢 [increments](../../lessons/javascript/08-operators/Operators_arithmetique.md#increment-et-decrement-operator)
     - unary (-) (inverser valeur) 🟢  [unaire negation](../../lessons/javascript/08-operators/Operators_arithmetique.md#négation-unaire)
@@ -59,17 +59,17 @@ DEV Niveau 2
 - operator (in, instanceof, typeof) 🟢
 	- In operator (pour parcours d'objects ou array index) 🟢 [lessons/javascript/08-operators/Operator_IN.md](../../lessons/javascript/08-operators/Operator_IN.md)
 	- instanceof / typeof 🟢 [lessons/javascript/08-operators/Operator_Typeof.md](../../lessons/javascript/08-operators/Operator_Typeof.md)
-	- For In operator 🟠 [lessons/javascript/08-operators/Operator_IN.md](../../lessons/javascript/07.loops/For_in.md)
+	- For In operator 🟢 [lessons/javascript/08-operators/Operator_IN.md](../../lessons/javascript/07.loops/For_in.md)
 - scopes 🟢 [lessons/javascript/12.other-concepts/Scopes_lvl_1.md](../../lessons/javascript/12.other-concepts/Scopes_lvl_1.md)
 	- global, local, blockscope 🟢
-- objects 2 | array 2 
-	- attention avec les références 🟠 [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md)
-    - example de passage en param de function qui n'est pas "pure" 🟠  [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md/#passage-en-paramètre-fonction)
-	- realiser des copies d objects/arrays 🟠 [lessons/javascript/03.objects/02-copies-object-arrays.md](../javascript/03.objects/02-copies-object-arrays.md)
+- objects 2 | array 2 🟠
+	- attention avec les références  [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md)
+    - example de passage en param de function qui n'est pas "pure"  [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md/#passage-en-paramètre-fonction)
+	- realiser des copies d objects/arrays  [lessons/javascript/03.objects/02-copies-object-arrays.md](../javascript/03.objects/02-copies-object-arrays.md)
     - shallow copy et deep copy  [lessons/javascript/03.objects/02-copies-object-arrays.md](../../lessons/javascript/03.objects/02-copies-object-arrays.md/#1-shadow-copy)
 - functions 2 🟠
-	- comment utiliser les fonctions pour faire de l'orienté object  🟠
-	- construction / instantiation 🟠
+	- comment utiliser les fonctions pour faire de l'orienté object  
+	- construction / instantiation 
 - Eval + Game 
 
 DEV Niveau 2.1

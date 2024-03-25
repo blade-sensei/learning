@@ -21,10 +21,18 @@ console.log((3 + 4) * 5); // 7 * 5
 
 ```
 let a = 2 + 6 / 2;
-a =  argent > 60 || true && false;
+a =  true && true || true && false;
 ```
 - donner dans l'ordre les conditions / calculs qui vont s'executer et au même temps donner le résultat de chaque condition 
 - modifier l'expression  `let a = 2 + 6 / 2;` pour avoir comme résultat 4
+
+```bash
+exercice 2
+
+3 > 2 && 2 > 1
+donner dans l'ordre les conditions / calculs qui vont s'executer et au même temps donner le résultat de chaque condition 
+
+```
 ### Resultat ? 
 
 ```
@@ -44,4 +52,6 @@ const d = 40 + ((23 - a) + (c + 5));
 ```
 
 
-https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Operator_precedence
+## Référence:
+
+ordre par operator:  https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Operator_precedence
