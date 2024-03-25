@@ -62,7 +62,7 @@ DEV Niveau 2
 	- For In operator 🟢 [lessons/javascript/08-operators/Operator_IN.md](../../lessons/javascript/07.loops/For_in.md)
 - scopes 🟢 [lessons/javascript/12.other-concepts/Scopes_lvl_1.md](../../lessons/javascript/12.other-concepts/Scopes_lvl_1.md)
 	- global, local, blockscope 🟢
-- objects 2 | array 2 🟠
+- objects 2 | array 2 🟢
 	- attention avec les références  [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md)
     - example de passage en param de function qui n'est pas "pure"  [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md/#passage-en-paramètre-fonction)
 	- realiser des copies d objects/arrays  [lessons/javascript/03.objects/02-copies-object-arrays.md](../javascript/03.objects/02-copies-object-arrays.md)
@@ -74,9 +74,9 @@ DEV Niveau 2
 
 DEV Niveau 2.1
 - JS
-	- Falsy + Truthy [lessons/javascript/12.other-concepts/Truthy_and_Falsy.md](../../lessons/javascript/12.other-concepts/Truthy_and_Falsy.md)
+	- Falsy + Truthy 🟠 [lessons/javascript/12.other-concepts/Truthy_and_Falsy.md](../../lessons/javascript/12.other-concepts/Truthy_and_Falsy.md)
 	- conditions 2 🔵 
-    - court circuit pour exécuter du code avec condition ou alors assignation 🔵
+	    - court circuit pour exécuter du code avec condition ou alors assignation 🔵
 - Les classes 🔵
 	- POO 
 		- concepte de encapsulation
