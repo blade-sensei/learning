@@ -32,19 +32,19 @@
             }
           },
           {
-            "id": "91fdc5b67dc61c86",
+            "id": "4159c0d10900a0e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
+                "file": "lessons/javascript/BACKLOG.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -171,21 +171,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "beacaa0f22fe09a9",
+  "active": "4159c0d10900a0e7",
   "lastOpenFiles": [
+    "lessons/javascript/12.other-concepts/object-oriented-programming/01.OOP-Base.md",
+    "lessons/javascript/05.functions/03.Function-for-object-oriented-programming.md",
+    "2_uml.webp",
     "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
+    "lessons/javascript/08-operators/Operator_this_lvl_1.md",
     "lessons/javascript/BACKLOG.md",
+    "lessons/javascript/05.functions/05.Functions-anonym.md",
+    "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
     "lessons/javascript/03.objects/02-copies-object-arrays.md",
     "lessons/javascript/03.objects/02-objects-references.md",
     "lessons/javascript/02.primitives/Type_de_données.Primitives.md",
     "lessons/javascript/08-operators/Operators_Précedence.md",
     "lessons/javascript/07.loops/For_in.md",
     "lessons/javascript/08-operators/Logical_operators.md",
-    "lessons/javascript/05.functions/03.Function-for-object-oriented-programming.md",
-    "lessons/javascript/05.functions/05.Functions-anonym.md",
-    "lessons/javascript/12.other-concepts/object-oriented-programming/01.OOP-Base.md",
     "classe-d-objet.png",
-    "2_uml.webp",
     "lessons/javascript/08-operators/Operators_de_comparaison.md",
     "lessons/javascript/08-operators/Operators_arithmetique.md",
     "lessons/javascript/05.functions/01-Functions.md",
@@ -202,13 +204,10 @@
     "1_BwARRnm0-gFoh-Rq_ubbwQ.png",
     "lessons/javascript/12.other-concepts/hosting.md",
     "lessons/javascript/08-operators/Untitled.md",
-    "lessons/javascript/08-operators/Operator_this_lvl_1.md",
     "lessons/javascript/08-operators/Operators_assigment.md",
     "lessons/javascript/12.other-concepts",
     "Untitled",
     "lessons/javascript/01.declare-assign/déclarer_assigner.md",
-    "Untitled 1.md",
-    "lessons/javascript/08-operators/Operators.md",
     "Pasted image 20240125160103.png",
     "Pasted image 20240125151824.png",
     "AND-gate-..gif",

@@ -54,7 +54,7 @@ DEV Niveau 2
     - unary (-) (inverser valeur) 🟢  [unaire negation](../../lessons/javascript/08-operators/Operators_arithmetique.md#négation-unaire)
     - assignation 🟢 
 	    - += -= 🟢  [unaire negation](../../lessons/javascript/08-operators/Operators_assigment#assignation--calcul)
-  - operator this 🟠 [lessons/javascript/08-operators/Operator_this_lvl_1.md](lessons/javascript/08-operators/Operator_this_lvl_1.md)
+  - operator this 🟢 [lessons/javascript/08-operators/Operator_this_lvl_1.md](lessons/javascript/08-operators/Operator_this_lvl_1.md)
 	  - c'est quoi le this 
 - operator (in, instanceof, typeof) 🟢
 	- In operator (pour parcours d'objects ou array index) 🟢 [lessons/javascript/08-operators/Operator_IN.md](../../lessons/javascript/08-operators/Operator_IN.md)
@@ -67,7 +67,7 @@ DEV Niveau 2
     - example de passage en param de function qui n'est pas "pure"  [lessons/javascript/03.objects/02-objects-references.md](../javascript/03.objects/02-objects-references.md/#passage-en-paramètre-fonction)
 	- realiser des copies d objects/arrays  [lessons/javascript/03.objects/02-copies-object-arrays.md](../javascript/03.objects/02-copies-object-arrays.md)
     - shallow copy et deep copy  [lessons/javascript/03.objects/02-copies-object-arrays.md](../../lessons/javascript/03.objects/02-copies-object-arrays.md/#1-shadow-copy)
-- functions 2 🟠
+- functions 2 🟢
 	- comment utiliser les fonctions pour faire de l'orienté object  
 	- construction / instantiation 
 - Eval + Game 
