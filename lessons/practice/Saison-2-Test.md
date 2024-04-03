@@ -25,11 +25,11 @@ function combienDePommes(fruits) {
 combienDePommes();
 ```
 
-- `fruits.length > 10` : ....
-- `for (const fruit of fruits) {}`
-- `counter++`
-- `fruit === "pomme"`
-- `combienDePommes()`
+- `fruits.length > 10` : expression
+- `for (const fruit of fruits) {}` : statement
+- `counter++` : expression
+- `fruit === "pomme"` : expression
+- `combienDePommes()` : statement
 
 ## 2. Scopes
 
@@ -64,37 +64,57 @@ main();
 console.log('final', role);
 ```
 
-- donnez la sortie de la ligne `'callback logging: ->`
-- quel est la valeur de `  const role = user.role;` dans isAllowedForPrivateSection
-- donnez la sortie console de la dernière ligne
-- donnez la valeur de `current role`
-- donnez la valeur de `verify function, role:`
-
-- Je m'attend à avoir `callback logging: -> client` c'est normal ? Tu peux expliquer ta réponse ?
-- Il y a une erreur dans ce code, veuillez l'indiquer et expliquer 
+- donnez la sortie de la ligne `'callback logging: ->` : 'client'
+- quel est la valeur de `  const role = user.role;` dans isAllowedForPrivateSection : superadmin
+- donnez la sortie console de la dernière ligne : superadmin
+- donnez la valeur de `current role` : client
+- donnez la valeur de `verify function, role:` : superadmin
+<!-- 
+- Je m'attend à avoir `callback logging: -> client` c'est normal ? Tu peux expliquer ta réponse ? oui car on vien de redédinir dans ce scope  const role = 'client'; -->
+- Il y a une erreur dans ce code, veuillez l'indiquer et expliquer : il faut mettre isAllowed dans une const, pour ne pas changer la valeur
 
 ## 3. Operators
 
 ```javascript
 a = false || (false && true);
+a = false || false
+a = true
+
 b = (false && true) || (true && false);
+b = false || false
+b = false
+
 b = 3 > 2 && 2 > 1;
+b = true && true
+b = true
+
 c = (12 < 10 && 12 > 18) || true;
+c = (false && false ) || true
+c = false || true
+c = true
+
 d = false && (true || false) > 18 && true;
+d = false && true > 18 && true
+d = false && false && true
+d = false && true
+d = false 
 ```
 
 - normalement je m'attendais à ce que c = false, veuillez m'expliquer pourquoi je n'arrive pas à avoir ce résultat
+non car il faut d'abord traiter la () avant le ||
 
 ```js
 let number = 10;
 let number2 = 40;
-const z = number++;
-
-const y = ++number2;
+const z = number++; 
+const y = ++number2; 
 const w = --number;
 ```
 
 - donnez les valeurs de z, y et w
+z : 10
+y : 41
+w : 9
 
 ## 4. Où est l'erreur ❌
 
