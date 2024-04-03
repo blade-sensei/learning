@@ -1,6 +1,6 @@
 ## 1. Vocabulaire
 
-En utilisant les mots
+1. En utilisant les mots
 
 - expression
 - statement
@@ -25,12 +25,15 @@ function combienDePommes(fruits) {
 combienDePommes();
 ```
 
-- `fruits.length > 10` : ....
+- `fruits.length > 10`  
 - `for (const fruit of fruits) {}`
 - `counter++`
 - `fruit === "pomme"`
 - `combienDePommes()`
 
+2. Dans la programmation object
+- C'est quoi une class ? à quoi elle sert ? 
+- une instance ? 
 ## 2. Scopes
 
 1.  Partie 1
@@ -97,9 +100,6 @@ const w = --number;
 
 ## 4. Où est l'erreur ❌
 
-- ce code va crash à un certain moment, trouvez le bout de code qui cause l'erreur, 
-- veuillez décrire ce qu'il se passe dans le code qui fait qu'on arrive à ce résultat
-
 ```javascript
 const originalDebts = [
   { id: '1', value: 3 },
@@ -107,13 +107,13 @@ const originalDebts = [
   { id: '3', value: 200 },
 ];
 
-const copySteps = ['name', 'documents', 'transfer'];
+const steps = ['name', 'documents', 'transfer'];
 
 const account = {
   accountNumber: '123XY',
   status: 'OPEN',
   debts: [...originalDebts],
-  onboardingSteps: [...copySteps],
+  onboardingSteps: [...steps],
 };
 
 const copy = { ...account };
@@ -121,26 +121,15 @@ copy.debts[0].value = 30;
 console.log('original 1:', originalDebts[0].value);
 console.log('copy 1:', copy.debts[0].value);
 account.onboardingSteps.push('adress');
-console.log('adress step:', copySteps[3].toString());
+console.log('adress step:', steps[3].toString());
 ```
 
-2.  Classes
+- description d'erreur?
+- veuillez décrire ce qu'il se passe dans le code qui fait qu'on arrive à ce résultat
 
-```js
-function salleClass(nom, etage, nomBatiment) {
- //attributs 
-  const college = 'Jean Phillippe Rameau'
-  this.nom = nom; 
-  this.etage = etage;
-  this.nomBatiment = nomBatiment;
-  this.renommer = function (nom) {
-   const changerNom = this.nom;
-   nom = changerNom
-  }
-}
 
-const salle = new salleClass('Molière', 3, 'A'); 
-salle.renommer("SalleB");
+```
+
 ```
 ## 5. Why ?
 
@@ -157,7 +146,7 @@ function livrer(commande) {
 }
 
 livrer(commande);
-console.log('commande final', commande);
 ```
 
-- Pourquoi 
+- quelle est la valeur de commande dans le scope global ? Pourquoi cette valeur ?
+
