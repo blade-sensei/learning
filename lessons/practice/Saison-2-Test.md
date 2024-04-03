@@ -70,7 +70,6 @@ console.log('final', role);
 - donnez la valeur de `current role`
 - donnez la valeur de `verify function, role:`
 
-- Je m'attend à avoir `callback logging: -> client` c'est normal ? Tu peux expliquer ta réponse ?
 - Il y a une erreur dans ce code, veuillez l'indiquer et expliquer 
 
 ## 3. Operators
@@ -160,4 +159,4 @@ livrer(commande);
 console.log('commande final', commande);
 ```
 
-- Pourquoi 
+- Pourquoi commande égale à code A53, menu: kebab, prix: 10
