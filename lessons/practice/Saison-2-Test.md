@@ -64,14 +64,13 @@ main();
 console.log('final', role);
 ```
 
-- donnez la sortie de la ligne `'callback logging: ->` : 'client'
+- donnez la sortie de la ligne `'callback logging: ->` : client
 - quel est la valeur de `  const role = user.role;` dans isAllowedForPrivateSection : superadmin
 - donnez la sortie console de la dernière ligne : superadmin
 - donnez la valeur de `current role` : client
 - donnez la valeur de `verify function, role:` : superadmin
-<!-- 
-- Je m'attend à avoir `callback logging: -> client` c'est normal ? Tu peux expliquer ta réponse ? oui car on vien de redédinir dans ce scope  const role = 'client'; -->
-- Il y a une erreur dans ce code, veuillez l'indiquer et expliquer : il faut mettre isAllowed dans une const, pour ne pas changer la valeur
+- Je m'attend à avoir `callback logging: -> client` c'est normal ? Tu peux expliquer ta réponse ?
+- Il y a une erreur dans ce code, veuillez l'indiquer et expliquer : il faut mettre isAllowed dans une const pour que la valoir ne soit pas changeable
 
 ## 3. Operators
 
@@ -100,8 +99,7 @@ d = false && true
 d = false 
 ```
 
-- normalement je m'attendais à ce que c = false, veuillez m'expliquer pourquoi je n'arrive pas à avoir ce résultat
-non car il faut d'abord traiter la () avant le ||
+- normalement je m'attendais à ce que c = false, veuillez m'expliquer pourquoi je n'arrive pas à avoir ce résultat : il faut d'abord résoudre le () avant le ||
 
 ```js
 let number = 10;
@@ -118,6 +116,9 @@ w : 9
 
 ## 4. Où est l'erreur ❌
 
+- ce code va crash à un certain moment, trouvez le bout de code qui cause l'erreur, : l.143, copyStep contient que 3 éléments
+- veuillez décrire ce qu'il se passe dans le code qui fait qu'on arrive à ce résultat
+
 ```javascript
 const originalDebts = [
   { id: '1', value: 3 },
@@ -125,13 +126,13 @@ const originalDebts = [
   { id: '3', value: 200 },
 ];
 
-const steps = ['name', 'documents', 'transfer'];
+const copySteps = ['name', 'documents', 'transfer'];
 
 const account = {
   accountNumber: '123XY',
   status: 'OPEN',
   debts: [...originalDebts],
-  onboardingSteps: [...steps],
+  onboardingSteps: [...copySteps],
 };
 
 const copy = { ...account };
@@ -139,12 +140,30 @@ copy.debts[0].value = 30;
 console.log('original 1:', originalDebts[0].value);
 console.log('copy 1:', copy.debts[0].value);
 account.onboardingSteps.push('adress');
-console.log('adress step:', steps[3].toString());
+console.log('adress step:', copySteps[3].toString());
 ```
 
-- description d'erreur?
-- veuillez décrire ce qu'il se passe dans le code qui fait qu'on arrive à ce résultat
+2.  Classes
 
+```js
+function salleClass(nom, etage, nomBatiment) {
+ //attributs 
+  const college = 'Jean Phillippe Rameau'
+  this.nom = nom; 
+  this.etage = etage;
+  this.nomBatiment = nomBatiment;
+  this.renommer = function (nom) {
+   const changerNom = this.nom;
+   nom = changerNom
+  }
+}
+
+const salle = new salleClass('Molière', 3, 'A'); 
+salle.renommer("SalleB");
+
+- on n'utilise pas changerNom, peut etre qu'il fait enlever la foction renommer
+
+```
 ## 5. Why ?
 
 ```js
@@ -160,7 +179,10 @@ function livrer(commande) {
 }
 
 livrer(commande);
+console.log('commande final', commande);
 ```
 
-- quelle est la valeur de commande dans le scope global ? Pourquoi cette valeur ?
+- Pourquoi console "commande final" affiche commande égale à = { code A53, menu: kebab, prix: 10 }
+Le console.log final affiche : commande final
+(4) {code: "A53", menu: "kebab", prix: 10, status: "LIVRAISON_EN°COURS"} car on n'a pas fait de copie de commande, donc lorsqu'on rajoute le statut, il modifie l'objet initial
 

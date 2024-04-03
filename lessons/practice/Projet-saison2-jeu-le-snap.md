@@ -11,7 +11,7 @@ On distribue les 52 cartes d’un jeu de cartes classique et personne ne regarde
 ## Régles
 
 - Si tu poses une carte correspondant au chiffre que tu dois dire, tout le monde tape sur le tas.
-- Si deux cartes du même chiffre OU figure se suivent, tout le monde tape sur le tas.
+- Si deux cartes de la même valeur (sans compter le symbole ou couleur) se suivent, tout le monde tape sur le tas.
 - Si la carte est un 7, il faut dire le chiffre dans sa tête (ex: 4-5-…-7-8)
 	- si la personne dit le chiffre à haute voix alors les cartes devront être distribués à tous les joueurs (sauf celui qui vient de commettre l'erreur)
 
@@ -25,15 +25,15 @@ On distribue les 52 cartes d’un jeu de cartes classique et personne ne regarde
 - jeux sur console/terminal
 - Quand on dit "taper sur le tas" cela veut dire appuyer sur une touche
 - On doit pouvoir jouer à 4 maximum, avant le la parti: 
-	-  on doit pouvoir déclarer à combien de jouer on jouera
-	- chaque jouer doit choisir le touche qu'il veut appuyer.., par example le jouer 1 choisi le touche A, le jouer 2 la touche M.. etc
+	-  on doit pouvoir déclarer à combien de joueurs on jouera
+	- chaque jouer doit choisir la touche qu'il veut appuyer.., par example le jouer 1 choisi le touche A, le jouer 2 la touche M.. etc 
 - Entre chaque "tour", avant de dévoiler la prochaine carte on a un décompte de 2 secondes, ensuite on passe au tour du jouer suivant et on dévoile sa carte
 - Lors que un jouer à remportez des cartes, ou quelqu'un a commis une erreur, avant de passer au tour de la personne suivante, on doit appuyer sur la touche "espace"
 - lors que le jouer le plus rapide récupère les cartes, on doit les ajouter à son paquet de cartes
 - Il est important d'affiche les cartes restantes de chaque joueur...
 
 ### Modélisation Minimal
-Jouer
+Joueur
 ------ 
 touchSelectionee
 score
@@ -76,15 +76,15 @@ Joueur 1: nb de cartes: 10, ****
 Joueur 2: nb de cartes: 5, ****
 Joueur 3: nb de cartes: 2
 
-reste 3... 2... avant le tour du prochaine jouer:
-tour du Jouer 2:
+reste 3... 2s... avant le tour du prochaine joueur:
+tour du Joueur 2:
 cartes: 3♥️ - 10♣️ - Q👸 - J🥷 - 4♥️
 reste 3... 2... avant le tour du prochaine jouer:
 > Le plus rapide est: Jouer 2
 > Le Jouer 2 récupère le cas
 > Le Jouer 3: ne possède plus de cartes.. ELIMINé TU RENTRES CHEZ TOI
 
-Veuillez appuyer sur la touche "espace" pour continuer avec le jouer 3
+Veuillez appuyer sur la touche "espace" pour continuer avec le joueur 3
 ...
 tour du Jouer 3:
 cartes: 10♣️ - Q👸 - J🥷 - 4♥️ - 4♠️
@@ -92,10 +92,7 @@ reste 3... 2... avant le tour du prochaine jouer:
 tour du Jouer 1:
 cartes: 10♣️ - Q👸 - J🥷 - 4♥️ - 4♠️
 
-
-
 ```
-
 ## Bonus
 
 - On voit pouvoir arrêter la parti en cours avec la touche "esc"
