@@ -159,4 +159,4 @@ livrer(commande);
 console.log('commande final', commande);
 ```
 
-- Pourquoi commande égale à code A53, menu: kebab, prix: 10
+- Pourquoi console "commande final" affiche commande égale à = { code A53, menu: kebab, prix: 10 }
