@@ -50,6 +50,21 @@ function distribuerLesCartes(jeuDuJoueur, nombreDeCartesParJoueurs, jeuDeCartes)
         }
     }}
 
+function distribuerLeTas(joueurs) {
+    const nombreDeCartesDansTas = tas.length;
+    const nombreDeJoueurs = joueurs.length;
+    const nombreDeCartesParJoueur = Math.floor(nombreDeCartesDansTas / nombreDeJoueurs);
+
+    let carteIndex = 0;
+    for (const joueur of joueurs) {
+        joueur.jeuDuJoueur.push(...tas.slice(carteIndex, carteIndex + nombreDeCartesParJoueur));
+        carteIndex += nombreDeCartesParJoueur;
+    }
+
+    // Vider le tas 
+    tas = [];
+}
+    
 // Fonction pour démarrer le jeu
 function demarrerJeu() {
     let nombreDeJoueurs;
@@ -106,19 +121,20 @@ function poserUneCarte(joueur) {
 function jouerUnTour(joueurs, index) {
     if (index < joueurs.length) {
         const joueur = joueurs[index];
-        afficherCarteAttendue();
+        // afficherCarteAttendue();
 
         //setTimeout
-        let tempsRestant = 2;
+        let tempsRestant = 5;
         console.log("Tas actuel:", tas); 
         console.log(`Temps restant pour 'Taper': ${tempsRestant} secondes`);
+        console.log(`Voulez-vous "taper" ?`); 
+        
 
         setTimeout(() => {
             poserUneCarte(joueur);
 
             prompt.get([{
                 name: 'reponse',
-                description: `Voulez-vous "taper" ?`
             }], function (err, result) {
                 if (err) {
                     console.log('Il y a eu une erreur');
@@ -127,9 +143,17 @@ function jouerUnTour(joueurs, index) {
                 const reponse = result.reponse;
                 reglesDuJeu(reponse, joueur);
             });
-
-            console.log("Le temps est écoulé. Appuyez sur une touche pour continuer.");
             // console.log('Après premier tour, jeuDuJoueur:', joueur.jeuDuJoueur);
+
+            const derniereCarteDansTas = tas[tas.length - 1];
+            carteAttendue = 2;
+            if (derniereCarteDansTas === carteAttendue) {
+                joueur.jeuDuJoueur.push(...tas);
+                console.log(`Le joueur ${joueur.nomDuJoueur} a tapé sur le tas et récupère les cartes`);
+                console.log('ici joueurs après tappé', joueurs);
+            } else {
+                console.log(`Le joueur s'est trompé , on redistribue le tas`);
+            }
 
             // Passez au joueur suivant
             jouerUnTour(joueurs, index + 1);
@@ -150,15 +174,23 @@ function reglesDuJeu(toucheSaisie, joueur) {
         
         console.log(`aucune touche saisie`);
     }
+
+
+//  Si tu poses une carte correspondant au chiffre que tu dois dire, tout le monde tape sur le tas.
+
+// Si deux cartes de la même valeur (sans compter le symbole ou couleur) se suivent, tout le monde tape sur le tas.
+
+// Si la carte est un 7, il faut dire le chiffre dans sa tête (ex: 4-5-…-7-8)
+
+// si la personne dit le chiffre à haute voix alors les cartes devront être distribués à tous les joueurs (sauf celui qui vient de commettre l'erreur)
+// Si la carte est un 10, tout le monde tape sur le tas
+
+// Si la carte est une Dame, l’énonciation des chiffres change de sens (ex: Dame-Valet-10-9-8…)
+
+// Si quelqu'un tape sur le tas, alors qu'il ne fallait pas le faire, la pile de carte du milieu est distribué entre tous les autres joueurs
+
+// Celui qui tape en 1er récupère toutes les carte du tas
 }
 
-
-// Attendre un délai avant de dévoiler la carte suivante.
-// Le joueur dont c'est le tour pose une carte sur le tas en comptant.
-// Les autres joueurs observent la carte posée et réagissent selon les règles du jeu.
-// Si un joueur commet une erreur, les cartes du tas sont distribuées aux autres joueurs.
-// Si un joueur tape sur le tas correctement, il récupère toutes les cartes du tas.
-// Mettre à jour le score de chaque joueur en fonction des cartes qu'ils ont en main.
-// Passer au joueur suivant pour le tour suivant.
 
  
