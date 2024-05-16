@@ -72,7 +72,7 @@ DEV Niveau 2
 	- construction / instantiation 
 - Eval + Game 
 
-DEV Niveau 2.1
+DEV Niveau 2.1 (approfondir la programmation orienté objet +  outils de versioning / déploiements )
 - JS
 	- Falsy + Truthy 🟠 [lessons/javascript/12.other-concepts/Truthy_and_Falsy.md](../../lessons/javascript/12.other-concepts/Truthy_and_Falsy.md)
 	- conditions 2 🔵 
@@ -97,7 +97,7 @@ DEV Niveau 2.1
 - Faire une app jeux
 
 
-DEV Niveau 3
+DEV Niveau 3 (application des conceptes JS pour le backend / APIs HTTP)
 - JS
   - Operators 3
     - logique
@@ -134,10 +134,14 @@ DEV Niveau 3
 - Backend APP
 
 
-JavaScript Niveau 4
+JavaScript Niveau 4 (utilisation de Typescript)
 - Typescript
   - Typing
-  - Runner TS
+	  - Interfaces
+	  - Abstract
+	  - Union Type
+	  - Enums 
+  - Runner TS (un peu de théorie)
     - c'est quoi transpilation
     - comment compiler 1 seul fichier
   - le TSconfig

@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7a80d457859debf5",
+        "id": "eb168c924d514bee",
         "type": "tabs",
         "children": [
           {
-            "id": "8eee0c10efbab0f2",
+            "id": "d56384dca80ced3e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/practice/Saison-2-Test.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f9203d27f917d640",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "lessons/javascript/05.functions/03.Function-for-object-oriented-programming.md",
+                "file": "lessons/javascript/BACKLOG.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lessons/practice/Saison-2-Test.md",
+                "file": "lessons/javascript/BACKLOG.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lessons/practice/Saison-2-Test.md",
+                "file": "lessons/javascript/BACKLOG.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lessons/practice/Saison-2-Test.md"
+                "file": "lessons/javascript/BACKLOG.md"
               }
             }
           }
@@ -158,13 +146,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8eee0c10efbab0f2",
+  "active": "d56384dca80ced3e",
   "lastOpenFiles": [
+    "lessons/javascript/03.objects/02-copies-object-arrays.md",
+    "lessons/javascript/03.objects/02-objects-references.md",
+    "lessons/practice/Saison-2-Test.md",
     "lessons/practice/Saison-2-Test-correction.md",
+    "lessons/javascript/08-operators/Operators_Précedence.md",
     "lessons/javascript/BACKLOG.md",
+    "lessons/javascript/README.md",
+    "lessons/javascript/11.expression-statement/01-Expression-And-Statement.md",
     "lessons/javascript/05.functions/03.Function-for-object-oriented-programming.md",
     "lessons/practice/Projet-saison2-jeu-le-snap.md",
-    "lessons/practice/Saison-2-Test.md",
     "lessons/practice/Level 1 Test.md",
     "lessons/javascript/05.functions/05.Functions-anonym.md",
     "lessons/practice/Level-1-Test-Correction.md",
@@ -178,16 +171,11 @@
     "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
     "lessons/javascript/08-operators/Operator_this_lvl_1.md",
     "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
-    "lessons/javascript/03.objects/02-copies-object-arrays.md",
-    "lessons/javascript/03.objects/02-objects-references.md",
     "lessons/javascript/02.primitives/Type_de_données.Primitives.md",
-    "lessons/javascript/08-operators/Operators_Précedence.md",
     "lessons/javascript/07.loops/For_in.md",
     "lessons/javascript/08-operators/Logical_operators.md",
     "classe-d-objet.png",
     "lessons/javascript/08-operators/Operators_de_comparaison.md",
-    "lessons/javascript/08-operators/Operators_arithmetique.md",
-    "lessons/javascript/05.functions/01-Functions.md",
     "0_sJcCz-q5pIZbgmsK.png",
     "Object oriented programming concepts in Java.jpg",
     "lessons/javascript/Untitled",
