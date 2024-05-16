@@ -44,7 +44,6 @@ ramasser()
 Carte
 ------
 chiffre
-symbole
 estDeMemeValeurQue(carteX):boolean
 
 Plateau
