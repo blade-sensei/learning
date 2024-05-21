@@ -10,6 +10,7 @@ function salleClass(nom, etage, nomBatiment) {
  }
  const salle = new salleClass('Molière', 3, 'A'); //new est un operator pour instancier 
 
-salle.reserverSalle();
+const p = salle.reserverSalle();
+console.log(p)
 
-console.log(salle);
+//console.log(salle);
