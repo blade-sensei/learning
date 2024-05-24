@@ -1,7 +1,7 @@
 # Functions
 
 
-## Definition and Creation 
+ v
 
 -  2 STEPS when you want to use a function
   - 1 STEP: the definition of this function

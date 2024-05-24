@@ -88,8 +88,8 @@ DEV Niveau 2
 DEV Niveau 2.1 (approfondir la programmation orienté objet +  outils de versioning / déploiements )
 - JS
 	- Falsy + Truthy 🟠 [lessons/javascript/12.other-concepts/Truthy_and_Falsy.md](../../lessons/javascript/12.other-concepts/Truthy_and_Falsy.md)
-	- conditions 2 🔵 
-	    - court circuit pour exécuter du code avec condition ou alors assignation 🔵
+	- conditions 2 🟠
+	    - court circuit pour exécuter du code avec condition ou alors assignation 🟠
 - Les classes 🔵
 	- POO 
 		- concepte de encapsulation
