@@ -89,7 +89,7 @@ DEV Niveau 2.1 (approfondir la programmation orienté objet +  outils de version
 - JS
 	- Falsy + Truthy 🟠 [lessons/javascript/12.other-concepts/Truthy_and_Falsy.md](../../lessons/javascript/12.other-concepts/Truthy_and_Falsy.md)
 	- conditions 2 🟠
-	    - court circuit pour exécuter du code avec condition ou alors assignation 🟠
+	    - court circuit pour exécuter du code avec condition ou alors assignation 🟠 [lessons/javascript/06.conditions/Condition-2-court-circuit.md](../../lessons/javascript/06.conditions/Condition-2-court-circuit.md)
 - Les classes 🔵
 	- POO 
 		- concepte de encapsulation
