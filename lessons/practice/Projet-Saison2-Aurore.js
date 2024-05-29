@@ -1,5 +1,6 @@
 const prompt = require('prompt');
 const colors = require('colors/safe');
+const readline = require('readline');
 
 const jeuDeCartes = [
     // 2, 2, 2, 2,
@@ -7,7 +8,7 @@ const jeuDeCartes = [
     // 4, 4, 4, 4,
     // 5, 5, 5, 5,
     // 6, 6, 6, 6,
-    // 7, 7, 7, 7,
+    7, 7, 7, 7,
     // 8, 8, 8, 8,
     9, 9, 9, 9,
     10, 10, 10, 10,
@@ -17,26 +18,37 @@ const jeuDeCartes = [
     // 14, 14, 14, 14  // As
 ];
 
-function Joueur(nomDuJoueur, toucheSelectionnee) {
+function Joueur(nomDuJoueur, toucheSelectionnee, plateau) {
     this.nomDuJoueur = nomDuJoueur;
     this.toucheSelectionnee = toucheSelectionnee;
     this.jeuDuJoueur = [];
+    this.estElimine = false;
+    this.plateau = plateau;
 
     this.poserUneCarte = function (tas, joueurs) {
         if (this.jeuDuJoueur.length === 0) {
+            this.estElimine = true;
             plateau.eliminerUnJoueur(nomDuJoueur);
-        }
-        else if (joueurs.length === 1) {
-            const joueurGagnant = this.joueurs[0];
-            console.log(`**** Le joueur ${joueurGagnant.nomDuJoueur} a gagné la partie! ****`);
-            return;
+
+            if (joueurs.filter(j => !j.estElimine).length === 1) {
+                const joueurGagnant = joueurs.find(j => !j.estElimine);
+                console.log(`**** Le joueur ${joueurGagnant.nomDuJoueur} a gagné la partie! ****`);
+                plateau.afficherClassement()
+            }
         } else {
             const carte = this.jeuDuJoueur.shift();
             tas.push(carte);
             console.log(`Le joueur ${this.nomDuJoueur} a posé la carte ${carte}`);
+            return;
         }
     }
+
+    this.ajouterCarte = function (carte) {
+        this.jeuDuJoueur.push(carte);
+        // this.playerGame
+    }
 }
+
 
 function Carte (plateau) {
     this.plateau = plateau;
@@ -69,9 +81,10 @@ function Carte (plateau) {
     }
 }
 
-function Plateau(joueurs) {
+function Plateau() {
     this.joueurs = [];
     this.tas = [];
+    this.ordreElimination = [];
 
     this.creationDeJoueurs = async function(nombreDeJoueurs) {
         const touchesDisponibles = ['A', 'B', 'C', 'D'];
@@ -79,7 +92,7 @@ function Plateau(joueurs) {
         for (let i = 0; i < nombreDeJoueurs; i++) {
             const nomDuJoueur = "Joueur" + (i + 1);
             const toucheSelectionnee = touchesDisponibles[i];
-            const nouveauJoueur = new Joueur(nomDuJoueur, toucheSelectionnee);
+            const nouveauJoueur = new Joueur(nomDuJoueur, toucheSelectionnee, this);
             this.joueurs.push(nouveauJoueur);
         }
     }
@@ -90,7 +103,8 @@ function Plateau(joueurs) {
         for (const joueur of this.joueurs) {
             for (let i = 0; i < cartesADistribuer; i++) {
                 const carteADistribuer = Math.floor(Math.random() * jeuDeCartes.length);
-                joueur.jeuDuJoueur.push(jeuDeCartes.splice(carteADistribuer, 1)[0]);
+                const carte = jeuDeCartes.splice(carteADistribuer, 1)[0];
+                joueur.ajouterCarte(carte);
             }
         }
     };
@@ -100,57 +114,64 @@ function Plateau(joueurs) {
         this.tas.push(carte);
     };
 
-    this.recupereLeTas = function(joueurTouche) {
-        if (this.joueurs.length === 1) {
-            const joueurGagnant = this.joueurs[0];
-            console.log(`**** Le joueur ${joueurGagnant.nomDuJoueur} a gagné la partie! ****`);
-            return;
+    this.eliminerUnJoueur = function(nomDuJoueur) {
+        console.log(`${nomDuJoueur} est éliminé!`)
+        const joueur = this.joueurs.find(j => j.nomDuJoueur === nomDuJoueur);
+        if (joueur) {
+            joueur.estElimine = true;
+            if (!this.ordreElimination.includes(joueur)) { 
+                this.ordreElimination.push(joueur);
+            }
         }
-        else if (this.joueurs.length > 0 && joueurTouche) {
-            console.log(`Tas avant récupération: ${this.tas}`);
-            console.log(`Jeu du joueur avant récupération: ${joueurTouche.jeuDuJoueur}`);
+    };
+
+    this.recupereLeTas = function(joueurTouche) {
+        if (this.joueurs.length > 0 && joueurTouche) {
             joueurTouche.jeuDuJoueur = joueurTouche.jeuDuJoueur.concat(this.tas);
-            console.log ('jeu du joueur', joueurTouche.jeuDuJoueur)
 
             this.tas = [];
-
-            console.log(`Jeu du joueur après récupération: ${joueurTouche.jeuDuJoueur}`);
-            console.log(`Tas après avoir été vidé: ${this.tas}`);
         }
     }
-}
 
     this.redistribuerLeTas = function() {
         console.log('le tas est redistribué')
-        // const nombreDeJoueurs = this.joueurs.length;
-        // const cartesADistribuer = Math.floor(this.tas.length / nombreDeJoueurs);
+        console.log('Joueurs avant redistribution:', this.joueurs)
+        console.log('Tas avant redistribution:', this.tas)
+        const nombreDeJoueurs = this.joueurs.length;
+        const cartesADistribuer = Math.floor(this.tas.length / nombreDeJoueurs);
 
-        // let indexCarte = 0;
-        // for (let i = 0; i < nombreDeJoueurs; i++) {
-        //     for (let j = 0; j < cartesADistribuer; j++) {
-        //         this.joueurs[i].jeuDuJoueur.push(this.tas[indexCarte]);
-        //         indexCarte++;
-        //     }
-        // }
-
-        // while (indexCarte < this.tas.length) {
-        //     this.joueurs[0].jeuDuJoueur.push(this.tas[indexCarte]);
-        //     indexCarte++;
-        // }
-
-        // this.tas = [];
-    }
-
-    this.eliminerUnJoueur = function(nomDuJoueur) {
-        const index = this.joueurs.findIndex(joueur => joueur.nomDuJoueur === nomDuJoueur);
-        this.joueurs.splice(index, 1);
-        console.log(`Le joueur ${nomDuJoueur} a été éliminé de la partie.`);
-        if (joueurs.length === 1) {
-            const joueurGagnant = this.joueurs[0];
-            console.log(`**** Le joueur ${joueurGagnant.nomDuJoueur} a gagné la partie! ****`);
-            return;
+        let indexCarte = 0;
+        for (let i = 0; i < nombreDeJoueurs; i++) {
+            for (let j = 0; j < cartesADistribuer; j++) {
+                this.joueurs[i].jeuDuJoueur.push(this.tas[indexCarte]);
+                indexCarte++;
+            }
         }
-}
+
+        while (indexCarte < this.tas.length) {
+            this.joueurs[0].jeuDuJoueur.push(this.tas[indexCarte]);
+            indexCarte++;
+        }
+
+        this.tas = [];
+        };
+
+        this.afficherClassement = function() {
+            const joueursNonElimines = this.joueurs.filter(function(joueur) {
+                return !joueur.estElimine;
+            });
+            const ordreEliminationInverse = this.ordreElimination.slice().reverse();
+
+            const classementComplet = joueursNonElimines.concat(ordreEliminationInverse);
+    
+            const lignesDeClassement = classementComplet.map(function(joueur, index) {
+                return (index + 1) + ". " + joueur.nomDuJoueur + " - " + joueur.jeuDuJoueur.length + " cartes";
+            });
+    
+            console.log('Classement des joueurs:');
+            console.log(lignesDeClassement.join('\n'));
+        };
+    }
 
 async function demarrerJeu() {
     const plateau = new Plateau();
@@ -168,6 +189,11 @@ async function demarrerJeu() {
 
 
     const carte = new Carte(plateau);   
+
+    const readLine = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
 
     async function jouerUnTour(joueurs, index) {
         if (index < joueurs.length) {
@@ -209,18 +235,28 @@ async function demarrerJeu() {
         while (tour <= nombreDeToursMax) {
             console.log(`Tour ${tour}`);
             await jouerUnTour(joueurs, 0);
+            if (joueurs.filter(j => !j.estElimine).length <= 1) {
+                break;
+            }
             tour++;
         }
-        console.log("La partie est terminée!");
     }
 
     jouerPartie(plateau.joueurs);
 
 }
 
-// Démarrer le jeu
 demarrerJeu().then(() => console.log('start game'));
 
-const joueurs = []; 
 
-const plateau = new Plateau(joueurs)
+const readLine = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+readLine.input.on('keypress', (str, key) => {
+    if (key.sequence === '\u001b') {
+        console.log('Touche esc appuyée, le jeu est terminé');
+        readLine.close();
+    }
+});
