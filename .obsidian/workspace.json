@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Base-encapsulation-extend.md",
+                "file": "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Core-Principes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Base-encapsulation-extend.md",
+                "file": "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Core-Principes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Base-encapsulation-extend.md",
+                "file": "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Core-Principes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Base-encapsulation-extend.md"
+                "file": "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Core-Principes.md"
               }
             }
           }
@@ -148,13 +148,17 @@
   },
   "active": "68c8e5fa572f3028",
   "lastOpenFiles": [
+    "lessons/javascript/12.other-concepts/object-oriented-programming/01.OOP-Base.md",
+    "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Core-Principes.md",
     "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Examples.md",
-    "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Base-encapsulation-extend.md",
+    "0_5bscj-Hxw0AKkrzj 1.png",
+    "0_5bscj-Hxw0AKkrzj.png",
+    "encapsulation-in-java 1.png",
+    "encapsulation-in-java.png",
     "algorithms/oop.js",
     "lessons/javascript/12.other-concepts/object-oriented-programming/Class-heritage.md",
     "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
     "lessons/javascript/BACKLOG.md",
-    "lessons/javascript/12.other-concepts/object-oriented-programming/01.OOP-Base.md",
     "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
     "lessons/javascript/05.functions/01-Functions.md",
     "lessons/code/how-to-understand-code.md",
@@ -183,16 +187,11 @@
     "lessons/javascript/practice/Saison-2-Test-correction.md",
     "lessons/javascript/practice/Projet-saison2-jeu-le-snap.md",
     "lessons/javascript/practice/Level-1-Test-Correction.md",
-    "lessons/javascript/practice/Level 1 Test.md",
     "2_uml.webp",
     "classe-d-objet.png",
     "0_sJcCz-q5pIZbgmsK.png",
     "Object oriented programming concepts in Java.jpg",
     "1_BwARRnm0-gFoh-Rq_ubbwQ.png",
-    "Pasted image 20240125160103.png",
-    "Pasted image 20240125151824.png",
-    "AND-gate-..gif",
-    "6-types-javascript-objet-primitif.png",
-    "1_YoTPCR_l1ApgGGfMp6ZzmQ.png"
+    "Pasted image 20240125160103.png"
   ]
 }
