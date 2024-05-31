@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
+                "file": "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Base-encapsulation-extend.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
+                "file": "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Base-encapsulation-extend.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
+                "file": "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Base-encapsulation-extend.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lessons/javascript/06.conditions/Condition-2-court-circuit.md"
+                "file": "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Base-encapsulation-extend.md"
               }
             }
           }
@@ -148,10 +148,13 @@
   },
   "active": "68c8e5fa572f3028",
   "lastOpenFiles": [
-    "lessons/javascript/BACKLOG.md",
-    "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
-    "lessons/javascript/12.other-concepts/object-oriented-programming/01.OOP-Base.md",
+    "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Examples.md",
     "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Base-encapsulation-extend.md",
+    "algorithms/oop.js",
+    "lessons/javascript/12.other-concepts/object-oriented-programming/Class-heritage.md",
+    "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
+    "lessons/javascript/BACKLOG.md",
+    "lessons/javascript/12.other-concepts/object-oriented-programming/01.OOP-Base.md",
     "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
     "lessons/javascript/05.functions/01-Functions.md",
     "lessons/code/how-to-understand-code.md",
@@ -169,7 +172,6 @@
     "lessons/javascript/00.records-videos/learning js_ expression _ statement ET operators 1-20240226_134726-Meeting Recording.mp4",
     "lessons/javascript/00.records-videos/Learning_ JS - scopes + typeof _ in-20240311_110658-Meeting Recording.mp4",
     "lessons/javascript/00.records-videos/learning_ Objets Références Clonage-20240321_140739-Meeting Recording.mp4",
-    "lessons/javascript/00.records-videos/learning_ le  THIS et OOP-20240327_143212-Meeting Recording.mp4",
     "lessons/javascript/00.practice/jeux-de-loie.md",
     "lessons/javascript/00.practice/Saison-2-Test.md",
     "lessons/javascript/00.practice/Saison-2-Test-correction.md",
@@ -182,8 +184,6 @@
     "lessons/javascript/practice/Projet-saison2-jeu-le-snap.md",
     "lessons/javascript/practice/Level-1-Test-Correction.md",
     "lessons/javascript/practice/Level 1 Test.md",
-    "lessons/javascript/03.objects/02-copies-object-arrays.md",
-    "lessons/javascript/03.objects/02-objects-references.md",
     "2_uml.webp",
     "classe-d-objet.png",
     "0_sJcCz-q5pIZbgmsK.png",
