@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/git/01.1.git-commandes-de-base.md",
+                "file": "lessons/javascript/BACKLOG.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c2375bc6725d7487",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "lessons/javascript/BACKLOG.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lessons/git/01.1.git-commandes-de-base.md",
+                "file": "lessons/javascript/BACKLOG.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lessons/git/01.1.git-commandes-de-base.md",
+                "file": "lessons/javascript/BACKLOG.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lessons/git/01.1.git-commandes-de-base.md"
+                "file": "lessons/javascript/BACKLOG.md"
               }
             }
           }
@@ -146,11 +159,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ce7202f2c7c34449",
+  "active": "c2375bc6725d7487",
   "lastOpenFiles": [
+    "lessons/git/01.1.git-commandes-de-base.md",
     "téléchargement (7).jpeg",
     "lessons/git/01.0.git-introduction.md",
-    "lessons/git/01.1.git-commandes-de-base.md",
     "Pasted image 20240606164203.png",
     "Pasted image 20240606160856.png",
     "image-5.png",
@@ -161,7 +174,6 @@
     "Pasted image 20240605155123.png",
     "1_diRLm1S5hkVoh5qeArND0Q.png",
     "Pasted image 20240605153451.png",
-    "téléchargement (2).png",
     "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Core-Principes.md",
     "lessons/javascript/12.other-concepts/object-oriented-programming/01.OOP-Base.md",
     "lessons/javascript/BACKLOG.md",

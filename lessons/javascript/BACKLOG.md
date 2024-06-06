@@ -6,7 +6,7 @@
 🟢 présenté
 ```
 
-DEV Niveau 0 Base
+# DEV Niveau 0 Base
 - comment déclarer une variable pour stocker une donnée
 - types de variables
   - 3 types de base (primitives)
@@ -17,19 +17,7 @@ DEV Niveau 0 Base
 - Modules 🔵
   - export | import avec module.exports 
 
-DEV Niveau 1
-
-
-| Chapitre                                          | Support                                                                                                                                           | Record                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Status |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| c'est quoi la déclaration et l'assignation        | [lessons/javascript/01.declare-assign/déclarer_assigner.md](../../lessons/javascript/01.declare-assign/déclarer_assigner.md)                      | [record](https://oney-my.sharepoint.com/:v:/g/personal/jccoyla_oney_fr/ERzcO3tNKmdBmrbj7Il35M0BzJmuo67jl4NgKM4QZ734sQ?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxNzQuNzU0LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=Bn9fJQ)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 🟢     |
-| comment déclarer une variable (avec const et let) | [lessons/javascript/01.declare-assign/déclarer_assigner.md](../../lessons/javascript/01.declare-assign/déclarer_assigner.md#const-et-let)         | ❌                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | 🟢     |
-| datatype primitives                               | [lessons/javascript/02.primitives/Type_de_données.Primitives.md](../../lessons/javascript/02.primitives/Type_de_données.Primitives.md#primitives) | [record](https://oney-my.sharepoint.com/:v:/g/personal/jccoyla_oney_fr/ERzcO3tNKmdBmrbj7Il35M0BzJmuo67jl4NgKM4QZ734sQ?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozNjAuMDYzLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=DeXwSm)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 🟢     |
-| datatype objects                                  | [lessons/javascript/03.objects/01-objects.js](../javascript/03.objects/01-objects.js)                                                             | [record](https://oney-my.sharepoint.com/:v:/g/personal/jccoyla_oney_fr/ERzcO3tNKmdBmrbj7Il35M0BzJmuo67jl4NgKM4QZ734sQ?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjo4OTYuMzI3LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=XPbJYO)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 🟢     |
-| Objects                                           | [lessons/javascript/03.objects/01-objects.js](../javascript/03.objects/01-objects.js)                                                             | ❌                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |        |
-| Lecture et execution de code                      | [lessons/code/how-to-understand-code.md/lecture-interpretion](../../lessons/code/how-to-understand-code.md#lecture--interpréation)                | [record](https://oney-my.sharepoint.com/:v:/g/personal/jccoyla_oney_fr/ESCl2FYcNzRAqN6AUBvrxJoBW3GKHeiqr1IOf8DqzSkL1Q?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoyMTQuMDkzLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=VQTFn6)[lecture](https://oney-my.sharepoint.com/:v:/g/personal/jccoyla_oney_fr/ESCl2FYcNzRAqN6AUBvrxJoBW3GKHeiqr1IOf8DqzSkL1Q?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoyMTQuMDkzLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=VQTFn6) |        |
-| Lecture + importation                             |                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |        |
-|                                                   |                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |        |
+# DEV Niveau 1
 
 - savoir les types de variables 🟢
   - primitives 🟢 [lessons/javascript/02.primitives/Type_de_données.Primitives.md](../../lessons/javascript/02.primitives/Type_de_données.Primitives.md#primitives) [record](https://oney-my.sharepoint.com/:v:/g/personal/jccoyla_oney_fr/ERzcO3tNKmdBmrbj7Il35M0BzJmuo67jl4NgKM4QZ734sQ?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozNjAuMDYzLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=DeXwSm)
@@ -53,7 +41,7 @@ DEV Niveau 1
 - Projet/Game [lessons/javascript/00.practice/Saison-1-projet-jeux-de-loie.md](lessons/javascript/00.practice/Saison-1-projet-jeux-de-loie.md)
 - Test saison 1 [lessons/javascript/00.practice/Saison-1-Test.md](lessons/javascript/00.practice/Saison-1-Test.md) [record-correction](https://oney-my.sharepoint.com/:v:/g/personal/jccoyla_oney_fr/ESas96mckm5AgI6e60g-02UB8BA8B9zB5j8MaeRzs5E29A?e=9hjJEq&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
-DEV Niveau 2
+# DEV Niveau 2.0
 
 - Expression statement 🟢 [lessons/javascript/11.expression-statement/01-Expression-And-Statement.md](../javascript/11.expression-statement/01-Expression-And-Statement.md)
   - [record](https://oney-my.sharepoint.com/personal/jccoyla_oney_fr/_layouts/15/stream.aspx?id=%2Fpersonal%2Fjccoyla%5Foney%5Ffr%2FDocuments%2FEnregistrements%2Flearning%20js%5F%20expression%20%5F%20statement%20ET%20operators%201%2D20240226%5F134726%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb5e3f739%2D0a2d%2D441e%2D9723%2D4f577b0bb349)
@@ -85,7 +73,7 @@ DEV Niveau 2
 - Eval + Game [lessons/javascript/00.practice/Saison-2-Test.md](lessons/javascript/00.practice/Saison-2-Test.md) [record](https://oney-my.sharepoint.com/:v:/g/personal/jccoyla_oney_fr/EezThtZVcCRKqtRDcxrVyGUBxRhQgXaz7Z592AZYwuBeOA?e=cokCSQ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
   - correction: [lessons/javascript/00.practice/Saison-2-Test-correction.md](lessons/javascript/00.practice/Saison-2-Test-correction.md) [record](https://oney-my.sharepoint.com/:v:/g/personal/jccoyla_oney_fr/EXQrAVREKX5Jk3Q_ek7XdoIB578eKN7Cnh64xX3nPHF6_g?e=z1xjRg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
-DEV Niveau 2.1 (approfondir la programmation orienté objet +  outils de versioning / déploiements )
+# DEV Niveau 2.1 (approfondir la programmation orienté objet +  outils de versioning / déploiements )
 - JS
 	- Falsy + Truthy 🟠 [lessons/javascript/12.other-concepts/Truthy_and_Falsy.md](../../lessons/javascript/12.other-concepts/Truthy_and_Falsy.md)
 	- conditions 2 🟠
@@ -122,7 +110,7 @@ DEV Niveau 2.1 (approfondir la programmation orienté objet +  outils de version
 - Faire refactoring du 1er jeu.
 
 
-DEV Niveau 3.1 (application des conceptes JS pour le backend / APIs HTTP)
+# DEV Niveau 3.0 (application des conceptes JS pour le backend / APIs HTTP)
 - JS
   - ternary operator (comment raccourci un else if pour assigner une valeur)
   - asynchrone
@@ -147,7 +135,7 @@ DEV Niveau 3.1 (application des conceptes JS pour le backend / APIs HTTP)
       - Http Status
     - Query \ Params
   
---- FIN de Niveau 3.2 partie (on fera un API basique) et en partie 2 une API avec clean architecture
+# DEV Niveau 3.1 partie (on fera un API basique) et en partie 2 une API avec clean architecture
 - ES6
 - eslint / prettier
 - Clean architecture
@@ -155,7 +143,7 @@ DEV Niveau 3.1 (application des conceptes JS pour le backend / APIs HTTP)
 - Backend APP
 
 
-JavaScript Niveau 4 (utilisation de Typescript)
+# DEV Niveau 4.0 (utilisation de Typescript)
 - Typescript
   - Typing
 	  - Interfaces
@@ -177,7 +165,7 @@ JavaScript Niveau 4 (utilisation de Typescript)
   - Polymorphisme
 - Backend App V2
 
-JavaScript Niveau 5
+# DEV Niveau 5.0
 
 - Solid
   - Depedency injection
@@ -203,7 +191,7 @@ JavaScript Niveau 5
 - Backend App 2 (from scratch)
 
 
-Niveau ++ (Bonus)
+#Niveau ++ (Bonus)
 
 - destructuring expression
 - spread operator
