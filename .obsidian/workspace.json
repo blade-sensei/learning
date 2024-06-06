@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f30017d5876843b4",
+        "id": "e115bb2b737c0efc",
         "type": "tabs",
         "children": [
           {
-            "id": "68c8e5fa572f3028",
+            "id": "ce7202f2c7c34449",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Core-Principes.md",
+                "file": "lessons/git/01.1.git-commandes-de-base.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Core-Principes.md",
+                "file": "lessons/git/01.1.git-commandes-de-base.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Core-Principes.md",
+                "file": "lessons/git/01.1.git-commandes-de-base.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Core-Principes.md"
+                "file": "lessons/git/01.1.git-commandes-de-base.md"
               }
             }
           }
@@ -146,22 +146,40 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "68c8e5fa572f3028",
+  "active": "ce7202f2c7c34449",
   "lastOpenFiles": [
-    "lessons/javascript/12.other-concepts/object-oriented-programming/01.OOP-Base.md",
+    "téléchargement (7).jpeg",
+    "lessons/git/01.0.git-introduction.md",
+    "lessons/git/01.1.git-commandes-de-base.md",
+    "Pasted image 20240606164203.png",
+    "Pasted image 20240606160856.png",
+    "image-5.png",
+    "1_mQOZjM3wwL1UV-ydQYAJTg.png",
+    "02 Branch-1 kopiera.png",
+    "img_merge-conflict.png",
+    "lessons/git/01.git-introduction.md",
+    "Pasted image 20240605155123.png",
+    "1_diRLm1S5hkVoh5qeArND0Q.png",
+    "Pasted image 20240605153451.png",
+    "téléchargement (2).png",
     "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Core-Principes.md",
+    "lessons/javascript/12.other-concepts/object-oriented-programming/01.OOP-Base.md",
+    "lessons/javascript/BACKLOG.md",
+    "lessons/javascript/11.expression-statement/01-Expression-And-Statement.md",
+    "lessons/javascript/07.loops/For_in.md",
+    "lessons/javascript/05.functions/05.Functions-anonym.md",
+    "lessons/javascript/05.functions/01-Functions.md",
+    "lessons/javascript/05.functions/02.Functions-callback.md",
+    "lessons/javascript/02.primitives/Type_de_données.Primitives.md",
+    "lessons/javascript/01.declare-assign/déclarer_assigner.md",
+    "lessons/code/how-to-understand-code.md",
+    "lessons/git",
+    "lessons/code/how-to-understand-code-correction.md",
     "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Examples.md",
-    "0_5bscj-Hxw0AKkrzj 1.png",
-    "0_5bscj-Hxw0AKkrzj.png",
-    "encapsulation-in-java 1.png",
-    "encapsulation-in-java.png",
     "algorithms/oop.js",
     "lessons/javascript/12.other-concepts/object-oriented-programming/Class-heritage.md",
     "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
-    "lessons/javascript/BACKLOG.md",
     "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
-    "lessons/javascript/05.functions/01-Functions.md",
-    "lessons/code/how-to-understand-code.md",
     "lessons/javascript/00.practice/Saison-2-projet-jeu-le-snap.md",
     "lessons/javascript/00.practice/Saison-1-projet-jeux-de-loie.md",
     "lessons/javascript/00.records-videos/RECORDS.md",
@@ -175,23 +193,6 @@
     "lessons/javascript/00.records-videos/learning_ correction test niveau 1-20240125_163255-Meeting Recording.mp4",
     "lessons/javascript/00.records-videos/learning js_ expression _ statement ET operators 1-20240226_134726-Meeting Recording.mp4",
     "lessons/javascript/00.records-videos/Learning_ JS - scopes + typeof _ in-20240311_110658-Meeting Recording.mp4",
-    "lessons/javascript/00.records-videos/learning_ Objets Références Clonage-20240321_140739-Meeting Recording.mp4",
-    "lessons/javascript/00.practice/jeux-de-loie.md",
-    "lessons/javascript/00.practice/Saison-2-Test.md",
-    "lessons/javascript/00.practice/Saison-2-Test-correction.md",
-    "lessons/javascript/00.practice/Projet-saison2-jeu-le-snap.md",
-    "lessons/javascript/00.practice/Level-1-Test-Correction.md",
-    "lessons/javascript/00.practice/Level 1 Test.md",
-    "lessons/javascript/practice/jeux-de-loie.md",
-    "lessons/javascript/practice/Saison-2-Test.md",
-    "lessons/javascript/practice/Saison-2-Test-correction.md",
-    "lessons/javascript/practice/Projet-saison2-jeu-le-snap.md",
-    "lessons/javascript/practice/Level-1-Test-Correction.md",
-    "2_uml.webp",
-    "classe-d-objet.png",
-    "0_sJcCz-q5pIZbgmsK.png",
-    "Object oriented programming concepts in Java.jpg",
-    "1_BwARRnm0-gFoh-Rq_ubbwQ.png",
-    "Pasted image 20240125160103.png"
+    "lessons/javascript/00.practice/jeux-de-loie.md"
   ]
 }

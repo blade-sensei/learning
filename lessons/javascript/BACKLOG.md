@@ -98,28 +98,41 @@ DEV Niveau 2.1 (approfondir la programmation orienté objet +  outils de version
 		    - static
 		- héritage pour partager des propriétés de base
 		- polymorphisme pour la modularité / extension du code + saine
-- Git 2 🔵
-	- le staging
-	- git vs git origin
-	- git stash
-	- git rebase / pull rebase
-	- git merge vs rebase
-	- git cherry pick
-	- git log / reset HEARD - SOFT
-	- vscode pluging : Git Graph
-- Faire une app jeux
+- Git 2 🟠
+  - A ça sert ? 
+  - expliquer le systeme théorie avec des examples. 🟠
+  - c'est quoi le commit 🟠
+  - c'est quoi le staging / local / remote(origin) 🟠
+  - c'est quoi le "head" (post it) 🟠
+  - c'est quoi les branches 🟠
+
+  - features intermédiaires
+  	- git stash
+  	- status / checkout
+  	- git log / reset HEARD - SOFT 🟠, comment revenir en arrière
+  	- vscode pluging : Git Graph 🔵
+	- features avancés
+  	- git rebase / pull rebase 
+	- changer de branch avec des modifications en cours (mettre de côté temporairement) 🟠
+	- resoudre des conflits 🟠
+  	- git merge vs rebase 🟠
+  	- git cherry pick (pour préparer / copier des commits) 🟠
+	- travailler en remote avec un autre dev
+
+- Faire refactoring du 1er jeu.
 
 
-DEV Niveau 3 (application des conceptes JS pour le backend / APIs HTTP)
+DEV Niveau 3.1 (application des conceptes JS pour le backend / APIs HTTP)
 - JS
-  - Operators 3
-    - logique
-      - Negation (!) pour eviter les status === false
-    - arithmetique 🔵
-      - Unary (unaire plus) '+' 🔵 (pour transformer un number)
-  - functions 2 🔵
-    - Comment utiliser les conditions simplifier une fonction 🔵
   - ternary operator (comment raccourci un else if pour assigner une valeur)
+  - asynchrone
+    - promises 🔵
+    - await / async 🔵
+      - Comment faire de l'ecriture/lecture fichiers 🔵
+      - transformer JS. JSON 🔵
+- Structure fichiers (folder tree)
+  - Export / Import
+  - screaming architecture
 - NPM
   - yarn / pnpm 
   - package json
@@ -133,13 +146,8 @@ DEV Niveau 3 (application des conceptes JS pour le backend / APIs HTTP)
     - Request -> Response
       - Http Status
     - Query \ Params
-- L'asyncroyne 🔵
-  - promises 🔵
-  - await / async 🔵
-  - Comment faire de l'ecriture/lecture fichiers 🔵
-    - transformer JS. JSON 🔵
   
---- FIN de Niveau 3 partie (on fera un API basique) et en partie 2 une API avec clean architecture
+--- FIN de Niveau 3.2 partie (on fera un API basique) et en partie 2 une API avec clean architecture
 - ES6
 - eslint / prettier
 - Clean architecture
@@ -210,7 +218,10 @@ Niveau ++ (Bonus)
 	- - example de context qui change: https://www.codeheroes.fr/2018/01/10/javascript-le-mot-cle-this/  🔵
 	- - arrow function pourquoi ? (operator this)
 	- memohization 
-- 
+  - logique
+    - Negation (!) pour eviter les status === false
+  - arithmetique 🔵
+    - Unary (unaire plus) '+' 🔵 (pour transformer un number)
 
 Common Errors
 
