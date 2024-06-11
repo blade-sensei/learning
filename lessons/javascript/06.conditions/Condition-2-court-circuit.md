@@ -1,8 +1,8 @@
 Une condition peut être court circuité, alors que une des condition permet de savoir à l'avance le résultat final de toute la condition final
-Par example si notre condition est "Acheter burger" OU "Acheter un sandwich" si jamais "Acheter burger" a été réalisé, alors on a pas besoin de "verifier que "Acheter un sandwich" passe ou non. DONC on a fait un cout circuit. On a arrêté les vérifications sans aller au bout, car 1 seul condition a permis d'avoir le résultat final de la condition.
+
 
 - Ce principe de court circuit s'utilise avec les operators ET et OU
-- On peut combiner une valeur "truthy/falsy" pour écrire ce type de code et créer les court-cuits
+- On peut combiner une valeur "truthy/falsy" pour écrire ce type de code et créer les court-cuits avec une syntaxe plus "légère"
 
 ## Example
 
@@ -39,6 +39,12 @@ condition && aRetournerSiVrai();
 - si condition = false, que fait ce code
 - si condition = true, que fait ce code
 
+
+
+Jusqu'à maintenant vous avez utilisé les "&&" et "||" pour les conditions qui donnent comme résultat des "boolean" mais..
+Il y a deux choses à savoir, si on utilise ces de type d'expression (court-circuit) dans un "if" ou si on l'utilise en dehors du if
+
+Si on utilise la valeur en dehors d'un if, on va execute du code, ou alors on va récupérer la valeur de l'évaluation (pas forcement un boolean), un example plus bas:
 ## Exercices
 
 ### 1.
