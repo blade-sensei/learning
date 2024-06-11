@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/javascript/BACKLOG.md",
+                "file": "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lessons/javascript/BACKLOG.md",
+                "file": "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lessons/javascript/BACKLOG.md",
+                "file": "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lessons/javascript/BACKLOG.md"
+                "file": "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md"
               }
             }
           }
@@ -161,6 +161,11 @@
   },
   "active": "c2375bc6725d7487",
   "lastOpenFiles": [
+    "lessons/javascript/BACKLOG.md",
+    "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
+    "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
+    "lessons/javascript/12.other-concepts/hosting.md",
+    "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Core-Principes.md",
     "lessons/git/01.1.git-commandes-de-base.md",
     "téléchargement (7).jpeg",
     "lessons/git/01.0.git-introduction.md",
@@ -174,9 +179,7 @@
     "Pasted image 20240605155123.png",
     "1_diRLm1S5hkVoh5qeArND0Q.png",
     "Pasted image 20240605153451.png",
-    "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Core-Principes.md",
     "lessons/javascript/12.other-concepts/object-oriented-programming/01.OOP-Base.md",
-    "lessons/javascript/BACKLOG.md",
     "lessons/javascript/11.expression-statement/01-Expression-And-Statement.md",
     "lessons/javascript/07.loops/For_in.md",
     "lessons/javascript/05.functions/05.Functions-anonym.md",
@@ -190,8 +193,6 @@
     "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Examples.md",
     "algorithms/oop.js",
     "lessons/javascript/12.other-concepts/object-oriented-programming/Class-heritage.md",
-    "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
-    "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
     "lessons/javascript/00.practice/Saison-2-projet-jeu-le-snap.md",
     "lessons/javascript/00.practice/Saison-1-projet-jeux-de-loie.md",
     "lessons/javascript/00.records-videos/RECORDS.md",
