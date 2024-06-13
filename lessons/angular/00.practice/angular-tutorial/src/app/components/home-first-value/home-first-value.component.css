@@ -1,7 +1,7 @@
 .first-value {
   display: flex;
   gap: 10%;
-  background: linear-gradient(#e66465, #9198e5);
+  background: linear-gradient(#FFC9DA, #D3EAF5);
   border: solid black 1px;
   border-radius: 2%;
   padding: 2.2rem;
@@ -14,10 +14,12 @@
 
 .first-value__right {
   flex: 0 50%;
+  padding-top: 20px;
 }
 
 .first-value__title {
   font-size: larger;
+  margin-bottom: 30px;
 }
 
 .first-value__right button {
