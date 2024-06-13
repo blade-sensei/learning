@@ -5,4 +5,10 @@
 .home__first-value {
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.home__second-value {
+  width: 90%;
+  margin: 0 auto;
 }

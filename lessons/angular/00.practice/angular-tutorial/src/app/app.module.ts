@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { HomeFirstValueComponent } from './components/home-first-value/home-first-value.component';
+import { HomeSecondValueComponent } from './components/home-second-value/home-second-value.component';
 
 @NgModule({
   //ajout des components / directives / pipes pour composer le Module et que chaque composant se connaisse
@@ -12,6 +13,7 @@ import { HomeFirstValueComponent } from './components/home-first-value/home-firs
     AppComponent,
     HeroComponent,
     HomeFirstValueComponent,
+    HomeSecondValueComponent,
   ],
 
   //import ce qui est exportable depuis les modules, des components / services / etc
