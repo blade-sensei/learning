@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { HomeFirstValueComponent } from './components/home-first-value/home-first-value.component';
 import { HomeSecondValueComponent } from './components/home-second-value/home-second-value.component';
+import { MoreButtonComponent } from './components/more-button/more-button.component';
+import { HomeThirdValueComponent } from './components/home-third-value/home-third-value.component';
 
 @NgModule({
   //ajout des components / directives / pipes pour composer le Module et que chaque composant se connaisse
@@ -14,6 +16,8 @@ import { HomeSecondValueComponent } from './components/home-second-value/home-se
     HeroComponent,
     HomeFirstValueComponent,
     HomeSecondValueComponent,
+    MoreButtonComponent,
+    HomeThirdValueComponent,
   ],
 
   //import ce qui est exportable depuis les modules, des components / services / etc

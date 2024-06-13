@@ -11,4 +11,16 @@
 .home__second-value {
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.home__third-value {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.home__more {
+  text-align: center;
+  margin-bottom: 60px;
 }
