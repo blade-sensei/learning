@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
@@ -8,6 +8,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class HeroComponent {
   public heroTitle = 'Filmora 12 is Here, Your Freedom to Creativiy'
   public heroSubtitle = 'A cross-platform for making videos anywhere for all creators!'
+
+  @Input()
+  public img = '';
 
   @Output() changeToInSlider = new EventEmitter<string>()
 

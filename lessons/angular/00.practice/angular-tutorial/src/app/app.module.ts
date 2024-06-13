@@ -4,14 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroComponent } from './components/hero/hero.component';
-import { Hero2Component } from './components/hero-2/hero-2.component';
+import { HomeFirstValueComponent } from './components/home-first-value/home-first-value.component';
 
 @NgModule({
   //ajout des components / directives / pipes pour composer le Module et que chaque composant se connaisse
   declarations: [
     AppComponent,
     HeroComponent,
-    Hero2Component
+    HomeFirstValueComponent,
   ],
 
   //import ce qui est exportable depuis les modules, des components / services / etc

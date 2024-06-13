@@ -9,7 +9,7 @@
     <button (click)="seeUpdates()"> See updates </button>
   </div>
   <div class="slider__right">
-    <img src="/images/red.png" width="100%" height="200" />
+    <img [src]="img" width="100%" height="200" />
   </div>
   <div class="slider__left-previous-button">
     <button (click)="goTo('next')">next ></button>

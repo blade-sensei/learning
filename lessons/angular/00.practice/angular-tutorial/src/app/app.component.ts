@@ -10,6 +10,7 @@ export class AppComponent {
 
   heroList = ['first', 'second'];
   currentIndex = 0;
+  imagesPath = ['/images/blue.jpg', '/images/red.png']
 
   handleGoToInSlider(value: string) {
     let nextIndex = value === "next" ? this.currentIndex + 1: this.currentIndex + -1;

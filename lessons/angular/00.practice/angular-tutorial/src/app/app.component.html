@@ -16,12 +16,11 @@
     <div>
       navbar
     </div>
-    <div>
-      @if (heroList[currentIndex] === "first") {
-        <app-hero (changeToInSlider)="handleGoToInSlider($event)"></app-hero>
-      } @else if (heroList[currentIndex] === "second") {
-        <app-hero-2 (changeToInSlider)="handleGoToInSlider($event)"></app-hero-2>
-      }
+    <div class="home__hero">
+        <app-hero [img]="imagesPath[currentIndex]" (changeToInSlider)="handleGoToInSlider($event)"></app-hero>
+    </div>
+    <div class="home__first-value">
+        <app-home-first-value></app-home-first-value>
     </div>
     <div>
       footer
