@@ -35,9 +35,9 @@
     <app-more-button title="More PDF Solutions"></app-more-button>
   </div>
   <div class="home__learnAbout">
-    <app-about-card></app-about-card>
-    <app-about-card></app-about-card>
-    <app-about-card></app-about-card>
+    <div *ngFor="let card of cards">
+      <app-about-card [text]="card.text" [imgPath]="card.img"></app-about-card>
+    </div>
   </div>
     <div>
       footer
