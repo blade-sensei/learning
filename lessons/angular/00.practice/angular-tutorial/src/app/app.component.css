@@ -1,9 +1,15 @@
 .home__hero {
+  display: flex;
   margin-bottom: 60px;
+  height: 600px;
+  align-items: center;
+  background: linear-gradient(#FFCBA0, #DD5789, #9B5BE6);
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .home__first-value {
-  width: 90%;
+  width: 60%;
   margin: 0 auto;
   margin-bottom: 60px;
 }

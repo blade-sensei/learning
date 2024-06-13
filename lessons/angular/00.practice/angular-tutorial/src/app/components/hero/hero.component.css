@@ -1,9 +1,10 @@
 .slider {
+  border-radius: 1.4%;
   background-color: #06263a;
   display: flex;
   gap: 20px;
   width: 100%;
-  height: 350px;
+  height: 450px;
   align-items: center;
 }
 
@@ -20,9 +21,20 @@
   align-self: center;
 }
 
+.slider__left-previous-button {
+  flex: 1 1 10%;
+}
+.slider__left {
+  flex: 1 1 40%;
+}
 .slider__right {
+  flex: 1 1 40%;
+}
+.slider__right-previous-button {
+  flex: 1 1 10%;
 }
 
-.slider__title {
-  font-size: small;
+.slider__left button {
+  margin-top: 20px;
+  padding: 10px;
 }

@@ -7,41 +7,41 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<style>
-
-</style>
+<style></style>
 
 <main class="main">
   <div class="content">
-    <div>
-      navbar
-    </div>
+    <div>navbar</div>
     <div class="home__hero">
-        <app-hero [img]="imagesPath[currentIndex]" (changeToInSlider)="handleGoToInSlider($event)"></app-hero>
+      <app-hero
+        [img]="imagesPath[currentIndex]"
+        (changeToInSlider)="handleGoToInSlider($event)"
+      ></app-hero>
     </div>
     <div class="home__first-value">
-        <app-home-first-value></app-home-first-value>
+      <app-home-first-value></app-home-first-value>
     </div>
     <div class="home__second-value">
       <app-home-second-value></app-home-second-value>
-  </div>
-  <div class="home__more-videos">
-    <app-more-button title="More Video Solutions"></app-more-button>
-  </div>
-  <div class="home__third-value">
-    <app-home-third-value></app-home-third-value>
-  </div>
-  <div class="home__more-pdf">
-    <app-more-button title="More PDF Solutions"></app-more-button>
-  </div>
-  <div class="home__learnAbout">
-    <div *ngFor="let card of cards">
-      <app-about-card [text]="card.text" [imgPath]="card.img"></app-about-card>
     </div>
-  </div>
-    <div>
-      footer
+    <div class="home__more-videos">
+      <app-more-button title="More Video Solutions"></app-more-button>
     </div>
+    <div class="home__third-value">
+      <app-home-third-value></app-home-third-value>
+    </div>
+    <div class="home__more-pdf">
+      <app-more-button title="More PDF Solutions"></app-more-button>
+    </div>
+    <div class="home__learnAbout">
+      <div *ngFor="let card of cards">
+        <app-about-card
+          [text]="card.text"
+          [imgPath]="card.img"
+        ></app-about-card>
+      </div>
+    </div>
+    <div>footer</div>
   </div>
 </main>
 
@@ -52,6 +52,5 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 
 <router-outlet />
