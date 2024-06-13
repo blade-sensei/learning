@@ -1,0 +1,31 @@
+.first-value {
+  display: flex;
+  gap: 10%;
+  background: linear-gradient(#e66465, #9198e5);
+  border: solid black 1px;
+  border-radius: 2%;
+  padding: 2.2rem;
+}
+
+.first-value__left {
+  flex: 0 50%;
+  align-self: center;
+}
+
+.first-value__right {
+  flex: 0 50%;
+}
+
+.first-value__title {
+  font-size: larger;
+}
+
+.first-value__right button {
+  background-color: black;
+  color: white;
+  border-radius: 0.4rem;
+  padding: 10px;
+}
+.first-value__right a {
+  margin-left: 10px;
+}
