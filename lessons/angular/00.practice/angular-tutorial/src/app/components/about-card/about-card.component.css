@@ -1,0 +1,21 @@
+.card img {
+  width: 100%;
+
+/* Rectangle */
+}
+
+.card {
+  box-sizing: border-box;
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+padding-left: 0.4rem;
+padding-right: 0.4rem;
+}
+
+.card__body-resume-text {
+  font-size: x-small;
+}
+.card__body-main-text {
+  font-size: large;
+}

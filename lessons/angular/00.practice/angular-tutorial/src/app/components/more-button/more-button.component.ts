@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-more-button',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './more-button.component.css'
 })
 export class MoreButtonComponent {
-
+  @Input()
+  title = ''
 }
