@@ -1,0 +1,28 @@
+.slider {
+  background-color: #06263a;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 350px;
+  align-items: center;
+}
+
+.slider__title {
+  align-self: center;
+  color: aqua;
+}
+
+.slider__subtitle {
+  color: white;
+}
+
+.slider__left-previous-button {
+  align-self: center;
+}
+
+.slider__right {
+}
+
+.slider__title {
+  font-size: small;
+}

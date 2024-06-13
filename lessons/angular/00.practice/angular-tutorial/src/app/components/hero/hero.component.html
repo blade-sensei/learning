@@ -1,15 +1,18 @@
-<div>
-  {{ heroTitle }}
-
-  <p>{{ heroSubtitle }} </p>
-  <img src="/images/red.png" width="400" height="200" />
-
-  <div>
+<div class="slider">
+  <div class="slider__left-previous-button">
     <button (click)="goTo('previous')">&lt;before</button>
+  </div>
+  <div class="slider__left">
+    <h1 class="slider__title">{{ heroTitle }}</h1>
+    <p class="slider__subtitle">{{ heroSubtitle }} </p>
+    <br>
+    <button (click)="seeUpdates()"> See updates </button>
+  </div>
+  <div class="slider__right">
+    <img src="/images/red.png" width="100%" height="200" />
+  </div>
+  <div class="slider__left-previous-button">
     <button (click)="goTo('next')">next ></button>
   </div>
-
-  <br>
-  <button (click)="seeUpdates()"> See updates </button>
   
 </div>
