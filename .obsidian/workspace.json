@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
+                "file": "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
+                "file": "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
+                "file": "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md"
+                "file": "lessons/javascript/06.conditions/Condition-2-court-circuit.md"
               }
             }
           }
@@ -161,8 +161,8 @@
   },
   "active": "c2375bc6725d7487",
   "lastOpenFiles": [
-    "lessons/javascript/BACKLOG.md",
     "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
+    "lessons/javascript/BACKLOG.md",
     "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
     "lessons/javascript/12.other-concepts/hosting.md",
     "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Core-Principes.md",
