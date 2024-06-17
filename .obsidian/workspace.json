@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/javascript/BACKLOG.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c2375bc6725d7487",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
+                "file": "lessons/javascript/08-operators/Operators_Précedence.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
+                "file": "lessons/javascript/08-operators/Operators_Précedence.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
+                "file": "lessons/javascript/08-operators/Operators_Précedence.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lessons/javascript/06.conditions/Condition-2-court-circuit.md"
+                "file": "lessons/javascript/08-operators/Operators_Précedence.md"
               }
             }
           }
@@ -159,13 +146,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c2375bc6725d7487",
+  "active": "ce7202f2c7c34449",
   "lastOpenFiles": [
-    "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
-    "lessons/javascript/BACKLOG.md",
+    "lessons/javascript/08-operators/Operator_IN.md",
+    "lessons/javascript/08-operators/Logical_operators.md",
     "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
-    "lessons/javascript/12.other-concepts/hosting.md",
+    "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Examples.md",
     "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Core-Principes.md",
+    "lessons/javascript/12.other-concepts/object-oriented-programming/01.OOP-Base.md",
+    "lessons/javascript/BACKLOG.md",
+    "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
+    "lessons/angular/00.practice/angular-tutorial/src/app/app.component.html",
+    "lessons/angular/00.practice/angular-tutorial/src/app/app.component.css",
+    "lessons/angular/00.practice/angular-tutorial/src/app",
+    "lessons/angular/00.practice/angular-tutorial/src",
+    "lessons/javascript/12.other-concepts/hosting.md",
     "lessons/git/01.1.git-commandes-de-base.md",
     "téléchargement (7).jpeg",
     "lessons/git/01.0.git-introduction.md",
@@ -179,7 +174,6 @@
     "Pasted image 20240605155123.png",
     "1_diRLm1S5hkVoh5qeArND0Q.png",
     "Pasted image 20240605153451.png",
-    "lessons/javascript/12.other-concepts/object-oriented-programming/01.OOP-Base.md",
     "lessons/javascript/11.expression-statement/01-Expression-And-Statement.md",
     "lessons/javascript/07.loops/For_in.md",
     "lessons/javascript/05.functions/05.Functions-anonym.md",
@@ -190,22 +184,15 @@
     "lessons/code/how-to-understand-code.md",
     "lessons/git",
     "lessons/code/how-to-understand-code-correction.md",
-    "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Examples.md",
     "algorithms/oop.js",
     "lessons/javascript/12.other-concepts/object-oriented-programming/Class-heritage.md",
     "lessons/javascript/00.practice/Saison-2-projet-jeu-le-snap.md",
     "lessons/javascript/00.practice/Saison-1-projet-jeux-de-loie.md",
     "lessons/javascript/00.records-videos/RECORDS.md",
     "lessons/javascript/00.practice/Saison-1-Test-Correction.md",
-    "lessons/javascript/00.practice/Saison-1-Test.md",
     "lessons/javascript/00.records-videos/Workshop JS basics-20231220_154123-Meeting Recording.mp4",
     "lessons/javascript/00.records-videos/Workshop JS basics-20231220_154243-Meeting Recording.mp4",
     "lessons/javascript/00.records-videos/learning_ callbacks - anonym fonction-20240122_105529-Meeting Recording.mp4",
-    "lessons/javascript/00.records-videos/Learning_ JS-20240108_145820-Meeting Recording.mp4",
-    "lessons/javascript/00.records-videos/learning_ lvl 1 - read code - functions voc-20240116_131945-Meeting Recording.mp4",
-    "lessons/javascript/00.records-videos/learning_ correction test niveau 1-20240125_163255-Meeting Recording.mp4",
-    "lessons/javascript/00.records-videos/learning js_ expression _ statement ET operators 1-20240226_134726-Meeting Recording.mp4",
-    "lessons/javascript/00.records-videos/Learning_ JS - scopes + typeof _ in-20240311_110658-Meeting Recording.mp4",
-    "lessons/javascript/00.practice/jeux-de-loie.md"
+    "lessons/javascript/00.records-videos/Learning_ JS-20240108_145820-Meeting Recording.mp4"
   ]
 }

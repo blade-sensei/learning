@@ -1,16 +1,12 @@
-function salleClass(nom, etage, nomBatiment) {
-  //attributs 
-   this.nom = nom; 
-   this.etage = etage;
-   this.nomBatiment = nomBatiment;
+function two() {
+  console.log('heo 2')
+  return 2;
+}
 
-   this.reserverSalle = function () {
-    this.reserve = true;
-   }
- }
- const salle = new salleClass('Molière', 3, 'A'); //new est un operator pour instancier 
+function six() {
+  console.log('heo 6')
+  return 6;
+}
 
-const p = salle.reserverSalle();
-console.log(p)
-
-//console.log(salle);
+const t = two() + six() / two();
+console.log(t);

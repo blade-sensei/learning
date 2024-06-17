@@ -1,5 +1,5 @@
 
-- La **précédence des opérateurs** détermine l'ordre dans lequel les opérateurs sont évalués. Les opérateurs avec la plus haute précédence sont évalués en premier.
+- La **précédence des opérateurs** détermine l'ordre dans lequel les opérateurs sont regroupés. Les opérateurs avec la plus haute précédence sont évalués en premier.
 
 - Un peu comme en mathématiques,  l'opérateur de multiplication (« `*` ») (ayant une précédence plus haute que l'opérateur d'addition (« `+` »)) est évalué en premier et l'expression `6 * 4 + 2` renverra 26 (et pas 36).
 	- ici c'est le calcul (évaluation) de `4 * 5` qui sera faite en premier
