@@ -13,10 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/javascript/08-operators/Operators_Précedence.md",
+                "file": "lessons/javascript/00.practice/Saison-2-Test-correction.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Saison-2-Test-correction"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lessons/javascript/08-operators/Operators_Précedence.md",
+                "file": "lessons/javascript/00.practice/Test Junior.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Test Junior"
             }
           },
           {
@@ -102,10 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lessons/javascript/08-operators/Operators_Précedence.md",
+                "file": "lessons/javascript/00.practice/Test Junior.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Test Junior"
             }
           },
           {
@@ -116,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -125,8 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lessons/javascript/08-operators/Operators_Précedence.md"
-              }
+                "file": "lessons/javascript/00.practice/Test Junior.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Test Junior"
             }
           }
         ]
@@ -148,6 +164,15 @@
   },
   "active": "ce7202f2c7c34449",
   "lastOpenFiles": [
+    "lessons/javascript/00.practice/Test-Junior-Correction.md",
+    "evaluations/Test Junior.md",
+    "evaluations",
+    "lessons/javascript/00.practice/Saison-2-Test.md",
+    "lessons/javascript/00.practice/Saison-2-Test-correction.md",
+    "lessons/javascript/00.practice/Saison-1-Test-Correction.md",
+    "lessons/javascript/03.objects/02-objects-references.md",
+    "lessons/lesson.md",
+    "lessons/javascript/08-operators/Operators_Précedence.md",
     "lessons/javascript/08-operators/Operator_IN.md",
     "lessons/javascript/08-operators/Logical_operators.md",
     "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
@@ -179,20 +204,10 @@
     "lessons/javascript/05.functions/05.Functions-anonym.md",
     "lessons/javascript/05.functions/01-Functions.md",
     "lessons/javascript/05.functions/02.Functions-callback.md",
-    "lessons/javascript/02.primitives/Type_de_données.Primitives.md",
-    "lessons/javascript/01.declare-assign/déclarer_assigner.md",
-    "lessons/code/how-to-understand-code.md",
     "lessons/git",
-    "lessons/code/how-to-understand-code-correction.md",
     "algorithms/oop.js",
-    "lessons/javascript/12.other-concepts/object-oriented-programming/Class-heritage.md",
-    "lessons/javascript/00.practice/Saison-2-projet-jeu-le-snap.md",
-    "lessons/javascript/00.practice/Saison-1-projet-jeux-de-loie.md",
-    "lessons/javascript/00.records-videos/RECORDS.md",
-    "lessons/javascript/00.practice/Saison-1-Test-Correction.md",
     "lessons/javascript/00.records-videos/Workshop JS basics-20231220_154123-Meeting Recording.mp4",
     "lessons/javascript/00.records-videos/Workshop JS basics-20231220_154243-Meeting Recording.mp4",
-    "lessons/javascript/00.records-videos/learning_ callbacks - anonym fonction-20240122_105529-Meeting Recording.mp4",
-    "lessons/javascript/00.records-videos/Learning_ JS-20240108_145820-Meeting Recording.mp4"
+    "lessons/javascript/00.records-videos/learning_ callbacks - anonym fonction-20240122_105529-Meeting Recording.mp4"
   ]
 }
