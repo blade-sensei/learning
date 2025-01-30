@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons/javascript/00.practice/Saison-2-Test-correction.md",
+                "file": "evaluations/Test Junior Git.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Saison-2-Test-correction"
+              "title": "Test Junior Git"
             }
           }
         ]
@@ -164,12 +164,27 @@
   },
   "active": "ce7202f2c7c34449",
   "lastOpenFiles": [
-    "lessons/javascript/00.practice/Test-Junior-Correction.md",
+    "sandbox/git/conflict-local/items.html",
+    "sandbox/git/conflict-local",
+    "sandbox/git/conflict-remote/readme.md",
+    "sandbox/git/conflict-remote",
+    "sandbox/git/project-test/src/items.js",
+    "sandbox/git/project-test/src/items.html",
+    "sandbox/git/project-test/src",
+    "sandbox/git/project-test/feature/items.js",
+    "sandbox/git/project-test/feature/items.html",
+    "sandbox/git/project-test/feature",
+    "sandbox/git/project-test",
     "evaluations/Test Junior.md",
-    "evaluations",
+    "evaluations/Test Junior Git.md",
+    "lessons/javascript/00.practice/Test-Junior-Correction.md",
+    "lessons/javascript/00.practice/Saison-1-projet-jeux-de-loie.md",
+    "lessons/javascript/00.practice/Saison-1-Test.md",
+    "lessons/javascript/00.practice/Saison-1-Test-Correction.md",
+    "lessons/javascript/00.practice/Saison-2-projet-jeu-le-snap.md",
     "lessons/javascript/00.practice/Saison-2-Test.md",
     "lessons/javascript/00.practice/Saison-2-Test-correction.md",
-    "lessons/javascript/00.practice/Saison-1-Test-Correction.md",
+    "evaluations",
     "lessons/javascript/03.objects/02-objects-references.md",
     "lessons/lesson.md",
     "lessons/javascript/08-operators/Operators_Précedence.md",
@@ -181,10 +196,6 @@
     "lessons/javascript/12.other-concepts/object-oriented-programming/01.OOP-Base.md",
     "lessons/javascript/BACKLOG.md",
     "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
-    "lessons/angular/00.practice/angular-tutorial/src/app/app.component.html",
-    "lessons/angular/00.practice/angular-tutorial/src/app/app.component.css",
-    "lessons/angular/00.practice/angular-tutorial/src/app",
-    "lessons/angular/00.practice/angular-tutorial/src",
     "lessons/javascript/12.other-concepts/hosting.md",
     "lessons/git/01.1.git-commandes-de-base.md",
     "téléchargement (7).jpeg",
@@ -198,16 +209,6 @@
     "lessons/git/01.git-introduction.md",
     "Pasted image 20240605155123.png",
     "1_diRLm1S5hkVoh5qeArND0Q.png",
-    "Pasted image 20240605153451.png",
-    "lessons/javascript/11.expression-statement/01-Expression-And-Statement.md",
-    "lessons/javascript/07.loops/For_in.md",
-    "lessons/javascript/05.functions/05.Functions-anonym.md",
-    "lessons/javascript/05.functions/01-Functions.md",
-    "lessons/javascript/05.functions/02.Functions-callback.md",
-    "lessons/git",
-    "algorithms/oop.js",
-    "lessons/javascript/00.records-videos/Workshop JS basics-20231220_154123-Meeting Recording.mp4",
-    "lessons/javascript/00.records-videos/Workshop JS basics-20231220_154243-Meeting Recording.mp4",
-    "lessons/javascript/00.records-videos/learning_ callbacks - anonym fonction-20240122_105529-Meeting Recording.mp4"
+    "Pasted image 20240605153451.png"
   ]
 }
