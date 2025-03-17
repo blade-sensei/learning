@@ -20,6 +20,23 @@
               "icon": "lucide-file",
               "title": "Saison-2-Test-correction"
             }
+<<<<<<< Updated upstream
+=======
+          },
+          {
+            "id": "9b8a38e1d491471c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "lessons/javascript/00.practice/asynchrone/Exercices asynchrone.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Exercices asynchrone"
+            }
+>>>>>>> Stashed changes
           }
         ]
       }
@@ -164,6 +181,19 @@
   },
   "active": "ce7202f2c7c34449",
   "lastOpenFiles": [
+    "lessons/javascript/12.other-concepts/asynchrone/01.Asynchrone.md",
+    "lessons/javascript/00.practice/asynchrone/Exercices asynchrone.md",
+    "lessons/javascript/00.practice/formation-m/24-Feb-2025.md",
+    "lessons/javascript/BACKLOG.md",
+    "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Examples.md",
+    "lessons/javascript/00.practice/asynchrone",
+    "Pasted image 20250316234834.png",
+    "Test.md",
+    "lessons/javascript/12.other-concepts/object-oriented-programming/Class-heritage.md",
+    "lessons/javascript/12.other-concepts/object-oriented-programming/01.OOP-Base.md",
+    "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Core-Principes.md",
+    "Untitled 1",
+    "Untitled",
     "lessons/javascript/00.practice/Test-Junior-Correction.md",
     "evaluations/Test Junior.md",
     "evaluations",
@@ -176,10 +206,6 @@
     "lessons/javascript/08-operators/Operator_IN.md",
     "lessons/javascript/08-operators/Logical_operators.md",
     "lessons/javascript/06.conditions/Condition-2-court-circuit.md",
-    "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Examples.md",
-    "lessons/javascript/12.other-concepts/object-oriented-programming/02.OOP-Core-Principes.md",
-    "lessons/javascript/12.other-concepts/object-oriented-programming/01.OOP-Base.md",
-    "lessons/javascript/BACKLOG.md",
     "lessons/javascript/12.other-concepts/Truthy_and_Falsy.md",
     "lessons/angular/00.practice/angular-tutorial/src/app/app.component.html",
     "lessons/angular/00.practice/angular-tutorial/src/app/app.component.css",
@@ -198,16 +224,8 @@
     "lessons/git/01.git-introduction.md",
     "Pasted image 20240605155123.png",
     "1_diRLm1S5hkVoh5qeArND0Q.png",
-    "Pasted image 20240605153451.png",
     "lessons/javascript/11.expression-statement/01-Expression-And-Statement.md",
-    "lessons/javascript/07.loops/For_in.md",
-    "lessons/javascript/05.functions/05.Functions-anonym.md",
-    "lessons/javascript/05.functions/01-Functions.md",
-    "lessons/javascript/05.functions/02.Functions-callback.md",
     "lessons/git",
-    "algorithms/oop.js",
-    "lessons/javascript/00.records-videos/Workshop JS basics-20231220_154123-Meeting Recording.mp4",
-    "lessons/javascript/00.records-videos/Workshop JS basics-20231220_154243-Meeting Recording.mp4",
-    "lessons/javascript/00.records-videos/learning_ callbacks - anonym fonction-20240122_105529-Meeting Recording.mp4"
+    "algorithms/oop.js"
   ]
 }
