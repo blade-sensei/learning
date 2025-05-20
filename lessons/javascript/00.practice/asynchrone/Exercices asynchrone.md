@@ -8,7 +8,11 @@
 function addition(a, b, callback) {
 
 // Implémentez la fonction qui ajoute a et b, puis appelle le callback avec le résultat
+const result = a + b ;
+callback(result);
 }
+
+function addition(3, 5, function (somme){})
 ```
 
   
@@ -24,6 +28,11 @@ Créez une fonction `delayedMessage(message, delay, callback)` qui affiche un me
 function delayedMessage(message, delay, callback) {
 
 // Implémentez un `setTimeout` pour afficher le message après le délai
+
+    setTimeout(() => {
+        console.log('affiche le message');
+        callback()
+    }, delay)
 }
 
 ```
@@ -47,8 +56,24 @@ function delayedMessage(message, delay, callback) {
 function greetUser(name, callback1, callback2) {
 
 // Implémentez deux délais pour appeler les callbacks
+    setTimeout(() => {
+        callback1()
+    }, 2000)
+
+    setTimeout(() => {
+        callback2()
+    }, 1000)
+
 }
 
+function callback1(name){
+    console.log(`Hello, ${name}!`);
+}
+function callback2(name){
+    console.log(`How are you, ${name}?`);
+}
+
+greetUser("Aurore", Hello, HowAreYou);
 ```
 
   
@@ -58,23 +83,28 @@ function greetUser(name, callback1, callback2) {
 Créez une fonction `task1(callback)` qui renvoie un message après 1 seconde. Ensuite, créez une fonction `task2(callback)` qui renvoie un autre message après 1 seconde. Enchaînez ces deux fonctions à l'aide de callbacks pour qu'elles s'exécutent l'une après l'autre.
 
   
-
 ```javascript
 
 function task1(callback) {
-
 // Implémentez un délai pour afficher un message
-
+    setTimeout(() => {
+        callback1()
+    }, 1000)
 }
-
-  
 
 function task2(callback) {
-
 // Implémentez un délai pour afficher un autre message
-
+    setTimeout(() => {
+        callback2()
+    }, 1000)
 }
 
+function callback1(){
+    console.log(`message1`);
+}
+function callback2(){
+    console.log(`message2`);
+}
 ```
 
   
@@ -88,6 +118,13 @@ Créez une fonction `divide(a, b, callback)` qui divise `a` par `b`. Si `b` est 
 ```javascript
 
 function divide(a, b, callback) {
+    const result = a / b ;
+    if (b === 0) {
+        callback(new Error("Division par zéro"))
+    }
+    else {
+        console.log(result)
+    }
 
 // Si b est 0, appelle le callback avec une erreur
 
@@ -145,7 +182,16 @@ Après avoir effectué ces tâches, le callback doit être appelé pour indiquer
 function asyncTasks(callback) {
 
 // Implémentez l'enchaînement des tâches asynchrones ici
-
+setTimeout(() => {
+        console.log("Task 1 done");
+        setTimeout(() => {
+            console.log("Task 2 done");
+            setTimeout(() => {
+                console.log("Task 3 done");
+                callback();
+            }, 1000);
+        }, 2000);
+    }, 1000);
 }
 
 asyncTasks(() => {
@@ -166,9 +212,19 @@ Créez une fonction `getDataFromServer()` qui simule la récupération de donné
 
 ```javascript
 
-function getDataFromServer() {}
-```
+function getDataFromServer(callback) {
+    let data = new Promise((resolve, reject) => {
+         setTimeout(() => {
+            resolve(); 
+        }, 2000); 
+    })
 
+    data.then((result) => {
+    console.log("résultats promise: ", result); 
+    callback(result);
+    })
+}
+```
   
 
 ## Exercice 8 : Simulation d'un setInterval avec Callback
@@ -179,11 +235,19 @@ Créez une fonction `startInterval(callback, delay)` qui appelle un callback tou
 ```javascript
 
 function startInterval(callback, delay) {
-
 	// Implémentez un intervalle pour appeler le callback
-}
+    let count = 0;
+    const i = setInterval(() => {
+        count++;
+        callback();
 
-  
+    if (count >= 5) {
+        clearInterval(i);
+        }   
+    }, delay);
+
+
+}
 
 startInterval(() => {
 	console.log("Message toutes les secondes");
@@ -202,17 +266,19 @@ Créez une fonction `task1(callback)` qui attend 1 seconde avant de retourner un
 ```javascript
 
 function task1(callback) {
-
 // Tâche 1 après 1 seconde
-
+    setTimeout(() => {
+        callback("Task 1");
+    }, 1000);
 }
 
   
 
 function task2(callback) {
-
 // Tâche 2 après 2 secondes
-
+    setTimeout(() => {
+        callback("Task 2");
+    }, 2000);
 }
 
 task1((message1) => {
